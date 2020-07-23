@@ -1,0 +1,33 @@
+@import url('https://use.typekit.net/guw0xro.css');
+
+.App {
+    @import 'buttons';
+
+    font-family: din-2014, sans-serif;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    img {
+        display: block;
+    }
+
+    h1 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 23px;
+      text-align: left;
+      color: #ffffff;
+    }
+  
+    p {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 23px;
+      text-align: left;
+      color: #ffffff;
+    }
+}

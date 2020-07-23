@@ -1,3 +1,27 @@
 .homepage-hero {
-    
+  position: relative;
+  background: deepskyblue;
+
+  .home-hero-img {
+    width: 100%;
+  }
+
+  .home-hero-content {
+    position: absolute;
+    width: 492px;
+    left: 31px;
+    bottom: 50px;
+    // border: 1px solid tomato
+  }
+
+  .home-hero-ctas {
+      width: 340px;
+
+      button {
+          margin: 10px 20px 0 0;
+          color: white;
+          background-color: transparent;
+          border-color: white;
+      }
+  }
 }

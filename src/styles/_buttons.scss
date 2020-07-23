@@ -1,0 +1,39 @@
+button {
+  dislay: block;
+  width: 150px;
+  height: 40px;
+  margin: 60px auto 0;
+  background-color: black;
+  border: 1px solid black;
+  transition: all 0.4s;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+.product-body {
+  button {
+    display: block;
+  }
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+}
+
+button.transp-bg {
+  color: black;
+  background-color: transparent;
+  transition: all 0.4s;
+}
+
+button.transp-bg:hover {
+  color: white;
+  background-color: black;
+}
