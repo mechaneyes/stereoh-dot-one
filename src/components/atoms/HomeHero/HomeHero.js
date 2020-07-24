@@ -25,6 +25,7 @@ const HomeHero = (props) => {
           <button className="transp-bg">Explore</button>
         </div>
       </div>
+      <div className="gradient"></div>
     </section>
   );
 };
