@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 
-import HomeHero from "../../components/atoms/HomeHero/HomeHero";
 import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
 import { defaultValues } from "../../components/constants";
-import "./Homepage.scss";
+import "./McCall.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
 
-export class Homepage extends Component {
+export class McCall extends Component {
   render() {
     const defaultProps = {
       title: defaultValues.HERO_TITLE,
@@ -38,8 +37,7 @@ export class Homepage extends Component {
     const relatedList = relatedItems.map( (rel, i) => <RelatedItem key={i} {...rel} />)
 
     return (
-      <div className="homepage">
-        <HomeHero homeHeroImg={imgPath + "tropicalFreeze_014.png"} />
+      <div className="single mccall">
         <section className="related-content">
           <h2>Moar Experiences</h2>
           <div className="related-grid">
@@ -51,4 +49,4 @@ export class Homepage extends Component {
   }
 }
 
-export default Homepage;
+export default McCall;

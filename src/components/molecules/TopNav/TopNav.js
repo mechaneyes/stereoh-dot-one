@@ -2,6 +2,7 @@
 // https://www.nts.live/shows/boom-bip/episodes/boom-bip-18th-may-2020
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./TopNav.scss"
 
@@ -13,19 +14,10 @@ const MenuItem = (href) => {
         <h2>neonPlatform</h2>
         <ul>
           <li className="menu-item">
-            <a href={href}>
-              <h4>menu01</h4>
-            </a>
+            <Link to="/">Home</Link>
           </li>
           <li className="menu-item">
-            <a href={href}>
-              <h4>menu02</h4>
-            </a>
-          </li>
-          <li className="menu-item">
-            <a href={href}>
-              <h4>menu03</h4>
-            </a>
+            <Link to="/mccall">McCall</Link>
           </li>
         </ul>
       </div>

@@ -1,66 +1,79 @@
 nav.top-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom: 1px solid #00a1ff;
+
+  div {
     display: flex;
-    justify-content: space-between;
-    height: 50px;
-    border-bottom: 1px solid #00A1FF;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    // border: 1px solid green;
+  }
 
-    
-    div {
-        display: flex;
-        align-items: center;
-        width: 40%;
-        height: 100%;
-        // border: 1px solid green;
+  .top-nav-left {
+    margin-left: 30px;
+  }
+
+  .top-nav-right {
+    justify-content: flex-end;
+    margin-right: 30px;
+  }
+
+  h2 {
+    float: left;
+    margin: 0;
+    margin-top: -3px; // Temp placeholder styling
+    color: #00a1ff;
+    font-family: dead-history, sans-serif;
+    font-weight: 700;
+  }
+
+  a {
+    margin: 0;
+    font-family: din-2014, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #bfbfbf;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
     }
+  }
 
-    .top-nav-left {
-        margin-left: 30px;
-    }
+  ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding-left: 10px;
+  }
 
-    .top-nav-right {
-        justify-content: flex-end;
-        margin-right: 30px;
-    }
+  li::marker {
+      display: none;
+      content: '';
+  }
 
-    h2 {
-        float: left;
-        margin: 0;
-        margin-top: -3px;           // Temp placeholder styling
-        color: #00A1FF;
-        font-family: dead-history, sans-serif;
-        font-weight: 700;
-    }
+  .menu-item {
+    float: left;
+    // height: 100%;
+    padding-left: 20px;
+    line-height: 1;
+  }
 
-    h4 {
-        margin: 0;
-        color: #BFBFBF;
-        text-transform: uppercase;
-
-        &:hover {
-            color: white;
-        }
-    }
-
-    ul {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        margin: 0;
-        padding-left: 10px;
-    }
-
-    .menu-item {
-        float: left;
-        // height: 100%;
-        padding-left: 20px;
-        line-height: 1;
-    }
-
-    button {
-        width: 120px;
-        height: 35px;
-        margin: 0 0 0 30px;
-        background-color: #00A1FF;
-        border: none;
-    }
+  button {
+    width: 120px;
+    height: 35px;
+    margin: 0 0 0 30px;
+    background-color: #00a1ff;
+    border: none;
+  }
 }
