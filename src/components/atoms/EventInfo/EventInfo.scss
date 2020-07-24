@@ -1,9 +1,14 @@
 .event-info {
-    clear: both;
-    overflow: hidden;
-    display: block;
+  clear: both;
+  overflow: hidden;
+  display: block;
   width: calc(66% - 30px);
   margin-left: 30px;
+
+  .event-logo {
+    width: 450px;
+    margin-bottom: 40px;
+  }
 
   .event-name {
     font-family: din-2014, sans-serif;
@@ -15,5 +20,10 @@
     align-items: center;
     text-align: center;
     color: #ffffff;
+  }
+
+  button.transp-bg:hover {
+    color: #001225;
+    background-color: white;
   }
 }

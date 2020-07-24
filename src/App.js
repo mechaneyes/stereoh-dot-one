@@ -1,26 +1,12 @@
-// import React, { Component } from "react";
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <TopNav />
-//       <Homepage />
-//       <Route exact path="/" component={Homepage} />
-//       <Route path="/mccall" component={McCall} />
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./App.css";
-import "./styles/main.scss";
 
 import TopNav from "./components/molecules/TopNav/TopNav";
 import Homepage from "./pages/Homepage/Homepage";
-import McCall from "./pages/McCall/McCall";
+import MrFingers from "./pages/MrFingers/MrFingers";
+
+import "./App.css";
+import "./styles/main.scss";
 
 export class App extends Component {
   render() {
@@ -28,10 +14,9 @@ export class App extends Component {
       <Router>
         <div className="App">
           <TopNav />
-          {/* <Homepage /> */}
           <Switch>
             <Route exact path="/" component={Homepage} />
-            <Route path="/mccall" component={McCall} />
+            <Route path="/mrfingers" component={MrFingers} />
           </Switch>
         </div>
       </Router>
