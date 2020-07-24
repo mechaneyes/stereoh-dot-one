@@ -2,20 +2,47 @@ import React, { Component } from "react";
 
 import HomeHero from "../../components/atoms/HomeHero/HomeHero";
 import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
+import { defaultValues } from "../../components/constants";
 
-const iconPath = process.env.PUBLIC_URL + "/assets/";
+const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 export class Homepage extends Component {
   render() {
+    const defaultProps = {
+      title: defaultValues.HERO_TITLE,
+      subhead: defaultValues.SUBHEADLINE_SHORT,
+    };
+
+    const relatedItems = [
+      {
+        relImage: `${imgPath}jenAndMe.png`,
+        relTitle: "It's just (House of Dupree)",
+        relSubhead: defaultProps.subhead,
+        relLinkUrl: '#',
+      },
+      {
+        relImage: `${imgPath}tropicalFreeze_066.png`,
+        relTitle: "Pier Children",
+        relSubhead: defaultProps.subhead,
+        relLinkUrl: '#',
+      },
+      {
+        relImage: `${imgPath}tropicalFreeze_051.png`,
+        relTitle: "Inside the Deku Tree",
+        relSubhead: defaultProps.subhead,
+        relLinkUrl: '#',
+      },
+    ];
+
+    const relatedList = relatedItems.map( (rel, i) => <RelatedItem key={i} {...rel} />)
+
     return (
       <div className="homepage">
-        <HomeHero homeHeroImg={iconPath + "tropicalFreeze_014.png"} />
+        <HomeHero homeHeroImg={imgPath + "tropicalFreeze_014.png"} />
         <section className="related-content">
-            <h2>Moar Experiences</h2>
+          <h2>Moar Experiences</h2>
           <div className="related-grid">
-            <RelatedItem relatedImg={iconPath + "tropicalFreeze_014.png"} />
-            <RelatedItem relatedImg={iconPath + "tropicalFreeze_014.png"} />
-            <RelatedItem relatedImg={iconPath + "tropicalFreeze_014.png"} />
+            {relatedList}
           </div>
         </section>
       </div>

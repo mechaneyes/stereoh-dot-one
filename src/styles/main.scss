@@ -1,7 +1,16 @@
 @import url("https://use.typekit.net/guw0xro.css");
 
 .App {
+  //   font-family: dead-history, sans-serif;
+  //   font-weight: 700;
+  //   font-weight: 400;
   font-family: din-2014, sans-serif;
+  //   font-weight: 200;
+  //   font-weight: 300;
+  //   font-weight: 400;
+  //   font-style: italic;    //   font-weight: 400;
+  //   font-weight: 600;
+  //   font-weight: 700;
   background: #001225;
 
   * {
@@ -66,6 +75,10 @@
     .related-content {
       margin: 0 30px;
     }
+  }
+
+  button:hover {
+    cursor: pointer;
   }
 
   @import "buttons";

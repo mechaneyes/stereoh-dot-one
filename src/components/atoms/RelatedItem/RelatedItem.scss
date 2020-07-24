@@ -11,6 +11,7 @@
 
   h5 {
     margin: 0 0 3px;
+    text-align: left;
   }
 
   button.transp-bg {
@@ -18,8 +19,8 @@
     height: 35px;
     font-size: 12px;
     &:hover {
-        color: #001225;
-        background-color: white;
+      color: #001225;
+      background-color: white;
     }
   }
 }
