@@ -1,10 +1,11 @@
 button {
-  dislay: block;
+    float: left;
+  display: block;
   width: 150px;
   height: 40px;
-  margin: 60px auto 0;
+  margin: 10px 0 0;
   background-color: black;
-  border: 1px solid black;
+  border: 1px solid white;
   transition: all 0.4s;
   font-size: 14px;
   font-weight: 600;
@@ -14,7 +15,7 @@ button {
   line-height: 1;
   letter-spacing: normal;
   text-align: center;
-  color: #000000;
+  color: white;
 }
 .product-body {
   button {
@@ -28,7 +29,7 @@ button:hover {
 }
 
 button.transp-bg {
-  color: black;
+  //   color: black;
   background-color: transparent;
   transition: all 0.4s;
 }
