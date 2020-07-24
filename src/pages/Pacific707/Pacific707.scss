@@ -1,3 +1,39 @@
 .pacific707 {
-    
+    overflow: hidden;
+    margin: 0 30px;
+    padding-top: 75px;
+    padding-bottom: 80px;
+
+    img {
+        width: 100%;
+    }
+
+    .pacific-left {
+        float: left;
+        width: 60%;
+
+        .related-content {
+            margin-top: 60px;
+        }
+
+        .related-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .one-related-item {
+                width: calc(50% - 15px);
+                margin-bottom: 100px;
+            }
+        }
+    }
+
+    .pacific-right {
+        float: right;
+        width: 40%;
+    }
+
+    .event-info {
+        width: 100%;
+    }
 }

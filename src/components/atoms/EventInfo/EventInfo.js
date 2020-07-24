@@ -26,6 +26,8 @@ const EventInfo = (props) => {
             <div className="event-body">
                 <p>{defaultProps.body}</p>
                 <p>{defaultProps.body}</p>
+                <p>{defaultProps.body}</p>
+                <p>{defaultProps.body}</p>
             </div>
             <Button />
             <Button />

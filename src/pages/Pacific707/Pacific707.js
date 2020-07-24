@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 
-// import EventInfo from "../../components/atoms/EventInfo/EventInfo";
-import GradientHero from "../../components/atoms/GradientHero/GradientHero";
+import EventInfo from "../../components/atoms/EventInfo/EventInfo";
 import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
 import { defaultValues } from "../../components/constants";
-import "./MrFingers.scss";
+import "./Pacific707.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
 
@@ -42,11 +41,22 @@ export class Pacific707 extends Component {
 
     return (
       <div className="single pacific707">
-        <GradientHero />
-        <section className="related-content">
-          <h2>Moar Experiences</h2>
-          <div className="related-grid">{relatedList}</div>
-        </section>
+        <div className="pacific-left">
+          <img
+            className="hero-image"
+            src={imgPath + "tropicalFreeze_066.png"}
+            alt="single event page hero"
+          />
+
+          <section className="related-content">
+            <h2>Earlier Experiences</h2>
+            <div className="related-grid">{relatedList}</div>
+          </section>
+        </div>
+
+        <div className="pacific-right">
+          <EventInfo />
+        </div>
       </div>
     );
   }

@@ -19,6 +19,9 @@ const MenuItem = (href) => {
           <li className="menu-item">
             <Link to="/mrfingers">mrfingers</Link>
           </li>
+          <li className="menu-item">
+            <Link to="/pacific707">pacific707</Link>
+          </li>
         </ul>
       </div>
       <div className="top-nav-right">
