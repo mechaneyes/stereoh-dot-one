@@ -1,0 +1,19 @@
+.event-info {
+    clear: both;
+    overflow: hidden;
+    display: block;
+  width: calc(66% - 30px);
+  margin-left: 30px;
+
+  .event-name {
+    font-family: din-2014, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+  }
+}

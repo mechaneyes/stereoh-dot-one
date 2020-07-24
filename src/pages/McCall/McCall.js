@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import EventInfo from "../../components/atoms/EventInfo/EventInfo";
 import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
 import { defaultValues } from "../../components/constants";
 import "./McCall.scss";
@@ -38,6 +39,7 @@ export class McCall extends Component {
 
     return (
       <div className="single mccall">
+          <EventInfo />
         <section className="related-content">
           <h2>Moar Experiences</h2>
           <div className="related-grid">

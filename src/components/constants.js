@@ -23,6 +23,7 @@ export const defaultValues = {
     DESCRIPTION: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. ',
     SUBHEADLINE: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc dolor, porttitor non felis et, auctor elementum dolor.',
     SUBHEADLINE_SHORT: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    BODY_LONG: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod ultrices placerat. Maecenas bibendum molestie dui, pretium rutrum libero aliquet sit amet. Morbi sit amet pharetra libero, vel luctus ligula. Ut consectetur sit amet tortor et ultrices. Sed a finibus metus. Etiam vitae turpis ex. Duis tristique tristique urna et finibus. Ut non volutpat lorem.',
     MENU_ITEM_LABEL: 'Menu Item Label',
     MENU_ITEM_DESCRIPTION: 'Menu Item Description',
 }
