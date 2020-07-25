@@ -3,6 +3,7 @@ import React from "react";
 import { defaultValues } from "../../constants";
 import "./HomeHero.scss";
 
+const imgPath = process.env.PUBLIC_URL + "/assets/";
 const defaultProps = {
   title: defaultValues.HERO_TITLE,
   subhead: defaultValues.SUBHEADLINE,
@@ -18,7 +19,8 @@ const HomeHero = (props) => {
         alt="neonPlatform hero"
       />
       <div className="home-hero-content">
-        <h1>Butterfly Effect</h1>
+        {/* <h1>Butterfly Effect</h1> */}
+        <img className="neoneon-logo" src={imgPath + "neonTron.png"} alt="neoneon logo" />
         <p className="home-hero-subheadline">{defaultProps.subhead}</p>
         <div className="home-hero-ctas">
           <button className="transp-bg">Enter</button>

@@ -23,9 +23,13 @@
   .home-hero-content {
     z-index: 2;
     position: absolute;
-    width: 492px;
+    width: 31%;
     left: 31px;
     bottom: 170px;
+
+    .neoneon-logo {
+      width: 65%;
+    }
   }
 
   h1 {

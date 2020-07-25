@@ -41,10 +41,10 @@ export class MrFingers extends Component {
     ));
 
     return (
-      <div className="single mrFingers">
+      <div className="single mr-fingers">
         <GradientHero />
         <section className="related-content">
-          <h2>Moar Experiences</h2>
+          <h2>Earlier</h2>
           <div className="related-grid">{relatedList}</div>
         </section>
       </div>
