@@ -10,7 +10,8 @@
 
     .pacific-left {
         float: left;
-        width: 60%;
+        width: calc(60% - 30px);
+        // border: 1px solid tomato;
 
         .related-content {
             margin-top: 60px;
@@ -30,10 +31,14 @@
 
     .pacific-right {
         float: right;
+        width: calc(40% - 30px);
         width: 40%;
+        // border: 1px solid deepskyblue;
     }
 
     .event-info {
+        width: calc(100% - 30px);
         width: 100%;
+        margin: 0;
     }
 }
