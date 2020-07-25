@@ -71,6 +71,7 @@ body {
     font-weight: 300;
     font-size: 18px;
     line-height: 29px;
+    line-height: 1.2;
     text-align: left;
     color: #ffffff;
   }
@@ -80,5 +81,5 @@ body {
   }
 
 //   @import "buttons";
-//   @import "homepage";
+  @import "breakpoints";
 }

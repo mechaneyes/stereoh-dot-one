@@ -1,3 +1,5 @@
+@import '../../../styles/breakpoints';
+
 .homepage-hero {
   position: relative;
   background: rgb(0, 18, 37);
@@ -14,6 +16,14 @@
       rgba(0, 18, 37, 1) 0%,
       rgba(253, 187, 45, 0) 55%
     );
+
+    // @include bp(port13) {
+    //   background: linear-gradient(
+    //     0deg,
+    //     rgba(0, 18, 37, 1) 0%,
+    //     rgba(253, 187, 45, 0) 65%
+    //   );
+    // }
   }
 
   .home-hero-img {
@@ -29,6 +39,11 @@
 
     .neoneon-logo {
       width: 65%;
+    }
+
+    @include bp(port13) {
+      bottom: 10%;
+      width: 40%;
     }
   }
 
