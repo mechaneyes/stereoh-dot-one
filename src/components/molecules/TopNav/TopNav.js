@@ -11,7 +11,7 @@ const MenuItem = (href) => {
   return (
     <nav className="top-nav">
       <div className="top-nav-left">
-        <h2>neonPlatform</h2>
+      <Link to="/"><h2>neonPlatform</h2></Link>
         <ul>
           <li className="menu-item">
             <Link to="/">Home</Link>

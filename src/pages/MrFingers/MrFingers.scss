@@ -47,6 +47,15 @@
       color: #bfbfbf;
       text-transform: uppercase;
       text-decoration: none;
+      
+      &.active-item {
+        color: white;
+        border-bottom: 3px solid #00C1B2;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

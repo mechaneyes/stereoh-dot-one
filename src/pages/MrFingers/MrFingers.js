@@ -42,13 +42,13 @@ const MrFingers = () => {
 
   const alsoItems = [
     {
-      relImage: `${imgPath}tropicalFreeze_066.png`,
+      relImage: `${imgPath}tropicalFreeze_010.png`,
       relTitle: "Pier Children",
       relSubhead: defaultProps.subhead,
       relLinkUrl: "#",
     },
     {
-      relImage: `${imgPath}tropicalFreeze_051.png`,
+      relImage: `${imgPath}tropicalFreeze_070.png`,
       relTitle: "Inside the Deku Tree",
       relSubhead: defaultProps.subhead,
       relLinkUrl: "#",
@@ -63,13 +63,13 @@ const MrFingers = () => {
 
   const detailsItems = [
     {
-      relImage: `${imgPath}tropicalFreeze_051.png`,
+      relImage: `${imgPath}tropicalFreeze_077.png`,
       relTitle: "Inside the Deku Tree",
       relSubhead: defaultProps.subhead,
       relLinkUrl: "#",
     },
     {
-      relImage: `${imgPath}jenAndMe.png`,
+      relImage: `${imgPath}tropicalFreeze_074.png`,
       relTitle: "It's just (House of Dupree)",
       relSubhead: defaultProps.subhead,
       relLinkUrl: "#",
@@ -84,6 +84,7 @@ const MrFingers = () => {
 
   if (extras === 0) {
     shownItems = earlierItems
+    console.log(this)
   } else if (extras === 1) {
     shownItems = alsoItems
   } else if (extras === 2) {
@@ -99,10 +100,9 @@ const MrFingers = () => {
       <GradientHero />
       <nav className="related-nav">
         <ul>
-          <li onClick={() => setExtras(0)}>earlier</li>
-          <li onClick={() => setExtras(1)}>you may also like</li>
-          <li onClick={() => setExtras(2)}>details</li>
-          <li>{extras}</li>
+          <li className={`${extras === 0 ? 'active-item' : ""}`} onClick={() => setExtras(0)}>earlier</li>
+          <li className={`${extras === 1 ? 'active-item' : ""}`} onClick={() => setExtras(1)}>you may also like</li>
+          <li className={`${extras === 2 ? 'active-item' : ""}`} onClick={() => setExtras(2)}>details</li>
         </ul>
       </nav>
       <section className="related-content">
