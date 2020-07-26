@@ -1,7 +1,8 @@
 @import url("https://use.typekit.net/guw0xro.css");
+@import 'breakpoints';
 
 body {
-    background: #001225;
+  background: #001225;
 }
 
 .App {
@@ -37,11 +38,15 @@ body {
   h2 {
     font-style: normal;
     font-weight: 400;
-    font-size: 25.0105px;
+    font-size: 28px;
     line-height: 32px;
     display: flex;
     align-items: flex-end;
     color: #ffffff;
+
+    @include bp(vert11) {
+      font-size: 22px;
+    }
   }
 
   h3 {
@@ -80,6 +85,6 @@ body {
     cursor: pointer;
   }
 
-//   @import "buttons";
+  //   @import "buttons";
   @import "breakpoints";
 }
