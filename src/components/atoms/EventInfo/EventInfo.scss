@@ -1,3 +1,5 @@
+@import '../../../styles/breakpoints';
+
 .event-info {
   clear: both;
   overflow: hidden;
@@ -15,15 +17,27 @@
     font-style: normal;
     font-weight: 600;
     font-size: 38px;
-    line-height: 0px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 1;
+    text-align: left;
     color: #ffffff;
+    word-wrap:break-word;
+    white-space: normal;
   }
 
   button.transp-bg:hover {
     color: #001225;
     background-color: white;
+  }
+
+  @include bp(land13) {
+    .event-logo {
+      width: 60%;
+      margin-bottom: 20px;
+    }
+
+    .event-name {
+      margin: 10px 0;
+      font-size: 28px;
+    }
   }
 }

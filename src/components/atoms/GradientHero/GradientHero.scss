@@ -1,3 +1,5 @@
+@import '../../../styles/breakpoints';
+
 .gradient-hero {
   position: relative;
 
@@ -11,6 +13,37 @@
     position: absolute;
     bottom: 20%;
     width: 40%;
+
+    @include bp(land13) {
+      bottom: 7%;
+      width: 46%;
+    }
+
+    @include bp(vert11) {
+      bottom: 7%;
+      width: 52%;
+
+      p:nth-child(1):after {
+        content: 'read more';
+        margin-left: 20px;
+        font-size: 16px;
+        text-transform: uppercase;
+        border-bottom: 1px solid white;
+      }
+
+      p:nth-child(2) {
+        display: none;
+      }
+
+      .event-name {
+        font-size: 22px;
+      }
+
+      button {
+        width: 125px;
+        height: 35px;
+      }
+    }
   }
 
   .gradient {
