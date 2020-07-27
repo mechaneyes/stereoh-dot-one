@@ -1,0 +1,30 @@
+.pull-quote {
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 65.625%;
+    }
+
+    .pull-quote-copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 34.375%;
+        padding: 0 50px;
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    &.quote-img-left {
+        .pull-quote-copy {
+            // padding-right: 50px;
+        }
+    }
+
+    &.quote-img-right {
+        flex-direction: row-reverse;
+    }
+}

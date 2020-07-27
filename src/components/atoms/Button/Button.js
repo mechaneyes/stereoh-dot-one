@@ -11,7 +11,7 @@ let Button = (props) => {
             disabled={props.disabled}
             className={"button " + (props.type) + ' transp-bg'}>
             {props.children}
-            explore
+            {props.btnTxt ? props.btnTxt : 'explore'}
         </button>
     )
 }

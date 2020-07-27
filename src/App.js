@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import TopNav from "./components/molecules/TopNav/TopNav";
 import Homepage from "./pages/Homepage/Homepage";
 import MrFingers from "./pages/MrFingers/MrFingers";
+import Anima from "./pages/Anima/Anima";
 import Pacific707 from "./pages/Pacific707/Pacific707";
 
 import "./App.css";
@@ -18,6 +19,7 @@ export class App extends Component {
           <Switch>
             <Route exact path="/" component={Homepage} />
             <Route path="/mrfingers" component={MrFingers} />
+            <Route path="/anima" component={Anima} />
             <Route path="/pacific707" component={Pacific707} />
           </Switch>
         </div>

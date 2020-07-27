@@ -1,9 +1,11 @@
 button {
   float: left;
   display: block;
-  width: 150px;
+  width: auto;
+  min-width: 150px;
   height: 40px;
   margin: 10px 20px 0 0;
+  padding: 0 25px;
   background-color: black;
   border: 1px solid white;
   transition: all 0.4s;

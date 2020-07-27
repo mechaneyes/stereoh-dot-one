@@ -1,0 +1,218 @@
+import React, { useState } from "react";
+
+// import EventInfo from "../../components/atoms/EventInfo/EventInfo";
+import HomeHero from "../../components/atoms/HomeHero/HomeHero";
+import Pull_Img_Left from "../../components/atoms/PullQuotes/Pull_Img_Left";
+import Pull_Img_Right from "../../components/atoms/PullQuotes/Pull_Img_Right";
+import Button from "../../components/atoms/Button/Button";
+import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
+import { defaultValues } from "../../components/constants";
+import "./Anima.scss";
+
+const imgPath = process.env.PUBLIC_URL + "/assets/";
+
+const defaultProps = {
+  title: defaultValues.HERO_TITLE,
+  subhead: defaultValues.SUBHEADLINE_SHORT,
+};
+
+const Anima = () => {
+  const [extras, setExtras] = useState(0);
+
+  let shownItems = [];
+
+  const earlierItems = [
+    {
+      relImage: `${imgPath}jenAndMe.png`,
+      relTitle: "It's just (House of Dupree)",
+      relSubhead: defaultProps.subhead,
+      relLinkUrl: "#",
+    },
+    {
+      relImage: `${imgPath}tropicalFreeze_066.png`,
+      relTitle: "Pier Children",
+      relSubhead: defaultProps.subhead,
+      relLinkUrl: "#",
+    },
+    {
+      relImage: `${imgPath}tropicalFreeze_051.png`,
+      relTitle: "Inside the Deku Tree",
+      relSubhead: defaultProps.subhead,
+      relLinkUrl: "#",
+    },
+  ];
+
+  const alsoItems = [
+    {
+      relImage: `${imgPath}tropicalFreeze_010.png`,
+      relTitle: "Pier Children",
+      relSubhead: defaultProps.subhead,
+      relLinkUrl: "#",
+    },
+    {
+      relImage: `${imgPath}tropicalFreeze_070.png`,
+      relTitle: "Inside the Deku Tree",
+      relSubhead: defaultProps.subhead,
+      relLinkUrl: "#",
+    },
+    {
+      relImage: `${imgPath}jenAndMe.png`,
+      relTitle: "It's just (House of Dupree)",
+      relSubhead: defaultProps.subhead,
+      relLinkUrl: "#",
+    },
+  ];
+
+  const detailsItems = [
+    {
+      relImage: `${imgPath}tropicalFreeze_077.png`,
+      relTitle: "Inside the Deku Tree",
+      relSubhead: defaultProps.subhead,
+      relLinkUrl: "#",
+    },
+    {
+      relImage: `${imgPath}tropicalFreeze_074.png`,
+      relTitle: "It's just (House of Dupree)",
+      relSubhead: defaultProps.subhead,
+      relLinkUrl: "#",
+    },
+    {
+      relImage: `${imgPath}tropicalFreeze_066.png`,
+      relTitle: "Pier Children",
+      relSubhead: defaultProps.subhead,
+      relLinkUrl: "#",
+    },
+  ];
+
+  if (extras === 0) {
+    shownItems = earlierItems;
+    console.log(this);
+  } else if (extras === 1) {
+    shownItems = alsoItems;
+  } else if (extras === 2) {
+    shownItems = detailsItems;
+  }
+
+  const relatedList = shownItems.map((rel, i) => (
+    <RelatedItem key={i} {...rel} />
+  ));
+
+  const quoteOne = {
+    pullImg: `${imgPath}anima_iki_05.jpg`,
+    pullTitle: "Spherical Projection",
+    pullPara:
+      "»ANIMA« is a sculptural installation developed to explore the relationship between itself and its surroundings through the use of movement, texture, light and sound.",
+  };
+
+  const quoteTwo = {
+    pullImg: `${imgPath}anima_iki_09.jpg`,
+    pullTitle: "Spherical Projection",
+    pullPara:
+      "Through this process of refining behavior and visual complexity,»ANIMA« becomes life-like and impressive. Installed in the round, the piece is experienced from all sides. In a unique way, »ANIMA« creates an intelligent reactive dialogue with all bodies within its surroundings.",
+  };
+
+  return (
+    <div className="single anima">
+      <HomeHero homeHeroImg={imgPath + "anima_iki_03.jpg"} />
+
+      <Pull_Img_Left {...quoteOne} />
+
+      <section className="body-copy">
+        <h2>ANIMA iki</h2>
+        <p>
+          The spherical projection is achieved from inside the globe with a
+          powerful wide angle projector and fisheye lens, producing images in a
+          full 360 degree directional beam. Modulating frequencies audible in
+          the installation respond to those in the space as sound is picked up
+          and resonated back as feedback to the atmosphere.
+        </p>
+
+        <p>
+          Through this process of refining behavior and visual complexity,
+          »ANIMA« becomes life-like and impressive. Installed in the round, the
+          piece is experienced from all sides. In a unique way, »ANIMA« creates
+          an intelligent reactive dialogue with all bodies within its
+          surroundings. The sculpture takes on an ethereal life of its own, as
+          it and the viewer continue their dynamic exchange. Participants, the
+          orb and soundscape combine to perpetually influence each other and
+          create an immersive and captivating experience.
+        </p>
+      </section>
+
+      <Pull_Img_Right {...quoteTwo} />
+
+      <section className="body-copy">
+        <p>
+          The spherical projection is achieved from inside the globe with a
+          powerful wide angle projector and fisheye lens, producing images in a
+          full 360 degree directional beam. Modulating frequencies audible in
+          the installation respond to those in the space as sound is picked up
+          and resonated back as feedback to the atmosphere.
+        </p>
+
+        <p>
+          Through this process of refining behavior and visual complexity,
+          »ANIMA« becomes life-like and impressive. Installed in the round, the
+          piece is experienced from all sides. In a unique way, »ANIMA« creates
+          an intelligent reactive dialogue with all bodies within its
+          surroundings. The sculpture takes on an ethereal life of its own, as
+          it and the viewer continue their dynamic exchange. Participants, the
+          orb and soundscape combine to perpetually influence each other and
+          create an immersive and captivating experience.
+        </p>
+
+        <p>
+          The spherical projection is achieved from inside the globe with a
+          powerful wide angle projector and fisheye lens, producing images in a
+          full 360 degree directional beam. Modulating frequencies audible in
+          the installation respond to those in the space as sound is picked up
+          and resonated back as feedback to the atmosphere.
+        </p>
+
+        <p>
+          Through this process of refining behavior and visual complexity,
+          »ANIMA« becomes life-like and impressive. Installed in the round, the
+          piece is experienced from all sides. In a unique way, »ANIMA« creates
+          an intelligent reactive dialogue with all bodies within its
+          surroundings. The sculpture takes on an ethereal life of its own, as
+          it and the viewer continue their dynamic exchange. Participants, the
+          orb and soundscape combine to perpetually influence each other and
+          create an immersive and captivating experience.
+        </p>
+
+        <Button btnTxt="follow anima" />
+        <Button btnTxt="contact anima" />
+      </section>
+
+      <img className="full-width-img" src={imgPath + "anima_iki_01.jpg"} />
+
+      <nav className="related-nav">
+        <ul>
+          <li
+            className={`${extras === 0 ? "active-item" : ""}`}
+            onClick={() => setExtras(0)}
+          >
+            earlier
+          </li>
+          <li
+            className={`${extras === 1 ? "active-item" : ""}`}
+            onClick={() => setExtras(1)}
+          >
+            you may also like
+          </li>
+          <li
+            className={`${extras === 2 ? "active-item" : ""}`}
+            onClick={() => setExtras(2)}
+          >
+            details
+          </li>
+        </ul>
+      </nav>
+      <section className="related-content">
+        <div className="related-grid">{relatedList}</div>
+      </section>
+    </div>
+  );
+};
+
+export default Anima;
