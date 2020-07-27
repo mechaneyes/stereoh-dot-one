@@ -1,12 +1,12 @@
 import React from "react";
 import './PullQuotes.scss'
 
-const Pull_Img_Right = (props) => {
+const PullImgLeft = (props) => {
   const { pullImg, pullTitle, pullPara } = props;
   return (
-    <section className="pull-quote quote-img-right">
+    <section className="pull-quote quote-img-left">
       <img
-        className="pull-img"
+        className="pull-left-img"
         src={pullImg}
         alt="neonPlatform hero"
       />
@@ -18,4 +18,4 @@ const Pull_Img_Right = (props) => {
   );
 };
 
-export default Pull_Img_Right;
+export default PullImgLeft;

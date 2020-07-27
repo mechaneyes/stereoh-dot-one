@@ -2,95 +2,29 @@ import React, { useState } from "react";
 
 // import EventInfo from "../../components/atoms/EventInfo/EventInfo";
 import HomeHero from "../../components/atoms/HomeHero/HomeHero";
-import Pull_Img_Left from "../../components/atoms/PullQuotes/Pull_Img_Left";
-import Pull_Img_Right from "../../components/atoms/PullQuotes/Pull_Img_Right";
+import PullImgLeft from "../../components/atoms/PullQuotes/PullImgLeft";
+import PullImgRight from "../../components/atoms/PullQuotes/PullImgRight";
 import Button from "../../components/atoms/Button/Button";
+import relatedItems from "../../components/related-data";
 import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
-import { defaultValues } from "../../components/constants";
 import "./Anima.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
-
-const defaultProps = {
-  title: defaultValues.HERO_TITLE,
-  subhead: defaultValues.SUBHEADLINE_SHORT,
-};
 
 const Anima = () => {
   const [extras, setExtras] = useState(0);
 
   let shownItems = [];
 
-  const earlierItems = [
-    {
-      relImage: `${imgPath}jenAndMe.png`,
-      relTitle: "It's just (House of Dupree)",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-    {
-      relImage: `${imgPath}tropicalFreeze_066.png`,
-      relTitle: "Pier Children",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-    {
-      relImage: `${imgPath}tropicalFreeze_051.png`,
-      relTitle: "Inside the Deku Tree",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-  ];
-
-  const alsoItems = [
-    {
-      relImage: `${imgPath}tropicalFreeze_010.png`,
-      relTitle: "Pier Children",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-    {
-      relImage: `${imgPath}tropicalFreeze_070.png`,
-      relTitle: "Inside the Deku Tree",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-    {
-      relImage: `${imgPath}jenAndMe.png`,
-      relTitle: "It's just (House of Dupree)",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-  ];
-
-  const detailsItems = [
-    {
-      relImage: `${imgPath}tropicalFreeze_077.png`,
-      relTitle: "Inside the Deku Tree",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-    {
-      relImage: `${imgPath}tropicalFreeze_074.png`,
-      relTitle: "It's just (House of Dupree)",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-    {
-      relImage: `${imgPath}tropicalFreeze_066.png`,
-      relTitle: "Pier Children",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-  ];
-
   if (extras === 0) {
-    shownItems = earlierItems;
-    console.log(this);
+    shownItems = relatedItems.slice(0, 3);
+    console.log(shownItems, 'one')
   } else if (extras === 1) {
-    shownItems = alsoItems;
+    shownItems = relatedItems.slice(3, 6);
+    console.log(shownItems, 'two')
   } else if (extras === 2) {
-    shownItems = detailsItems;
+    shownItems = relatedItems.slice(6, 9);
+    console.log(shownItems, 'three')
   }
 
   const relatedList = shownItems.map((rel, i) => (
@@ -115,7 +49,7 @@ const Anima = () => {
     <div className="single anima">
       <HomeHero homeHeroImg={imgPath + "anima_iki_03.jpg"} />
 
-      <Pull_Img_Left {...quoteOne} />
+      <PullImgLeft {...quoteOne} />
 
       <section className="body-copy">
         <h2>ANIMA iki</h2>
@@ -139,7 +73,7 @@ const Anima = () => {
         </p>
       </section>
 
-      <Pull_Img_Right {...quoteTwo} />
+      <PullImgRight {...quoteTwo} />
 
       <section className="body-copy">
         <p>
