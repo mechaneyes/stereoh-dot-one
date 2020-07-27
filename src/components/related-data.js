@@ -38,7 +38,7 @@ export default [
     relLinkUrl: "#",
   },
   {
-    relImage: `${imgPath}jenAndMe.png`,
+    relImage: `${imgPath}tropicalFreeze_014.png`,
     relTitle: "It's just (House of Dupree)",
     relSubhead: defaultProps.subhead,
     relLinkUrl: "#",

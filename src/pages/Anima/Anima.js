@@ -7,6 +7,7 @@ import PullImgRight from "../../components/atoms/PullQuotes/PullImgRight";
 import Button from "../../components/atoms/Button/Button";
 import relatedItems from "../../components/related-data";
 import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
+import "../../components/molecules/RelatedItems/RelatedItems.scss";
 import "./Anima.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
@@ -17,14 +18,11 @@ const Anima = () => {
   let shownItems = [];
 
   if (extras === 0) {
-    shownItems = relatedItems.slice(0, 3);
-    console.log(shownItems, 'one')
+    shownItems = relatedItems.slice(0, 6);
   } else if (extras === 1) {
     shownItems = relatedItems.slice(3, 6);
-    console.log(shownItems, 'two')
   } else if (extras === 2) {
     shownItems = relatedItems.slice(6, 9);
-    console.log(shownItems, 'three')
   }
 
   const relatedList = shownItems.map((rel, i) => (
