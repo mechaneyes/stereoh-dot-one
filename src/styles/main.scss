@@ -27,10 +27,11 @@ body {
   }
 
   h1 {
+    margin-bottom: 0;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 23px;
+    font-size: 50px;
+    line-height: 1;
     text-align: left;
     color: #ffffff;
   }
@@ -40,8 +41,7 @@ body {
     font-weight: 600;
     font-size: 28px;
     line-height: 32px;
-    display: flex;
-    align-items: flex-end;
+    text-align: left;
     color: #ffffff;
 
     @include bp(vert11) {
@@ -54,8 +54,7 @@ body {
     font-weight: 600;
     font-size: 24px;
     line-height: 23px;
-    display: flex;
-    align-items: flex-end;
+    text-align: left;
     letter-spacing: 0.03em;
     color: #ffffff;
     text-align: left;
@@ -66,8 +65,7 @@ body {
     font-weight: 300;
     font-size: 17px;
     line-height: 23px;
-    display: flex;
-    align-items: flex-end;
+    text-align: left;
     color: #ffffff;
   }
 

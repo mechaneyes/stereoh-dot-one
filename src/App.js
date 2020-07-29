@@ -5,7 +5,7 @@ import TopNav from "./components/molecules/TopNav/TopNav";
 import Homepage from "./pages/Homepage/Homepage";
 import MrFingers from "./pages/MrFingers/MrFingers";
 import Anima from "./pages/Anima/Anima";
-import Pacific707 from "./pages/Pacific707/Pacific707";
+import Equivalents from "./pages/Equivalents/Equivalents";
 
 import "./App.css";
 import "./styles/main.scss";
@@ -20,7 +20,7 @@ export class App extends Component {
             <Route exact path="/" component={Homepage} />
             <Route path="/mrfingers" component={MrFingers} />
             <Route path="/anima" component={Anima} />
-            <Route path="/pacific707" component={Pacific707} />
+            <Route path="/equiva" component={Equivalents} />
           </Switch>
         </div>
       </Router>
