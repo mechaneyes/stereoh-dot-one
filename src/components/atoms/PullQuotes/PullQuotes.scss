@@ -1,8 +1,31 @@
 .pull-quote {
     display: flex;
     justify-content: space-between;
-    img {
+
+    .pull-aspect-ratio-box {
         width: 65.625%;
+        height: auto;
+    }
+
+    .pull-aspect-ratio-box:before {
+        content: '';
+        width: 1px;
+        margin-left: -1px;
+        float: left;
+        height: 0;
+        overflow: hidden;
+        padding-top: 591.44px / 1127.34px * 100%;
+    }
+
+    .pull-aspect-ratio-box::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    img.pull-img {
+        width: 100%;
+        height: auto;
     }
 
     .pull-quote-copy {
@@ -11,7 +34,7 @@
         justify-content: center;
         align-items: flex-start;
         width: 34.375%;
-        padding: 0 50px;
+        padding: 0 30px;
 
         p {
             margin-top: 0;

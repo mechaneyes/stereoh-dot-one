@@ -32,14 +32,14 @@ const Anima = () => {
     pullImg: `${imgPath}anima_iki_05.jpg`,
     pullTitle: "Spherical Projection",
     pullPara:
-      "»ANIMA« is a sculptural installation developed to explore the relationship between itself and its surroundings through the use of movement, texture, light and sound.",
+      "developed to explore the relationship between itself and its surroundings through the use of movement, texture, light and sound",
   };
 
   const quoteTwo = {
     pullImg: `${imgPath}anima_iki_09.jpg`,
     pullTitle: "Fluid Shimmering Patterns",
     pullPara:
-      "Through this process of refining behavior and visual complexity,»ANIMA« becomes life-like and impressive. Installed in the round, the piece is experienced from all sides. In a unique way, »ANIMA« creates an intelligent reactive dialogue with all bodies within its surroundings.",
+      "Through this process of refining behavior and visual complexity,»ANIMA« becomes life-like and impressive.",
   };
 
   return (
