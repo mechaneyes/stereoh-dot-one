@@ -39,7 +39,7 @@ const Anima = () => {
     pullImg: `${imgPath}anima_iki_09.jpg`,
     pullTitle: "Fluid Shimmering Patterns",
     pullPara:
-      "Through this process of refining behavior and visual complexity,»ANIMA« becomes life-like and impressive.",
+      "Through this process of refining behavior and visual complexity, »ANIMA« becomes life-like and impressive.",
   };
 
   return (
@@ -111,8 +111,8 @@ const Anima = () => {
           create an immersive and captivating experience.
         </p>
 
-        <Button btnTxt="follow anima" />
-        <Button btnTxt="contact anima" />
+        <Button btnTxt="follow" />
+        <Button btnTxt="contact" />
       </section>
 
       <img className="full-width-img" src={imgPath + "anima_iki_01.jpg"} alt="full width" />
