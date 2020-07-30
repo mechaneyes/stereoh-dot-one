@@ -10,7 +10,7 @@ const defaultProps = {
 };
 
 const HomeHero = (props) => {
-  const { homeHeroImg } = props;
+  const { homeHeroImg, headline } = props;
   return (
     <section className="homepage-hero">
       <img
@@ -19,8 +19,8 @@ const HomeHero = (props) => {
         alt="neonPlatform hero"
       />
       <div className="home-hero-content">
-        {/* <h1>Butterfly Effect</h1> */}
-        <img className="neoneon-logo" src={imgPath + "neonTron.png"} alt="neoneon logo" />
+        {headline ? <h1>{headline}</h1> : <img className="neoneon-logo" src={imgPath + "neonTron.png"} alt="neoneon logo" />}
+        {/* <img className="neoneon-logo" src={imgPath + "neonTron.png"} alt="neoneon logo" /> */}
         <p className="home-hero-subheadline">{defaultProps.subhead}</p>
         <div className="home-hero-ctas">
           <button className="transp-bg">Enter</button>

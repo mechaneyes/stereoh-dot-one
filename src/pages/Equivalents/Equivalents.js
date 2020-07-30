@@ -1,18 +1,46 @@
 import React, { useState } from "react";
 
 import HomeHero from "../../components/atoms/HomeHero/HomeHero";
-import PullImgLeft from "../../components/atoms/PullQuotes/PullImgLeft";
-import PullImgRight from "../../components/atoms/PullQuotes/PullImgRight";
+import Carousel from "../../components/atoms/Carousel/Carousel";
 import Button from "../../components/atoms/Button/Button";
 import relatedItems from "../../components/related-data";
 import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
 import "../../components/molecules/RelatedItems/RelatedItems.scss";
-import "./Anima.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./Equivalents.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
 
-const Anima = () => {
-  const [extras, setExtras] = useState(0);
+const Equivalents = () => {
+  const [extras, setExtras] = useState(1);
+
+  let caroElements = [
+    {
+      src: "eliasson_009.jpg",
+      alt: "olafur eliasson 009",
+    },
+    {
+      src: "eliasson_005.jpg",
+      alt: "olafur eliasson 005",
+    },
+    {
+      src: "eliasson_006.jpg",
+      alt: "olafur eliasson 006",
+    },
+    {
+      src: "eliasson_007.jpg",
+      alt: "olafur eliasson 007",
+    },
+    {
+      src: "eliasson_010.jpg",
+      alt: "olafur eliasson 010",
+    },
+    {
+      src: "eliasson_011.jpg",
+      alt: "olafur eliasson 011",
+    },
+  ];
 
   let shownItems = [];
 
@@ -28,106 +56,83 @@ const Anima = () => {
     <RelatedItem key={i} {...rel} />
   ));
 
-  const quoteOne = {
-    pullImg: `${imgPath}anima_iki_05.jpg`,
-    pullTitle: "Spherical Projection",
-    pullPara:
-      "developed to explore the relationship between itself and its surroundings through the use of movement, texture, light and sound",
-  };
-
-  const quoteTwo = {
-    pullImg: `${imgPath}anima_iki_09.jpg`,
-    pullTitle: "Fluid Shimmering Patterns",
-    pullPara:
-      "Through this process of refining behavior and visual complexity,»ANIMA« becomes life-like and impressive.",
-  };
-
   return (
-    <div className="single anima">
-      <HomeHero homeHeroImg={imgPath + "anima_iki_03.jpg"} />
+    <div className="single equiva">
+      <HomeHero
+        homeHeroImg={imgPath + "eliasson_001.jpg"}
+        headline="Equivalents"
+      />
 
-      <PullImgLeft {...quoteOne} />
-
-      <section className="body-copy">
-        <h2>ANIMA iki</h2>
+      <section className="copy-top">
+        <h2>»ANIMA« becomes life-like and impressive. </h2>
         <p>
           The spherical projection is achieved from inside the globe with a
           powerful wide angle projector and fisheye lens, producing images in a
           full 360 degree directional beam. Modulating frequencies audible in
           the installation respond to those in the space as sound is picked up
           and resonated back as feedback to the atmosphere.
-        </p>
-
-        <p>
-          Through this process of refining behavior and visual complexity,
-          »ANIMA« becomes life-like and impressive. Installed in the round, the
-          piece is experienced from all sides. In a unique way, »ANIMA« creates
-          an intelligent reactive dialogue with all bodies within its
-          surroundings. The sculpture takes on an ethereal life of its own, as
-          it and the viewer continue their dynamic exchange. Participants, the
-          orb and soundscape combine to perpetually influence each other and
-          create an immersive and captivating experience.
         </p>
       </section>
 
-      <PullImgRight {...quoteTwo} />
-
-      <section className="body-copy">
-        <p>
-          The spherical projection is achieved from inside the globe with a
-          powerful wide angle projector and fisheye lens, producing images in a
-          full 360 degree directional beam. Modulating frequencies audible in
-          the installation respond to those in the space as sound is picked up
-          and resonated back as feedback to the atmosphere.
-        </p>
-
-        <p>
-          Through this process of refining behavior and visual complexity,
-          »ANIMA« becomes life-like and impressive. Installed in the round, the
-          piece is experienced from all sides. In a unique way, »ANIMA« creates
-          an intelligent reactive dialogue with all bodies within its
-          surroundings. The sculpture takes on an ethereal life of its own, as
-          it and the viewer continue their dynamic exchange. Participants, the
-          orb and soundscape combine to perpetually influence each other and
-          create an immersive and captivating experience.
-        </p>
-
-        <p>
-          The spherical projection is achieved from inside the globe with a
-          powerful wide angle projector and fisheye lens, producing images in a
-          full 360 degree directional beam. Modulating frequencies audible in
-          the installation respond to those in the space as sound is picked up
-          and resonated back as feedback to the atmosphere.
-        </p>
-
-        <p>
-          Through this process of refining behavior and visual complexity,
-          »ANIMA« becomes life-like and impressive. Installed in the round, the
-          piece is experienced from all sides. In a unique way, »ANIMA« creates
-          an intelligent reactive dialogue with all bodies within its
-          surroundings. The sculpture takes on an ethereal life of its own, as
-          it and the viewer continue their dynamic exchange. Participants, the
-          orb and soundscape combine to perpetually influence each other and
-          create an immersive and captivating experience.
-        </p>
-
-        <Button btnTxt="follow anima" />
-        <Button btnTxt="contact anima" />
+      <section className="image-carousel">
+        <div className="inner-carousel">
+          <Carousel items={caroElements} />
+        </div>
       </section>
 
-      <img className="full-width-img" src={imgPath + "anima_iki_01.jpg"} alt="full width" />
+      <section className="copy-body">
+        <p>
+          The spherical projection is achieved from inside the globe with a
+          powerful wide angle projector and fisheye lens, producing images in a
+          full 360 degree directional beam. Modulating frequencies audible in
+          the installation respond to those in the space as sound is picked up
+          and resonated back as feedback to the atmosphere.
+        </p>
+
+        <p>
+          Through this process of refining behavior and visual complexity,
+          »ANIMA« becomes life-like and impressive. Installed in the round, the
+          piece is experienced from all sides. In a unique way, »ANIMA« creates
+          an intelligent reactive dialogue with all bodies within its
+          surroundings. The sculpture takes on an ethereal life of its own, as
+          it and the viewer continue their dynamic exchange. Participants, the
+          orb and soundscape combine to perpetually influence each other and
+          create an immersive and captivating experience. The spherical
+          projection is achieved from inside the globe with a powerful wide
+          angle projector and fisheye lens, producing images in a full 360
+          degree directional beam. Modulating frequencies audible in the
+          installation respond to those in the space as sound is picked up and
+          resonated back as feedback to the atmosphere.
+        </p>
+
+        <p>
+          Through this process of refining behavior and visual complexity,
+          »ANIMA« becomes life-like and impressive. Installed in the round, the
+          piece is experienced from all sides. In a unique way, »ANIMA« creates
+          an intelligent reactive dialogue with all bodies within its
+          surroundings. The sculpture takes on an ethereal life of its own, as
+          it and the viewer continue their dynamic exchange. Participants, the
+          orb and soundscape combine to perpetually influence each other and
+          create an immersive and captivating experience.
+        </p>
+
+        <div className="ctas">
+          <Button btnTxt="follow anima anima" />
+          <Button btnTxt="contact anima" />
+        </div>
+      </section>
 
       <nav className="related-nav">
         <ul>
           <li
-            className={`${extras === 0 ? "active-item" : ""}`}
-            onClick={() => setExtras(0)}
+            className={`${extras === 1 ? "active-item" : ""}`}
+            onClick={() => setExtras(1)}
           >
             earlier
           </li>
           <li
-            className={`${extras === 1 ? "active-item" : ""}`}
-            onClick={() => setExtras(1)}
+            className={`${extras === 0 ? "active-item" : ""}`}
+            onClick={() => setExtras(0)}
           >
             you may also like
           </li>
@@ -146,4 +151,4 @@ const Anima = () => {
   );
 };
 
-export default Anima;
+export default Equivalents;

@@ -23,7 +23,7 @@ const MenuItem = (href) => {
             <Link to="/anima">anima</Link>
           </li>
           <li className="menu-item">
-            <Link to="/pacific707">pacific707</Link>
+            <Link to="/equiva">equiva</Link>
           </li>
         </ul>
       </div>
