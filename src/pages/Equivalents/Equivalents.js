@@ -1,16 +1,46 @@
 import React, { useState } from "react";
 
 import HomeHero from "../../components/atoms/HomeHero/HomeHero";
+import Carousel from "../../components/atoms/Carousel/Carousel";
 import Button from "../../components/atoms/Button/Button";
 import relatedItems from "../../components/related-data";
 import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
 import "../../components/molecules/RelatedItems/RelatedItems.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./Equivalents.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const Equivalents = () => {
   const [extras, setExtras] = useState(1);
+
+  let caroElements = [
+    {
+      src: "eliasson_009.jpg",
+      alt: "olafur eliasson 009",
+    },
+    {
+      src: "eliasson_005.jpg",
+      alt: "olafur eliasson 005",
+    },
+    {
+      src: "eliasson_006.jpg",
+      alt: "olafur eliasson 006",
+    },
+    {
+      src: "eliasson_007.jpg",
+      alt: "olafur eliasson 007",
+    },
+    {
+      src: "eliasson_010.jpg",
+      alt: "olafur eliasson 010",
+    },
+    {
+      src: "eliasson_011.jpg",
+      alt: "olafur eliasson 011",
+    },
+  ];
 
   let shownItems = [];
 
@@ -45,7 +75,9 @@ const Equivalents = () => {
       </section>
 
       <section className="image-carousel">
-        <img className="carousel-img" src={imgPath + "eliasson_005.jpg"} />
+        <div className="inner-carousel">
+          <Carousel items={caroElements} />
+        </div>
       </section>
 
       <section className="copy-body">
@@ -65,11 +97,12 @@ const Equivalents = () => {
           surroundings. The sculpture takes on an ethereal life of its own, as
           it and the viewer continue their dynamic exchange. Participants, the
           orb and soundscape combine to perpetually influence each other and
-          create an immersive and captivating experience. The spherical projection is achieved from inside the globe with a
-          powerful wide angle projector and fisheye lens, producing images in a
-          full 360 degree directional beam. Modulating frequencies audible in
-          the installation respond to those in the space as sound is picked up
-          and resonated back as feedback to the atmosphere.
+          create an immersive and captivating experience. The spherical
+          projection is achieved from inside the globe with a powerful wide
+          angle projector and fisheye lens, producing images in a full 360
+          degree directional beam. Modulating frequencies audible in the
+          installation respond to those in the space as sound is picked up and
+          resonated back as feedback to the atmosphere.
         </p>
 
         <p>

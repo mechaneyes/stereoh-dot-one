@@ -115,7 +115,7 @@ const Anima = () => {
         <Button btnTxt="contact anima" />
       </section>
 
-      <img className="full-width-img" src={imgPath + "anima_iki_01.jpg"} />
+      <img className="full-width-img" src={imgPath + "anima_iki_01.jpg"} alt="full width" />
 
       <nav className="related-nav">
         <ul>
