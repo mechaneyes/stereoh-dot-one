@@ -116,8 +116,10 @@ const Equivalents = () => {
           create an immersive and captivating experience.
         </p>
 
-        <Button btnTxt="follow anima" />
-        <Button btnTxt="contact anima" />
+        <div className="ctas">
+          <Button btnTxt="follow anima anima" />
+          <Button btnTxt="contact anima" />
+        </div>
       </section>
 
       <nav className="related-nav">

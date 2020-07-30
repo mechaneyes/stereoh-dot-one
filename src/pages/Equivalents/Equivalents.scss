@@ -43,7 +43,7 @@
   }
 
   .slick-list {
-      margin: 0 -60px;
+    margin: 0 -60px;
     overflow: visible;
   }
 
@@ -62,21 +62,57 @@
   }
 
   .slick-dots {
-      bottom: -255px;
+    bottom: -255px;
   }
 
   .slick-dots li button:before {
-      color: lightgray;
+    color: lightgray;
   }
 
   .slick-dots li.slick-active button:before {
-      color: white;
+    color: white;
+  }
+
+  .slick-prev,
+  .slick-next {
+    height: 60px;
+    margin: 0;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-family: din-2014, sans-serif;
+    font-size: 60px;
+    color: #001225;
+  }
+
+  .slick-prev:before {
+    content: "⟨";
+  }
+
+  .slick-next:before {
+    content: "⟩";
   }
 
   .copy-body {
     overflow: hidden;
     width: 79.5833%;
     width: 63.4722%;
-    margin: 0 auto 140px;
+    margin: 0 auto 170px;
+
+    .ctas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    button {
+        min-width: none;
+        margin: 50px 0 0;
+        &:hover {
+            color: #001225;
+            background-color: white;
+        }
+    }
   }
 }
