@@ -22,7 +22,7 @@ const Carousel = (props) => {
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
-    cenderPadding: '50px',
+    cenderPadding: '2px',
   };
 
   return <Slider {...slickSettings}>{caroList}</Slider>;

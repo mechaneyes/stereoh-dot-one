@@ -1,4 +1,5 @@
 .equiva {
+    padding-bottom: 100px;
   .homepage-hero {
     position: relative;
     background: rgb(0, 18, 37);
@@ -12,7 +13,7 @@
       background: linear-gradient(
         0deg,
         rgba(0, 18, 37, 1) 0%,
-        rgba(158, 162, 236, 0) 55%
+        rgba(186, 207, 233, 0) 75%
       );
     }
   }
@@ -26,8 +27,9 @@
     overflow: hidden;
     position: relative;
     width: 79.5833%;
-    margin: 0 auto 170px;
-    padding-top: 40%;
+    width: calc(100% - 60px);
+    margin: 0 30px 170px;
+    padding-top: 47%;
     // border: 1px solid deepskyblue
   }
 
@@ -57,12 +59,12 @@
   .slick-center {
     z-index: 2;
     position: relative;
-    transform: scale(2.5);
+    transform: scale(2.44);
     transition: transform 0.4s;
   }
 
   .slick-dots {
-    bottom: -255px;
+    bottom: -230px;
   }
 
   .slick-dots li button:before {
@@ -105,11 +107,13 @@
         // width: 50%;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 25px;
         margin-top: 40px;
     }
 
     button {
-        // flex: 1;
+        height: 50px;
+        margin: 0;
         &:hover {
             color: #001225;
             background-color: white;
