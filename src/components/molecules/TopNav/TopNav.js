@@ -11,11 +11,11 @@ const MenuItem = (href) => {
   return (
     <nav className="top-nav">
       <div className="top-nav-left">
-      <Link to="/"><h2>neonPlatform</h2></Link>
+      <Link to="/"><h2>Stereoh</h2></Link>
         <ul>
-          <li className="menu-item">
+          {/* <li className="menu-item">
             <Link to="/">Home</Link>
-          </li>
+          </li> */}
           <li className="menu-item">
             <Link to="/mrfingers">mrfingers</Link>
           </li>
@@ -23,13 +23,16 @@ const MenuItem = (href) => {
             <Link to="/anima">anima</Link>
           </li>
           <li className="menu-item">
-            <Link to="/equiva">equiva</Link>
+            <Link to="/equiva">equivalents</Link>
           </li>
+          {/* <li className="menu-item">
+            <Link to="/pnew">pnew</Link>
+          </li> */}
         </ul>
       </div>
       <div className="top-nav-right">
         <a href={href}>
-          <h4>login</h4>
+        <button>feedback</button>
         </a>
         <a href={href}>
           <button>sign up</button>

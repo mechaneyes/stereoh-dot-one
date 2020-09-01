@@ -6,6 +6,7 @@ import Homepage from "./pages/Homepage/Homepage";
 import MrFingers from "./pages/MrFingers/MrFingers";
 import Anima from "./pages/Anima/Anima";
 import Equivalents from "./pages/Equivalents/Equivalents";
+import PromoterNew from "./pages/PromoterNew/PromoterNew";
 
 import "./App.css";
 import "./styles/main.scss";
@@ -21,6 +22,7 @@ export class App extends Component {
             <Route path="/mrfingers" component={MrFingers} />
             <Route path="/anima" component={Anima} />
             <Route path="/equiva" component={Equivalents} />
+            <Route path="/pnew" component={PromoterNew} />
           </Switch>
         </div>
       </Router>

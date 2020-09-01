@@ -105,15 +105,13 @@
     .ctas {
         // display: flex;
         // width: 50%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
-        margin-top: 40px;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // gap: 25px;
+        // margin-top: 40px;
     }
 
     button {
-        height: 50px;
-        margin: 0;
         &:hover {
             color: #001225;
             background-color: white;

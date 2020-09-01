@@ -111,11 +111,15 @@ const Anima = () => {
           create an immersive and captivating experience.
         </p>
 
-        <Button btnTxt="follow" />
-        <Button btnTxt="contact" />
+        <Button btnUrl="theLink" btnTxt="explore" />
+        <Button btnUrl="feedback" btnTxt="feedback" />
       </section>
 
-      <img className="full-width-img" src={imgPath + "anima_iki_01.jpg"} alt="full width" />
+      <img
+        className="full-width-img"
+        src={imgPath + "anima_iki_01.jpg"}
+        alt="full width"
+      />
 
       <nav className="related-nav">
         <ul>

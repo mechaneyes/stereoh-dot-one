@@ -84,7 +84,7 @@ const MrFingers = () => {
 
   if (extras === 0) {
     shownItems = earlierItems
-    console.log(this)
+    // console.log(this)
   } else if (extras === 1) {
     shownItems = alsoItems
   } else if (extras === 2) {
