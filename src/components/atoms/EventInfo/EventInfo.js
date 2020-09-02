@@ -21,11 +21,12 @@ const EventInfo = (props) => {
   return (
     <div className="event-info">
       {/* <h1 className="event-name">{defaultProps.title}</h1> */}
-      <img
+      {/* <img
         className="event-logo"
         src={imgPath + "wipeout.png"}
         alt="single event page hero"
-      />
+      /> */}
+      <h1>Mr Fingers</h1>
       <h2 className="event-name">Lorem ipsum dolor sit amet, consectetur</h2>
       <div className="event-body">
         <p>{defaultProps.body}</p>

@@ -23,7 +23,7 @@ const HomeHero = (props) => {
         {/* <img className="neoneon-logo" src={imgPath + "neonTron.png"} alt="neoneon logo" /> */}
         <p className="home-hero-subheadline">{defaultProps.subhead}</p>
         <div className="home-hero-ctas">
-          <button className="transp-bg">Enter</button>
+          {/* <button className="transp-bg">Enter</button> */}
           <button className="transp-bg">Explore</button>
         </div>
       </div>

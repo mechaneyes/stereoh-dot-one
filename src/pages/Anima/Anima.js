@@ -44,7 +44,8 @@ const Anima = () => {
 
   return (
     <div className="single anima">
-      <HomeHero homeHeroImg={imgPath + "anima_iki_03.jpg"} />
+      <HomeHero homeHeroImg={imgPath + "anima_iki_03.jpg"} headline="Cybotron" />
+      {/* <HomeHero headline="Cybotron" /> */}
 
       <PullImgLeft {...quoteOne} />
 
@@ -115,11 +116,11 @@ const Anima = () => {
         <Button btnUrl="feedback" btnTxt="feedback" />
       </section>
 
-      <img
+      {/* <img
         className="full-width-img"
         src={imgPath + "anima_iki_01.jpg"}
         alt="full width"
-      />
+      /> */}
 
       <nav className="related-nav">
         <ul>
