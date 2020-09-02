@@ -33,7 +33,7 @@ const EventInfo = (props) => {
         <p>{defaultProps.body}</p>
         <p>{defaultProps.body}</p>
       </div>
-      <Button btnUrl="theLink" btnTxt="explore" />
+      <Button btnUrl="theLink" btnTxt="enter" />
       <Button btnUrl="feedback" btnTxt="feedback" />
     </div>
   );

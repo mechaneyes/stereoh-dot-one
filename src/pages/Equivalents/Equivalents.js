@@ -45,7 +45,7 @@ const Equivalents = () => {
   let shownItems = [];
 
   if (extras === 0) {
-    shownItems = relatedItems.slice(0, 6);
+    shownItems = relatedItems.slice(0, 2);
   } else if (extras === 1) {
     shownItems = relatedItems.slice(3, 6);
   } else if (extras === 2) {
@@ -128,9 +128,9 @@ const Equivalents = () => {
             className={`${extras === 1 ? "active-item" : ""}`}
             onClick={() => setExtras(1)}
           >
-            earlier
+            our other experiences
           </li>
-          <li
+          {/* <li
             className={`${extras === 0 ? "active-item" : ""}`}
             onClick={() => setExtras(0)}
           >
@@ -141,11 +141,43 @@ const Equivalents = () => {
             onClick={() => setExtras(2)}
           >
             details
-          </li>
+          </li> */}
         </ul>
       </nav>
-      <section className="related-content">
+      {/* <section className="related-content">
         <div className="related-grid">{relatedList}</div>
+      </section> */}
+      <section class="related-content">
+        <div class="related-grid">
+          <article class="one-related-item">
+            <img
+              class="home-hero-img"
+              src="/assets/jenAndMe.png"
+              alt="neonPlatform hero"
+            />
+            <div class="related-copy">
+              <h3>It's just (House of Dupree)</h3>
+              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+              <a href="#">
+                <button class="transp-bg">Explore</button>
+              </a>
+            </div>
+          </article>
+          <article class="one-related-item">
+            <img
+              class="home-hero-img"
+              src="/assets/tropicalFreeze_066.png"
+              alt="neonPlatform hero"
+            />
+            <div class="related-copy">
+              <h3>Pier Children</h3>
+              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+              <a href="#">
+                <button class="transp-bg">Explore</button>
+              </a>
+            </div>
+          </article>
+        </div>
       </section>
     </div>
   );

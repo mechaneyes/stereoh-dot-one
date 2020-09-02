@@ -107,6 +107,15 @@ body {
         color: #001225;
       }
     }
+
+    &.slick-next:hover,
+    &.slick-prev:hover {
+      background-color: transparent;
+    }
+  }
+
+  .related-nav {
+    margin-bottom: 20px;
   }
 
   //   @import "buttons";

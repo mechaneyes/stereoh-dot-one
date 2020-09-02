@@ -14,10 +14,9 @@ const defaultProps = {
 };
 
 const MrFingers = () => {
-  const [extras, setExtras] = useState(0)
+  const [extras, setExtras] = useState(0);
 
-  let shownItems = []  
-  
+  let shownItems = [];
 
   const earlierItems = [
     {
@@ -32,12 +31,12 @@ const MrFingers = () => {
       relSubhead: defaultProps.subhead,
       relLinkUrl: "#",
     },
-    {
-      relImage: `${imgPath}tropicalFreeze_051.png`,
-      relTitle: "Inside the Deku Tree",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
+    // {
+    //   relImage: `${imgPath}tropicalFreeze_051.png`,
+    //   relTitle: "Inside the Deku Tree",
+    //   relSubhead: defaultProps.subhead,
+    //   relLinkUrl: "#",
+    // },
   ];
 
   const alsoItems = [
@@ -83,12 +82,12 @@ const MrFingers = () => {
   ];
 
   if (extras === 0) {
-    shownItems = earlierItems
+    shownItems = earlierItems;
     // console.log(this)
   } else if (extras === 1) {
-    shownItems = alsoItems
+    shownItems = alsoItems;
   } else if (extras === 2) {
-    shownItems = detailsItems
+    shownItems = detailsItems;
   }
 
   const relatedList = shownItems.map((rel, i) => (
@@ -100,13 +99,51 @@ const MrFingers = () => {
       <GradientHero />
       <nav className="related-nav">
         <ul>
-          <li className={`${extras === 0 ? 'active-item' : ""}`} onClick={() => setExtras(0)}>earlier</li>
-          <li className={`${extras === 1 ? 'active-item' : ""}`} onClick={() => setExtras(1)}>you may also like</li>
-          <li className={`${extras === 2 ? 'active-item' : ""}`} onClick={() => setExtras(2)}>details</li>
+          <li
+            className={`${extras === 0 ? "active-item" : ""}`}
+            onClick={() => setExtras(0)}
+          >
+            our other spaces
+          </li>
+          {/* <li className={`${extras === 1 ? 'active-item' : ""}`} onClick={() => setExtras(1)}>you may also like</li>
+          <li className={`${extras === 2 ? 'active-item' : ""}`} onClick={() => setExtras(2)}>details</li> */}
         </ul>
       </nav>
-      <section className="related-content">
+      {/* <section className="related-content">
         <div className="related-grid">{relatedList}</div>
+      </section> */}
+
+      <section class="related-content">
+        <div class="related-grid">
+          <article class="one-related-item">
+            <img
+              class="home-hero-img"
+              src="/assets/jenAndMe.png"
+              alt="neonPlatform hero"
+            />
+            <div class="related-copy">
+              <h3>It's just (House of Dupree)</h3>
+              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+              <a href="#">
+                <button class="transp-bg">Explore</button>
+              </a>
+            </div>
+          </article>
+          <article class="one-related-item">
+            <img
+              class="home-hero-img"
+              src="/assets/tropicalFreeze_066.png"
+              alt="neonPlatform hero"
+            />
+            <div class="related-copy">
+              <h3>Pier Children</h3>
+              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+              <a href="#">
+                <button class="transp-bg">Explore</button>
+              </a>
+            </div>
+          </article>
+        </div>
       </section>
     </div>
   );

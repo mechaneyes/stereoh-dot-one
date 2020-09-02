@@ -17,12 +17,12 @@ const RelatedItems = () => {
           >
             you may also like
           </li>
-          <li
+          {/* <li
             className={`${extras === 2 ? "active-item" : ""}`}
             onClick={() => setExtras(2)}
           >
             details
-          </li>
+          </li> */}
         </ul>
       </nav>
       <section className="related-content">

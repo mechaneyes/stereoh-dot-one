@@ -27,12 +27,12 @@ export class Homepage extends Component {
         relSubhead: defaultProps.subhead,
         relLinkUrl: '#',
       },
-      {
-        relImage: `${imgPath}tropicalFreeze_051.png`,
-        relTitle: "Inside the Deku Tree",
-        relSubhead: defaultProps.subhead,
-        relLinkUrl: '#',
-      },
+      // {
+      //   relImage: `${imgPath}tropicalFreeze_051.png`,
+      //   relTitle: "Inside the Deku Tree",
+      //   relSubhead: defaultProps.subhead,
+      //   relLinkUrl: '#',
+      // },
     ];
 
     const relatedList = relatedItems.map( (rel, i) => <RelatedItem key={i} {...rel} />)
@@ -41,7 +41,8 @@ export class Homepage extends Component {
       <div className="homepage">
         <HomeHero homeHeroImg={imgPath + "tropicalFreeze_014.png"} />
         <section className="related-content">
-          <h2>Moar Experiences</h2>
+          {/* <h2>Moar Experiences</h2> */}
+          <nav class="related-nav"><ul><li class="active-item">our other spaces</li></ul></nav>
           <div className="related-grid">
             {relatedList}
           </div>

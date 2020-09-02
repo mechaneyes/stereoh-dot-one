@@ -6,7 +6,7 @@ import PullImgRight from "../../components/atoms/PullQuotes/PullImgRight";
 import Button from "../../components/atoms/Button/Button";
 import relatedItems from "../../components/related-data";
 import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
-import "../../components/molecules/RelatedItems/RelatedItems.scss";
+// import "../../components/molecules/RelatedItems/RelatedItems.scss";
 import "./Anima.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
@@ -17,11 +17,11 @@ const Anima = () => {
   let shownItems = [];
 
   if (extras === 0) {
-    shownItems = relatedItems.slice(0, 6);
-  } else if (extras === 1) {
-    shownItems = relatedItems.slice(3, 6);
-  } else if (extras === 2) {
-    shownItems = relatedItems.slice(6, 9);
+    shownItems = relatedItems.slice(0, 2);
+    // } else if (extras === 1) {
+    //   shownItems = relatedItems.slice(3, 6);
+    // } else if (extras === 2) {
+    //   shownItems = relatedItems.slice(6, 9);
   }
 
   const relatedList = shownItems.map((rel, i) => (
@@ -111,7 +111,7 @@ const Anima = () => {
           create an immersive and captivating experience.
         </p>
 
-        <Button btnUrl="theLink" btnTxt="explore" />
+        <Button btnUrl="theLink" btnTxt="enter" />
         <Button btnUrl="feedback" btnTxt="feedback" />
       </section>
 
@@ -127,9 +127,9 @@ const Anima = () => {
             className={`${extras === 0 ? "active-item" : ""}`}
             onClick={() => setExtras(0)}
           >
-            earlier
+            our other experiences
           </li>
-          <li
+          {/* <li
             className={`${extras === 1 ? "active-item" : ""}`}
             onClick={() => setExtras(1)}
           >
@@ -140,11 +140,44 @@ const Anima = () => {
             onClick={() => setExtras(2)}
           >
             details
-          </li>
+          </li> */}
         </ul>
       </nav>
-      <section className="related-content">
+      {/* <section className="related-content">
         <div className="related-grid">{relatedList}</div>
+      </section> */}
+
+      <section class="related-content">
+        <div class="related-grid">
+          <article class="one-related-item">
+            <img
+              class="home-hero-img"
+              src="/assets/jenAndMe.png"
+              alt="neonPlatform hero"
+            />
+            <div class="related-copy">
+              <h3>It's just (House of Dupree)</h3>
+              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+              <a href="#">
+                <button class="transp-bg">Explore</button>
+              </a>
+            </div>
+          </article>
+          <article class="one-related-item">
+            <img
+              class="home-hero-img"
+              src="/assets/tropicalFreeze_066.png"
+              alt="neonPlatform hero"
+            />
+            <div class="related-copy">
+              <h3>Pier Children</h3>
+              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+              <a href="#">
+                <button class="transp-bg">Explore</button>
+              </a>
+            </div>
+          </article>
+        </div>
       </section>
     </div>
   );
