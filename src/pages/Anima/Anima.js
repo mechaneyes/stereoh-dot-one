@@ -47,7 +47,6 @@ const Anima = () => {
       <HomeHero
         homeHeroImg={imgPath + "anima_iki_03.jpg"}
         headline="Anima"
-        ctaText="Enter Anima"
         showFeedback={true}
       />
       {/* <HomeHero headline="Cybotron" /> */}

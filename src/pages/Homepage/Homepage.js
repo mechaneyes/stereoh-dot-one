@@ -19,13 +19,13 @@ export class Homepage extends Component {
         relImage: `${imgPath}jenAndMe.png`,
         relTitle: "It's just (House of Dupree)",
         relSubhead: defaultProps.subhead,
-        relLinkUrl: '#',
+        relLinkUrl: "#",
       },
       {
         relImage: `${imgPath}tropicalFreeze_066.png`,
         relTitle: "Pier Children",
         relSubhead: defaultProps.subhead,
-        relLinkUrl: '#',
+        relLinkUrl: "#",
       },
       // {
       //   relImage: `${imgPath}tropicalFreeze_051.png`,
@@ -35,17 +35,24 @@ export class Homepage extends Component {
       // },
     ];
 
-    const relatedList = relatedItems.map( (rel, i) => <RelatedItem key={i} {...rel} />)
+    const relatedList = relatedItems.map((rel, i) => (
+      <RelatedItem key={i} {...rel} />
+    ));
 
     return (
       <div className="homepage">
-        <HomeHero headline="space one" homeHeroImg={imgPath + "cybotron_0_1_0.jpg"} ctaText='Explore Space One' showFeedback={false} />
+        <HomeHero
+          headline="space one"
+          homeHeroImg={imgPath + "cybotron_0_1_0.jpg"}
+          showFeedback={false}
+        />
         <section className="related-content">
-          {/* <h2>Moar Experiences</h2> */}
-          <nav class="related-nav"><ul><li class="active-item">our other spaces</li></ul></nav>
-          <div className="related-grid">
-            {relatedList}
-          </div>
+          <nav class="related-nav">
+            <ul>
+              <li class="active-item">our other spaces</li>
+            </ul>
+          </nav>
+          <div className="related-grid">{relatedList}</div>
         </section>
       </div>
     );
