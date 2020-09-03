@@ -31,7 +31,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="single anima">
+    <div className="single signUp">
       <section className="body-copy">
         <div class="home-hero-content">
           <h1>Let's Stay In Touch!</h1>

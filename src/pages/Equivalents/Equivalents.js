@@ -61,6 +61,7 @@ const Equivalents = () => {
       <HomeHero
         homeHeroImg={imgPath + "eliasson_001.jpg"}
         headline="Equivalents"
+        showFeedback={true}
       />
 
       <section className="copy-top">
@@ -147,33 +148,33 @@ const Equivalents = () => {
       {/* <section className="related-content">
         <div className="related-grid">{relatedList}</div>
       </section> */}
-      <section class="related-content">
-        <div class="related-grid">
-          <article class="one-related-item">
+      <section className="related-content">
+        <div className="related-grid">
+          <article className="one-related-item">
             <img
-              class="home-hero-img"
+              className="home-hero-img"
               src="/assets/jenAndMe.png"
               alt="neonPlatform hero"
             />
-            <div class="related-copy">
+            <div className="related-copy">
               <h3>It's just (House of Dupree)</h3>
               <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
               <a href="#">
-                <button class="transp-bg">Explore</button>
+                <button className="transp-bg">Explore</button>
               </a>
             </div>
           </article>
-          <article class="one-related-item">
+          <article className="one-related-item">
             <img
-              class="home-hero-img"
+              className="home-hero-img"
               src="/assets/tropicalFreeze_066.png"
               alt="neonPlatform hero"
             />
-            <div class="related-copy">
+            <div className="related-copy">
               <h3>Pier Children</h3>
               <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
               <a href="#">
-                <button class="transp-bg">Explore</button>
+                <button className="transp-bg">Explore</button>
               </a>
             </div>
           </article>

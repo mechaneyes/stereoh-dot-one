@@ -10,7 +10,8 @@ const defaultProps = {
 };
 
 const HomeHero = (props) => {
-  const { homeHeroImg, headline } = props;
+  const { homeHeroImg, headline, ctaText, showFeedback } = props;
+
   return (
     <section className="homepage-hero">
       <img
@@ -19,13 +20,28 @@ const HomeHero = (props) => {
         alt="neonPlatform hero"
       />
       <div className="home-hero-content">
-        {headline ? <h1>{headline}</h1> : <img className="neoneon-logo" src={imgPath + "neonTron.png"} alt="neoneon logo" />}
+        {headline ? (
+          <h1>{headline}</h1>
+        ) : (
+          <img
+            className="neoneon-logo"
+            src={imgPath + "neonTron.png"}
+            alt="neoneon logo"
+          />
+        )}
         {/* <img className="neoneon-logo" src={imgPath + "neonTron.png"} alt="neoneon logo" /> */}
         <p className="home-hero-subheadline">{defaultProps.subhead}</p>
         <div className="home-hero-ctas">
-          {/* <button className="transp-bg">Enter</button> */}
-          <button className="transp-bg">Explore Cybotron</button>
-          <button className="transp-bg">Feedback</button>
+          {ctaText ? (
+            <button className="transp-bg">{ctaText}</button>
+          ) : (
+            <button className="transp-bg">Enter Equivalents</button>
+          )}
+          {showFeedback ? (
+            <button className="transp-bg">Feedback</button>
+          ) : (
+            <div></div>
+          )}
         </div>
       </div>
       <div className="gradient"></div>

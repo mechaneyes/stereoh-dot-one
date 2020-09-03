@@ -44,7 +44,12 @@ const Anima = () => {
 
   return (
     <div className="single anima">
-      <HomeHero homeHeroImg={imgPath + "anima_iki_03.jpg"} headline="Cybotron" />
+      <HomeHero
+        homeHeroImg={imgPath + "anima_iki_03.jpg"}
+        headline="Anima"
+        ctaText="Enter Anima"
+        showFeedback={true}
+      />
       {/* <HomeHero headline="Cybotron" /> */}
 
       <PullImgLeft {...quoteOne} />

@@ -34,9 +34,9 @@ const MenuItem = (href) => {
         <a className="cta-nav" href={href}>
         <button>feedback</button>
         </a>
-        <a className="cta-nav" href={href}>
+        <div className="cta-nav" href={href}>
           <button><Link to="/signup">Sign Up</Link></button>
-        </a>
+        </div>
       </div>
     </nav>
   );

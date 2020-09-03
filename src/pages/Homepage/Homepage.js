@@ -39,8 +39,7 @@ export class Homepage extends Component {
 
     return (
       <div className="homepage">
-        {/* <HomeHero headline="cybotron" homeHeroImg={imgPath + "tropicalFreeze_014.png"} /> */}
-        <HomeHero headline="cybotron" homeHeroImg={imgPath + "cybotron_0_1_0.jpg"} />
+        <HomeHero headline="space one" homeHeroImg={imgPath + "cybotron_0_1_0.jpg"} ctaText='Explore Space One' showFeedback={false} />
         <section className="related-content">
           {/* <h2>Moar Experiences</h2> */}
           <nav class="related-nav"><ul><li class="active-item">our other spaces</li></ul></nav>
