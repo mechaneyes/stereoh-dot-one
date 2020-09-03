@@ -117,7 +117,7 @@ const Equivalents = () => {
         </p>
 
         <div className="ctas">
-          <Button btnUrl="theLink" btnTxt="explore" />
+          <Button btnUrl="theLink" btnTxt="enter" />
           <Button btnUrl="feedback" btnTxt="feedback" />
         </div>
       </section>

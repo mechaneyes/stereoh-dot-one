@@ -34,8 +34,14 @@ const EventInfo = (props) => {
         <p>{defaultProps.body}</p>
         <p>{defaultProps.body}</p>
       </div>
-      <Button btnUrl="theLink" btnTxt="enter" />
-      <Button btnUrl="feedback" btnTxt="feedback" />
+      <div className="cta-container">
+        <Button
+          className="large-cta"
+          btnUrl="theLink"
+          btnTxt="enter mr fingers"
+        />
+        <Button className="match-cta" btnUrl="feedback" btnTxt="feedback" />
+      </div>
     </div>
   );
 };

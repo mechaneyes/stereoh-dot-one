@@ -24,7 +24,8 @@ const HomeHero = (props) => {
         <p className="home-hero-subheadline">{defaultProps.subhead}</p>
         <div className="home-hero-ctas">
           {/* <button className="transp-bg">Enter</button> */}
-          <button className="transp-bg">Explore</button>
+          <button className="transp-bg">Explore Cybotron</button>
+          <button className="transp-bg">Feedback</button>
         </div>
       </div>
       <div className="gradient"></div>
