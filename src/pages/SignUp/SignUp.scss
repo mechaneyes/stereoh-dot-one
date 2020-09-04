@@ -100,6 +100,12 @@
   }
 
   .related-content {
+    max-width: none;
+
+    .related-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
     button {
       min-width: 125px;
     }

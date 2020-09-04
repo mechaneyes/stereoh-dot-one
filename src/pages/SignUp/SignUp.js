@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import HomeHero from "../../components/atoms/HomeHero/HomeHero";
 import Button from "../../components/atoms/Button/Button";
 import relatedItems from "../../components/related-data";
 import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
@@ -24,11 +23,6 @@ const SignUp = () => {
   const relatedList = shownItems.map((rel, i) => (
     <RelatedItem key={i} {...rel} />
   ));
-
-  const absStyle = {
-    // position: "absolute",
-    // left: "-5000px",
-  };
 
   return (
     <div className="single signUp">
@@ -80,8 +74,6 @@ const SignUp = () => {
             </form>
           </div>
         </div>
-
-        {/* <Button btnUrl="feedback" btnTxt="feedback" /> */}
       </section>
 
       <nav className="related-nav">
@@ -90,13 +82,10 @@ const SignUp = () => {
             className={`${extras === 0 ? "active-item" : ""}`}
             onClick={() => setExtras(0)}
           >
-            our other experiences
+            our experiences
           </li>
         </ul>
       </nav>
-      {/* <section className="related-content">
-        <div className="related-grid">{relatedList}</div>
-      </section> */}
 
       <section class="related-content">
         <div class="related-grid">
@@ -122,6 +111,20 @@ const SignUp = () => {
             />
             <div class="related-copy">
               <h3>Pier Children</h3>
+              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+              <a href="#">
+                <button class="transp-bg">Explore</button>
+              </a>
+            </div>
+          </article>
+          <article class="one-related-item">
+            <img
+              class="home-hero-img"
+              src="/assets/jenAndMe.png"
+              alt="neonPlatform hero"
+            />
+            <div class="related-copy">
+              <h3>It's just (House of Dupree)</h3>
               <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
               <a href="#">
                 <button class="transp-bg">Explore</button>
