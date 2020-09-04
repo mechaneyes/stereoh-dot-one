@@ -44,6 +44,7 @@ export class Homepage extends Component {
         <HomeHero
           headline="space one"
           homeHeroImg={imgPath + "cybotron_0_1_0.jpg"}
+          exploreCta={true}
           showFeedback={false}
         />
         <section className="related-content">

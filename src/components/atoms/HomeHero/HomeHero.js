@@ -10,7 +10,7 @@ const defaultProps = {
 };
 
 const HomeHero = (props) => {
-  const { homeHeroImg, headline, ctaText, showFeedback } = props;
+  const { homeHeroImg, headline, exploreCta, showFeedback } = props;
 
   return (
     <section className="homepage-hero">
@@ -32,7 +32,11 @@ const HomeHero = (props) => {
         {/* <img className="neoneon-logo" src={imgPath + "neonTron.png"} alt="neoneon logo" /> */}
         <p className="home-hero-subheadline">{defaultProps.subhead}</p>
         <div className="home-hero-ctas">
-          <button className="transp-bg">enter {headline}</button>
+          {exploreCta ? (
+            <button className="transp-bg">explore {headline}</button>
+          ) : (
+            <button className="transp-bg">enter {headline}</button>
+          )}
           {showFeedback ? (
             <button className="transp-bg">Feedback</button>
           ) : (
