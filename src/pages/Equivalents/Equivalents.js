@@ -118,7 +118,7 @@ const Equivalents = () => {
         </p>
 
         <div className="ctas">
-          <Button btnUrl="theLink" btnTxt="enter" />
+          <Button btnUrl="//space.neoneon.one/aMggN3t/striking-mature-soiree" btnTxt="enter equivalents" targetBlank="true" />
           <Button btnUrl="feedback" btnTxt="feedback" />
         </div>
       </section>

@@ -18,6 +18,7 @@ export class App extends Component {
     return (
       <Router>
         <div className="App">
+          {/* <AnonymousID /> */}
           <TopNav />
           <Switch>
             <Route exact path="/" component={Homepage} />
