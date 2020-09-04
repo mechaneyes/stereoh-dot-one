@@ -7,7 +7,7 @@ import Button from "../../components/atoms/Button/Button";
 import relatedItems from "../../components/related-data";
 import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
 // import "../../components/molecules/RelatedItems/RelatedItems.scss";
-import "./Anima.scss";
+import "./SpaceOne.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
 
@@ -43,10 +43,11 @@ const Anima = () => {
   };
 
   return (
-    <div className="single anima">
+    <div className="single spaceone">
       <HomeHero
         homeHeroImg={imgPath + "anima_iki_03.jpg"}
-        headline="Anima"
+        headline="Space One"
+        enterUrl="https://space.neoneon.one/aMggN3t/striking-mature-soiree"
         showFeedback={true}
       />
       {/* <HomeHero headline="Cybotron" /> */}
@@ -116,7 +117,7 @@ const Anima = () => {
           create an immersive and captivating experience.
         </p>
 
-        <Button btnUrl="theLink" btnTxt="enter" />
+        <Button btnUrl="https://space.neoneon.one/aMggN3t/striking-mature-soiree" btnTxt="enter space one" />
         <Button btnUrl="feedback" btnTxt="feedback" />
       </section>
 

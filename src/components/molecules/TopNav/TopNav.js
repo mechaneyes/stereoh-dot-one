@@ -17,10 +17,10 @@ const MenuItem = (href) => {
             <Link to="/">Home</Link>
           </li> */}
           <li className="menu-item">
-            <Link to="/mrfingers">mrfingers</Link>
+            <Link to="/spaceone">space one</Link>
           </li>
           <li className="menu-item">
-            <Link to="/anima">anima</Link>
+            <Link to="/mrfingers">mrfingers</Link>
           </li>
           <li className="menu-item">
             <Link to="/equiva">equivalents</Link>

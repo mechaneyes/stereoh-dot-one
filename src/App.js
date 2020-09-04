@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import TopNav from "./components/molecules/TopNav/TopNav";
 import Homepage from "./pages/Homepage/Homepage";
 import MrFingers from "./pages/MrFingers/MrFingers";
-import Anima from "./pages/Anima/Anima";
+import SpaceOne from "./pages/SpaceOne/SpaceOne";
 import Equivalents from "./pages/Equivalents/Equivalents";
 import Feedback from "./pages/Feedback/Feedback";
 import SignUp from "./pages/SignUp/SignUp";
@@ -23,7 +23,7 @@ export class App extends Component {
           <Switch>
             <Route exact path="/" component={Homepage} />
             <Route path="/mrfingers" component={MrFingers} />
-            <Route path="/anima" component={Anima} />
+            <Route path="/spaceone" component={SpaceOne} />
             <Route path="/equiva" component={Equivalents} />
             <Route path="/signup" component={SignUp} />
             <Route path="/feedback" component={Feedback} />

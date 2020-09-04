@@ -48,9 +48,9 @@ export class Homepage extends Component {
           showFeedback={false}
         />
         <section className="related-content">
-          <nav class="related-nav">
+          <nav className="related-nav">
             <ul>
-              <li class="active-item">our other spaces</li>
+              <li className="active-item">our other spaces</li>
             </ul>
           </nav>
           <div className="related-grid">{relatedList}</div>

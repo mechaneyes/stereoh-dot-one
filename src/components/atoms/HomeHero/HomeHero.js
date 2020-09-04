@@ -1,6 +1,7 @@
 import React from "react";
 
 import { defaultValues } from "../../constants";
+import Button from "../Button/Button";
 import "./HomeHero.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
@@ -10,7 +11,9 @@ const defaultProps = {
 };
 
 const HomeHero = (props) => {
-  const { homeHeroImg, headline, exploreCta, showFeedback } = props;
+  const { homeHeroImg, headline, exploreCta, enterUrl, showFeedback } = props;
+
+  console.log('enterUrl', enterUrl)
 
   return (
     <section className="homepage-hero">
@@ -32,10 +35,10 @@ const HomeHero = (props) => {
         {/* <img className="neoneon-logo" src={imgPath + "neonTron.png"} alt="neoneon logo" /> */}
         <p className="home-hero-subheadline">{defaultProps.subhead}</p>
         <div className="home-hero-ctas">
-          {exploreCta ? (
-            <button className="transp-bg">explore {headline}</button>
+          {enterUrl ? (
+            <Button btnUrl={enterUrl} btnTxt="enter space one" />
           ) : (
-            <button className="transp-bg">enter {headline}</button>
+            <button className="transp-bg">explore {headline}</button>
           )}
           {showFeedback ? (
             <button className="transp-bg">Feedback</button>
