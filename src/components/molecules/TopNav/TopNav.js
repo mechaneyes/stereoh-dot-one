@@ -31,11 +31,11 @@ const MenuItem = (href) => {
         </ul>
       </div>
       <div className="top-nav-right">
-        <a className="cta-nav" href={href}>
-        <button>feedback</button>
-        </a>
         <div className="cta-nav" href={href}>
-          <button><Link to="/signup">Sign Up</Link></button>
+        <Link to="/feedback"><button>Feedback</button></Link>
+        </div>
+        <div className="cta-nav" href={href}>
+        <Link to="/signup"><button>Sign Up</button></Link>
         </div>
       </div>
     </nav>

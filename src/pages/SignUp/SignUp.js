@@ -41,7 +41,7 @@ const SignUp = () => {
               name="mc-embedded-subscribe-form"
               class="validate"
               target="_blank"
-              novalidate
+              noValidate
             >
               <div id="mc_embed_signup_scroll">
                 <input
@@ -57,8 +57,7 @@ const SignUp = () => {
                   <input
                     type="text"
                     name="b_55b1042094d7ceee5fdf20bf9_996675cb7c"
-                    tabindex="-1"
-                    value=""
+                    tabIndex="-1"
                   />
                   <div className="submitStyle">
                     <input
