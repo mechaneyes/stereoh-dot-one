@@ -32,20 +32,7 @@ const EventHero = (props) => {
             alt="neoneon logo"
           />
         )}
-        {/* <img className="neoneon-logo" src={imgPath + "neonTron.png"} alt="neoneon logo" /> */}
         <p className="home-hero-subheadline">{defaultProps.subhead}</p>
-        {/* <div className="home-hero-ctas">
-          {enterUrl ? (
-            <Button btnUrl={enterUrl} btnTxt="enter space one" />
-          ) : (
-            <button className="transp-bg">explore {headline}</button>
-          )}
-          {showFeedback ? (
-            <button className="transp-bg">Feedback</button>
-          ) : (
-            <></>
-          )}
-        </div> */}
       </div>
       <div className="gradient"></div>
     </section>
