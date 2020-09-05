@@ -1,71 +1,61 @@
 import React, { useState } from "react";
 
-import HomeHero from "../../components/atoms/EventHero/EventHero";
-import Carousel from "../../components/atoms/Carousel/Carousel";
+import HomeHero from "../../components/atoms/HomeHero/HomeHero";
+import PullImgLeft from "../../components/atoms/PullQuotes/PullImgLeft";
+import PullImgRight from "../../components/atoms/PullQuotes/PullImgRight";
 import Button from "../../components/atoms/Button/Button";
 import relatedItems from "../../components/related-data";
 import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
-import "../../components/molecules/RelatedItems/RelatedItems.scss";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "../../components/molecules/RelatedItems/RelatedItems.scss";
 import "./Saturn6.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const Saturn6 = () => {
-  const [extras, setExtras] = useState(1);
-
-  let caroElements = [
-    {
-      src: "eliasson_009.jpg",
-      alt: "olafur eliasson 009",
-    },
-    {
-      src: "eliasson_005.jpg",
-      alt: "olafur eliasson 005",
-    },
-    {
-      src: "eliasson_006.jpg",
-      alt: "olafur eliasson 006",
-    },
-    {
-      src: "eliasson_007.jpg",
-      alt: "olafur eliasson 007",
-    },
-    {
-      src: "eliasson_010.jpg",
-      alt: "olafur eliasson 010",
-    },
-    {
-      src: "eliasson_011.jpg",
-      alt: "olafur eliasson 011",
-    },
-  ];
+  const [extras, setExtras] = useState(0);
 
   let shownItems = [];
 
   if (extras === 0) {
     shownItems = relatedItems.slice(0, 2);
-  } else if (extras === 1) {
-    shownItems = relatedItems.slice(3, 6);
-  } else if (extras === 2) {
-    shownItems = relatedItems.slice(6, 9);
+    // } else if (extras === 1) {
+    //   shownItems = relatedItems.slice(3, 6);
+    // } else if (extras === 2) {
+    //   shownItems = relatedItems.slice(6, 9);
   }
 
   const relatedList = shownItems.map((rel, i) => (
     <RelatedItem key={i} {...rel} />
   ));
 
+  const quoteOne = {
+    pullImg: `${imgPath}anima_iki_05.jpg`,
+    pullTitle: "Spherical Projection",
+    pullPara:
+      "developed to explore the relationship between itself and its surroundings through the use of movement, texture, light and sound",
+  };
+
+  const quoteTwo = {
+    pullImg: `${imgPath}anima_iki_09.jpg`,
+    pullTitle: "Fluid Shimmering Patterns",
+    pullPara:
+      "Through this process of refining behavior and visual complexity, »ANIMA« becomes life-like and impressive.",
+  };
+
   return (
-    <div className="single saturn6">
+    <div className="single anima">
       <HomeHero
-        homeHeroImg={imgPath + "eliasson_001.jpg"}
+        homeHeroImg={imgPath + "anima_iki_03.jpg"}
         headline="Saturn 6"
-        showFeedback={false}
+        enterUrl="https://space.neoneon.one/aMggN3t/striking-mature-soiree"
+        showFeedback={true}
       />
+      {/* <HomeHero headline="Cybotron" /> */}
 
-      <section className="copy-top">
-        <h2>Saturn 6 becomes a spherical projection. </h2>
+      <PullImgLeft {...quoteOne} />
+
+      <section className="body-copy">
+        <h2>ANIMA iki</h2>
         <p>
           The spherical projection is achieved from inside the globe with a
           powerful wide angle projector and fisheye lens, producing images in a
@@ -80,29 +70,43 @@ const Saturn6 = () => {
           the installation respond to those in the space as sound is picked up
           and resonated back as feedback to the atmosphere.
         </p>
-        <div className="ctas">
-          <Button btnUrl="//space.neoneon.one/aMggN3t/striking-mature-soiree" btnTxt="enter saturn 6" targetBlank="true" />
-          <Button btnUrl="feedback" btnTxt="feedback" />
-        </div>
       </section>
 
-      <section className="image-carousel">
-        <div className="inner-carousel">
-          <Carousel items={caroElements} />
-        </div>
+      <PullImgRight {...quoteTwo} />
+
+      <section className="body-copy">
+        <p>
+          Through this process of refining behavior and visual complexity,
+          »ANIMA« becomes life-like and impressive. Installed in the round, the
+          piece is experienced from all sides. In a unique way, »ANIMA« creates
+          an intelligent reactive dialogue with all bodies within its
+          surroundings. The sculpture takes on an ethereal life of its own, as
+          it and the viewer continue their dynamic exchange. Participants, the
+          orb and soundscape combine to perpetually influence each other and
+          create an immersive and captivating experience.
+        </p>
+
+        <Button btnUrl="https://space.neoneon.one/aMggN3t/striking-mature-soiree" btnTxt="enter space one" />
+        <Button btnUrl="feedback" btnTxt="feedback" />
       </section>
+
+      {/* <img
+        className="full-width-img"
+        src={imgPath + "anima_iki_01.jpg"}
+        alt="full width"
+      /> */}
 
       <nav className="related-nav">
         <ul>
           <li
-            className={`${extras === 1 ? "active-item" : ""}`}
-            onClick={() => setExtras(1)}
+            className={`${extras === 0 ? "active-item" : ""}`}
+            onClick={() => setExtras(0)}
           >
             our other experiences
           </li>
           {/* <li
-            className={`${extras === 0 ? "active-item" : ""}`}
-            onClick={() => setExtras(0)}
+            className={`${extras === 1 ? "active-item" : ""}`}
+            onClick={() => setExtras(1)}
           >
             you may also like
           </li>
@@ -117,6 +121,7 @@ const Saturn6 = () => {
       {/* <section className="related-content">
         <div className="related-grid">{relatedList}</div>
       </section> */}
+
       <section className="related-content">
         <div className="related-grid">
           <article className="one-related-item">
