@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import HomeHero from "../../components/atoms/HomeHero/HomeHero";
+import HomeHero from "../../components/atoms/EventHero/EventHero";
 import Carousel from "../../components/atoms/Carousel/Carousel";
 import Button from "../../components/atoms/Button/Button";
 import relatedItems from "../../components/related-data";
@@ -60,12 +60,12 @@ const Equivalents = () => {
     <div className="single equiva">
       <HomeHero
         homeHeroImg={imgPath + "eliasson_001.jpg"}
-        headline="Equivalents"
-        showFeedback={true}
+        headline="Saturn 6"
+        showFeedback={false}
       />
 
       <section className="copy-top">
-        <h2>»ANIMA« becomes life-like and impressive. </h2>
+        <h2>Saturn 6 becomes a spherical projection. </h2>
         <p>
           The spherical projection is achieved from inside the globe with a
           powerful wide angle projector and fisheye lens, producing images in a
@@ -73,53 +73,15 @@ const Equivalents = () => {
           the installation respond to those in the space as sound is picked up
           and resonated back as feedback to the atmosphere.
         </p>
+        <div className="ctas">
+          <Button btnUrl="//space.neoneon.one/aMggN3t/striking-mature-soiree" btnTxt="enter saturn 6" targetBlank="true" />
+          <Button btnUrl="feedback" btnTxt="feedback" />
+        </div>
       </section>
 
       <section className="image-carousel">
         <div className="inner-carousel">
           <Carousel items={caroElements} />
-        </div>
-      </section>
-
-      <section className="copy-body">
-        <p>
-          The spherical projection is achieved from inside the globe with a
-          powerful wide angle projector and fisheye lens, producing images in a
-          full 360 degree directional beam. Modulating frequencies audible in
-          the installation respond to those in the space as sound is picked up
-          and resonated back as feedback to the atmosphere.
-        </p>
-
-        <p>
-          Through this process of refining behavior and visual complexity,
-          »ANIMA« becomes life-like and impressive. Installed in the round, the
-          piece is experienced from all sides. In a unique way, »ANIMA« creates
-          an intelligent reactive dialogue with all bodies within its
-          surroundings. The sculpture takes on an ethereal life of its own, as
-          it and the viewer continue their dynamic exchange. Participants, the
-          orb and soundscape combine to perpetually influence each other and
-          create an immersive and captivating experience. The spherical
-          projection is achieved from inside the globe with a powerful wide
-          angle projector and fisheye lens, producing images in a full 360
-          degree directional beam. Modulating frequencies audible in the
-          installation respond to those in the space as sound is picked up and
-          resonated back as feedback to the atmosphere.
-        </p>
-
-        <p>
-          Through this process of refining behavior and visual complexity,
-          »ANIMA« becomes life-like and impressive. Installed in the round, the
-          piece is experienced from all sides. In a unique way, »ANIMA« creates
-          an intelligent reactive dialogue with all bodies within its
-          surroundings. The sculpture takes on an ethereal life of its own, as
-          it and the viewer continue their dynamic exchange. Participants, the
-          orb and soundscape combine to perpetually influence each other and
-          create an immersive and captivating experience.
-        </p>
-
-        <div className="ctas">
-          <Button btnUrl="//space.neoneon.one/aMggN3t/striking-mature-soiree" btnTxt="enter equivalents" targetBlank="true" />
-          <Button btnUrl="feedback" btnTxt="feedback" />
         </div>
       </section>
 

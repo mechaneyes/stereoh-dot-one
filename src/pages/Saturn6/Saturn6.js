@@ -7,11 +7,11 @@ import Button from "../../components/atoms/Button/Button";
 import relatedItems from "../../components/related-data";
 import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
 // import "../../components/molecules/RelatedItems/RelatedItems.scss";
-import "./SpaceOne.scss";
+import "./Saturn6.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
 
-const Anima = () => {
+const Saturn6 = () => {
   const [extras, setExtras] = useState(0);
 
   let shownItems = [];
@@ -43,10 +43,10 @@ const Anima = () => {
   };
 
   return (
-    <div className="single spaceone">
+    <div className="single anima">
       <HomeHero
         homeHeroImg={imgPath + "anima_iki_03.jpg"}
-        headline="Space One"
+        headline="Saturn 6"
         enterUrl="https://space.neoneon.one/aMggN3t/striking-mature-soiree"
         showFeedback={true}
       />
@@ -63,49 +63,11 @@ const Anima = () => {
           the installation respond to those in the space as sound is picked up
           and resonated back as feedback to the atmosphere.
         </p>
-
-        <p>
-          Through this process of refining behavior and visual complexity,
-          »ANIMA« becomes life-like and impressive. Installed in the round, the
-          piece is experienced from all sides. In a unique way, »ANIMA« creates
-          an intelligent reactive dialogue with all bodies within its
-          surroundings. The sculpture takes on an ethereal life of its own, as
-          it and the viewer continue their dynamic exchange. Participants, the
-          orb and soundscape combine to perpetually influence each other and
-          create an immersive and captivating experience.
-        </p>
       </section>
 
       <PullImgRight {...quoteTwo} />
 
       <section className="body-copy">
-        <p>
-          The spherical projection is achieved from inside the globe with a
-          powerful wide angle projector and fisheye lens, producing images in a
-          full 360 degree directional beam. Modulating frequencies audible in
-          the installation respond to those in the space as sound is picked up
-          and resonated back as feedback to the atmosphere.
-        </p>
-
-        <p>
-          Through this process of refining behavior and visual complexity,
-          »ANIMA« becomes life-like and impressive. Installed in the round, the
-          piece is experienced from all sides. In a unique way, »ANIMA« creates
-          an intelligent reactive dialogue with all bodies within its
-          surroundings. The sculpture takes on an ethereal life of its own, as
-          it and the viewer continue their dynamic exchange. Participants, the
-          orb and soundscape combine to perpetually influence each other and
-          create an immersive and captivating experience.
-        </p>
-
-        <p>
-          The spherical projection is achieved from inside the globe with a
-          powerful wide angle projector and fisheye lens, producing images in a
-          full 360 degree directional beam. Modulating frequencies audible in
-          the installation respond to those in the space as sound is picked up
-          and resonated back as feedback to the atmosphere.
-        </p>
-
         <p>
           Through this process of refining behavior and visual complexity,
           »ANIMA« becomes life-like and impressive. Installed in the round, the
@@ -189,4 +151,4 @@ const Anima = () => {
   );
 };
 
-export default Anima;
+export default Saturn6;

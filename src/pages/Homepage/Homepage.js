@@ -42,7 +42,7 @@ export class Homepage extends Component {
     return (
       <div className="homepage">
         <HomeHero
-          headline="space one"
+          headline="saturn 6"
           homeHeroImg={imgPath + "cybotron_0_1_0.jpg"}
           exploreCta={true}
           showFeedback={false}
