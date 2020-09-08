@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-// import EventInfo from "../../components/atoms/EventInfo/EventInfo";
 import GradientHero from "../../components/atoms/GradientHero/GradientHero";
-import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
 import { defaultValues } from "../../components/constants";
 import "./MrFingers.scss";
 
@@ -14,85 +12,6 @@ const defaultProps = {
 };
 
 const MrFingers = () => {
-  const [extras, setExtras] = useState(0);
-
-  let shownItems = [];
-
-  const earlierItems = [
-    {
-      relImage: `${imgPath}jenAndMe.png`,
-      relTitle: "It's just (House of Dupree)",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-    {
-      relImage: `${imgPath}tropicalFreeze_066.png`,
-      relTitle: "Pier Children",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-    // {
-    //   relImage: `${imgPath}tropicalFreeze_051.png`,
-    //   relTitle: "Inside the Deku Tree",
-    //   relSubhead: defaultProps.subhead,
-    //   relLinkUrl: "#",
-    // },
-  ];
-
-  const alsoItems = [
-    {
-      relImage: `${imgPath}tropicalFreeze_010.png`,
-      relTitle: "Pier Children",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-    {
-      relImage: `${imgPath}tropicalFreeze_070.png`,
-      relTitle: "Inside the Deku Tree",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-    {
-      relImage: `${imgPath}jenAndMe.png`,
-      relTitle: "It's just (House of Dupree)",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-  ];
-
-  const detailsItems = [
-    {
-      relImage: `${imgPath}tropicalFreeze_077.png`,
-      relTitle: "Inside the Deku Tree",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-    {
-      relImage: `${imgPath}tropicalFreeze_074.png`,
-      relTitle: "It's just (House of Dupree)",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-    {
-      relImage: `${imgPath}tropicalFreeze_066.png`,
-      relTitle: "Pier Children",
-      relSubhead: defaultProps.subhead,
-      relLinkUrl: "#",
-    },
-  ];
-
-  if (extras === 0) {
-    shownItems = earlierItems;
-    // console.log(this)
-  } else if (extras === 1) {
-    shownItems = alsoItems;
-  } else if (extras === 2) {
-    shownItems = detailsItems;
-  }
-
-  const relatedList = shownItems.map((rel, i) => (
-    <RelatedItem key={i} {...rel} />
-  ));
 
   return (
     <div className="single mr-fingers">
@@ -100,18 +19,12 @@ const MrFingers = () => {
       <nav className="related-nav">
         <ul>
           <li
-            className={`${extras === 0 ? "active-item" : ""}`}
-            onClick={() => setExtras(0)}
+            className="active-item"
           >
             our other spaces
           </li>
-          {/* <li className={`${extras === 1 ? 'active-item' : ""}`} onClick={() => setExtras(1)}>you may also like</li>
-          <li className={`${extras === 2 ? 'active-item' : ""}`} onClick={() => setExtras(2)}>details</li> */}
         </ul>
       </nav>
-      {/* <section className="related-content">
-        <div className="related-grid">{relatedList}</div>
-      </section> */}
 
       <section className="related-content">
         <div className="related-grid">

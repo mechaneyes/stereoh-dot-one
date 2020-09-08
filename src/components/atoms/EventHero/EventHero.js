@@ -1,7 +1,7 @@
 import React from "react";
 
 import { defaultValues } from "../../constants";
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 import "./EventHero.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
@@ -11,7 +11,7 @@ const defaultProps = {
 };
 
 const EventHero = (props) => {
-  const { homeHeroImg, headline, exploreCta, enterUrl, showFeedback } = props;
+  const { homeHeroImg, headline, enterUrl } = props;
 
   console.log('enterUrl', enterUrl)
 

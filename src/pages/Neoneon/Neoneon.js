@@ -1,27 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 
 import EventHero from "../../components/atoms/EventHero/EventHero";
 import PullImgLeft from "../../components/atoms/PullQuotes/PullImgLeft";
 import PullImgRight from "../../components/atoms/PullQuotes/PullImgRight";
+import { Link } from "react-router-dom";
 import Button from "../../components/atoms/Button/Button";
-import relatedItems from "../../components/related-data";
-import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
 import "./Neoneon.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const Neoneon = () => {
-  const [extras, setExtras] = useState(0);
-
-  let shownItems = [];
-
-  if (extras === 0) {
-    shownItems = relatedItems.slice(0, 2);
-  }
-
-  const relatedList = shownItems.map((rel, i) => (
-    <RelatedItem key={i} {...rel} />
-  ));
 
   const quoteOne = {
     pullImg: `${imgPath}anima_iki_05.jpg`,
@@ -68,15 +56,14 @@ const Neoneon = () => {
           orb and soundscape combine to perpetually influence each other and
           create an immersive and captivating experience.
         </p>
-        <Button btnUrl="theLink" btnTxt="enter neoneon" />
+        <Button btnUrl="https://hubs.mozilla.com/f6HM9iE/neoneon" btnTxt="enter neoneon" />
         <Button btnUrl="feedback" btnTxt="feedback" />
       </section>
 
       <nav className="related-nav">
         <ul>
           <li
-            className={`${extras === 0 ? "active-item" : ""}`}
-            onClick={() => setExtras(0)}
+            className="active-item"
           >
             our other experiences
           </li>
@@ -94,7 +81,7 @@ const Neoneon = () => {
             <div className="related-copy">
               <h3>It's just (House of Dupree)</h3>
               <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-              <a href="#">
+              <a href="https://neoneon.one/space/">
                 <button className="transp-bg">Explore</button>
               </a>
             </div>
@@ -106,11 +93,11 @@ const Neoneon = () => {
               alt="neonPlatform hero"
             />
             <div className="related-copy">
-              <h3>Pier Children</h3>
-              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-              <a href="#">
+            <h3>Tropical Freeze</h3>
+              <h5>Andrey, Kelly, Jen, Ray and Sam celebrated another trip around the sun. David and Liz packed up for a new chapter in LA.</h5>
+              <Link to="/mrfingers">
                 <button className="transp-bg">Explore</button>
-              </a>
+              </Link>
             </div>
           </article>
         </div>

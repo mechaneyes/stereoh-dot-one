@@ -3,7 +3,7 @@ import "./EventInfo.scss";
 import { defaultValues } from "../../constants";
 import Button from "../Button/Button";
 
-const imgPath = process.env.PUBLIC_URL + "/assets/";
+// const imgPath = process.env.PUBLIC_URL + "/assets/";
 const defaultProps = {
   title: defaultValues.HERO_TITLE,
   body: defaultValues.BODY_LONG,

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
 // import HomeHero from "../../components/atoms/HomeHero/HomeHero";
-import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
-import { defaultValues } from "../../components/constants";
+// import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
+// import { defaultValues } from "../../components/constants";
 import "./Feedback.scss";
 
-const imgPath = process.env.PUBLIC_URL + "/assets/";
+// const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 export class Homepage extends Component {
   render() {
@@ -19,6 +19,7 @@ export class Homepage extends Component {
           frameBorder="0"
           marginHeight="0"
           marginWidth="0"
+          title="Feedback form for Stereoh website"
         >
           Loading…
         </iframe>

@@ -1,8 +1,16 @@
 nav.top-nav {
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
   height: 60px;
+  z-index: 3;
   border-bottom: 1px solid #00a1ff;
+  background: #001225;
+
+  * {
+    // z-index: 2;
+  }
 
   div {
     display: flex;

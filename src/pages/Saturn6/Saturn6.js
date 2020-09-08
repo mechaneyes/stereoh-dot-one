@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
 import HomeHero from "../../components/atoms/EventHero/EventHero";
 import Carousel from "../../components/atoms/Carousel/Carousel";
 import Button from "../../components/atoms/Button/Button";
-import relatedItems from "../../components/related-data";
-import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
 import "../../components/molecules/RelatedItems/RelatedItems.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,7 +11,6 @@ import "./Saturn6.scss";
 const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const Saturn6 = () => {
-  const [extras, setExtras] = useState(1);
 
   let caroElements = [
     {
@@ -41,20 +38,6 @@ const Saturn6 = () => {
       alt: "olafur eliasson 011",
     },
   ];
-
-  let shownItems = [];
-
-  if (extras === 0) {
-    shownItems = relatedItems.slice(0, 2);
-  } else if (extras === 1) {
-    shownItems = relatedItems.slice(3, 6);
-  } else if (extras === 2) {
-    shownItems = relatedItems.slice(6, 9);
-  }
-
-  const relatedList = shownItems.map((rel, i) => (
-    <RelatedItem key={i} {...rel} />
-  ));
 
   return (
     <div className="single saturn6">
@@ -95,40 +78,24 @@ const Saturn6 = () => {
       <nav className="related-nav">
         <ul>
           <li
-            className={`${extras === 1 ? "active-item" : ""}`}
-            onClick={() => setExtras(1)}
+            className="active-item"
           >
             our other experiences
           </li>
-          {/* <li
-            className={`${extras === 0 ? "active-item" : ""}`}
-            onClick={() => setExtras(0)}
-          >
-            you may also like
-          </li>
-          <li
-            className={`${extras === 2 ? "active-item" : ""}`}
-            onClick={() => setExtras(2)}
-          >
-            details
-          </li> */}
         </ul>
       </nav>
-      {/* <section className="related-content">
-        <div className="related-grid">{relatedList}</div>
-      </section> */}
       <section className="related-content">
         <div className="related-grid">
           <article className="one-related-item">
             <img
               className="home-hero-img"
-              src="/assets/jenAndMe.png"
+              src="/assets/neoneon_001.jpg"
               alt="neonPlatform hero"
             />
             <div className="related-copy">
-              <h3>It's just (House of Dupree)</h3>
-              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-              <a href="#">
+              <h3>neoneon</h3>
+              <h5>Our first event. Feels like forever ago</h5>
+              <a href="https://hubs.mozilla.com/f6HM9iE/neoneon">
                 <button className="transp-bg">Explore</button>
               </a>
             </div>
@@ -140,9 +107,9 @@ const Saturn6 = () => {
               alt="neonPlatform hero"
             />
             <div className="related-copy">
-              <h3>Pier Children</h3>
-              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-              <a href="#">
+            <h3>Tropical Freeze</h3>
+              <h5>Andrey, Kelly, Jen, Ray and Sam are all celebrating another trip around the sun. David and Liz are packing up soon for a new chapter in LA</h5>
+              <a href="https://space.neoneon.one/VY3mMZa/tropical-freeze">
                 <button className="transp-bg">Explore</button>
               </a>
             </div>

@@ -6,7 +6,7 @@ import "./Button.scss";
 let Button = (props) => {
   return (
     <a
-      href={props.btnUrl == "feedback" ? "feedback" : props.btnUrl}
+      href={props.btnUrl === "feedback" ? "feedback" : props.btnUrl}
       target={props.targetBlank ? "_blank" : "_self"}
     >
       <button

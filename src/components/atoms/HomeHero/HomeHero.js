@@ -11,7 +11,7 @@ const defaultProps = {
 };
 
 const HomeHero = (props) => {
-  const { homeHeroImg, headline, exploreCta, enterUrl, showFeedback } = props;
+  const { homeHeroImg, headline, enterUrl, showFeedback } = props;
 
   console.log('enterUrl', enterUrl)
 

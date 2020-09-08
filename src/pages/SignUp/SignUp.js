@@ -1,35 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 
-import Button from "../../components/atoms/Button/Button";
-import relatedItems from "../../components/related-data";
-import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
 import "./SignUp.scss";
 
-const imgPath = process.env.PUBLIC_URL + "/assets/";
+// const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const SignUp = () => {
-  const [extras, setExtras] = useState(0);
-
-  let shownItems = [];
-
-  if (extras === 0) {
-    shownItems = relatedItems.slice(0, 2);
-    // } else if (extras === 1) {
-    //   shownItems = relatedItems.slice(3, 6);
-    // } else if (extras === 2) {
-    //   shownItems = relatedItems.slice(6, 9);
-  }
-
-  const relatedList = shownItems.map((rel, i) => (
-    <RelatedItem key={i} {...rel} />
-  ));
 
   return (
     <div className="single signUp">
       <section className="body-copy">
-        <div class="home-hero-content">
+        <div className="home-hero-content">
           <h1>Let's Stay In Touch!</h1>
-          <p class="home-hero-subheadline">
+          <p className="home-hero-subheadline">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             nunc dolor, porttitor non felis et, auctor elementum dolor.
           </p>
@@ -39,7 +21,7 @@ const SignUp = () => {
               method="post"
               id="mc-embedded-subscribe-form"
               name="mc-embedded-subscribe-form"
-              class="validate"
+              className="validate"
               target="_blank"
               noValidate
             >
@@ -78,55 +60,54 @@ const SignUp = () => {
       <nav className="related-nav">
         <ul>
           <li
-            className={`${extras === 0 ? "active-item" : ""}`}
-            onClick={() => setExtras(0)}
+            className="active-item"
           >
             our experiences
           </li>
         </ul>
       </nav>
 
-      <section class="related-content">
-        <div class="related-grid">
-          <article class="one-related-item">
+      <section className="related-content">
+        <div className="related-grid">
+          <article className="one-related-item">
             <img
-              class="home-hero-img"
+              className="home-hero-img"
               src="/assets/jenAndMe.png"
               alt="neonPlatform hero"
             />
-            <div class="related-copy">
+            <div className="related-copy">
               <h3>It's just (House of Dupree)</h3>
               <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
               <a href="#">
-                <button class="transp-bg">Explore</button>
+                <button className="transp-bg">Explore</button>
               </a>
             </div>
           </article>
-          <article class="one-related-item">
+          <article className="one-related-item">
             <img
-              class="home-hero-img"
+              className="home-hero-img"
               src="/assets/tropicalFreeze_066.png"
               alt="neonPlatform hero"
             />
-            <div class="related-copy">
+            <div className="related-copy">
               <h3>Pier Children</h3>
               <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
               <a href="#">
-                <button class="transp-bg">Explore</button>
+                <button className="transp-bg">Explore</button>
               </a>
             </div>
           </article>
-          <article class="one-related-item">
+          <article className="one-related-item">
             <img
-              class="home-hero-img"
+              className="home-hero-img"
               src="/assets/jenAndMe.png"
               alt="neonPlatform hero"
             />
-            <div class="related-copy">
+            <div className="related-copy">
               <h3>It's just (House of Dupree)</h3>
               <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
               <a href="#">
-                <button class="transp-bg">Explore</button>
+                <button className="transp-bg">Explore</button>
               </a>
             </div>
           </article>
