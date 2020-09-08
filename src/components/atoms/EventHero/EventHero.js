@@ -13,7 +13,7 @@ const defaultProps = {
 const EventHero = (props) => {
   const { homeHeroImg, headline, enterUrl } = props;
 
-  console.log('enterUrl', enterUrl)
+  console.log("enterUrl", enterUrl);
 
   return (
     <section className="homepage-hero">
@@ -34,7 +34,15 @@ const EventHero = (props) => {
         )}
         <p className="home-hero-subheadline">{defaultProps.subhead}</p>
       </div>
-      <div className="gradient"></div>
+      <div className="gradient">
+        <div className="gradient">
+          <div class="scroll-down">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

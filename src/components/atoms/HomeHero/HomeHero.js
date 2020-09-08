@@ -31,7 +31,7 @@ const HomeHero = (props) => {
           />
         )}
         {/* <img className="neoneon-logo" src={imgPath + "neonTron.png"} alt="neoneon logo" /> */}
-        <h3>Welcome to the launch of Stereoh!</h3>
+        <h3>Welcome to Stereoh 0.1.0!</h3>
         <p className="home-hero-subheadline">
           Stereoh is a content platform making hosting and attending virtual
           shows in social 3D environments easy, cost-effective, and accessible.
@@ -39,17 +39,19 @@ const HomeHero = (props) => {
         <p className="home-hero-subheadline">
           Have a look around, please give us feedback about the site and
           experiences using the link up top add your email to our list so we can
-          keep you informed.
+          keep you in the loop.
         </p>
         <p className="home-hero-subheadline">
-          Our most recent experience is Saturn 6. Give it a spin.
+          Our most recent experience is Saturn 6. Most of us will be in there
+          this evening. Give it a spin.
         </p>
       </div>
-      <div className="gradient"></div>
-      <div class="scroll-down">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div className="gradient">
+        <div class="scroll-down">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </section>
   );

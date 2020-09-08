@@ -18,12 +18,6 @@ const MrFingers = () => {
     <div className="single mr-fingers">
       <GradientHero />
 
-      <div class="scroll-down">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
       <nav className="related-nav">
         <ul>
           <li className="active-item">our other spaces</li>

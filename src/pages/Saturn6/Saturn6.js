@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import HomeHero from "../../components/atoms/EventHero/EventHero";
+import EventHero from "../../components/atoms/EventHero/EventHero";
 import Carousel from "../../components/atoms/Carousel/Carousel";
 import Button from "../../components/atoms/Button/Button";
 import "../../components/molecules/RelatedItems/RelatedItems.scss";
@@ -43,7 +43,7 @@ const Saturn6 = () => {
 
   return (
     <div className="single saturn6">
-      <HomeHero
+      <EventHero
         homeHeroImg={imgPath + "cybotron_0_1_0.jpg"}
         headline="Saturn 6"
         showFeedback={false}
@@ -75,12 +75,6 @@ const Saturn6 = () => {
           <Carousel items={caroElements} />
         </div>
       </section>
-      
-      <div class="scroll-down">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
 
       <nav className="related-nav">
         <ul>

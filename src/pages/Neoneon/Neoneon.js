@@ -32,12 +32,6 @@ const Neoneon = () => {
         headline="neoneon"
         showFeedback={false}
       />
-      
-      <div class="scroll-down">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
 
       <PullImgLeft {...quoteOne} />
 
