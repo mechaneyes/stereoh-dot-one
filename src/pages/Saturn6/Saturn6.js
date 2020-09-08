@@ -90,6 +90,20 @@ const Saturn6 = () => {
           <article className="one-related-item">
             <img
               className="home-hero-img"
+              src="/assets/tropicalFreeze_014.png"
+              alt="neonPlatform hero"
+            />
+            <div className="related-copy">
+            <h3>Tropical Freeze</h3>
+              <h5>Birthdays and Going Aways</h5>
+              <Link to="/tropical-freeze">
+                <button className="transp-bg">Explore</button>
+                </Link>
+            </div>
+          </article>
+          <article className="one-related-item">
+            <img
+              className="home-hero-img"
               src="/assets/neoneon_001.jpg"
               alt="neonPlatform hero"
             />
@@ -99,20 +113,6 @@ const Saturn6 = () => {
               <Link to="/neoneon">
                 <button className="transp-bg">Explore</button>
               </Link>
-            </div>
-          </article>
-          <article className="one-related-item">
-            <img
-              className="home-hero-img"
-              src="/assets/tropicalFreeze_014.png"
-              alt="neonPlatform hero"
-            />
-            <div className="related-copy">
-            <h3>Tropical Freeze</h3>
-              <h5>Birthdays and Going Aways</h5>
-              <Link to="/mrfingers">
-                <button className="transp-bg">Explore</button>
-                </Link>
             </div>
           </article>
         </div>

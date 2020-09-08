@@ -61,15 +61,15 @@ export class Homepage extends Component {
             <article className="one-related-item">
               <img
                 className="home-hero-img"
-                src="/assets/cybotron_0_1_0.jpg"
+                src="/assets/saturn6_002.jpg"
                 alt="neonPlatform hero"
               />
               <div className="related-copy">
                 <h3>Saturn 6</h3>
                 <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-                <a href="#">
+                <Link to="/saturn6">
                   <button className="transp-bg">Explore</button>
-                </a>
+                </Link>
               </div>
             </article>
             <article className="one-related-item">
@@ -81,7 +81,7 @@ export class Homepage extends Component {
               <div className="related-copy">
                 <h3>Tropical Freeze</h3>
                 <h5>Birthdays and Going Aways</h5>
-                <Link to="/mrfingers">
+                <Link to="/tropical-freeze">
                   <button className="transp-bg">Explore</button>
                 </Link>
               </div>

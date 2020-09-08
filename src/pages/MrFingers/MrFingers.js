@@ -28,7 +28,7 @@ const MrFingers = () => {
           <article className="one-related-item">
             <img
               className="home-hero-img"
-              src="/assets/cybotron_0_1_0.jpg"
+              src="/assets/saturn6_002.jpg"
               alt="neonPlatform hero"
             />
             <div className="related-copy">
