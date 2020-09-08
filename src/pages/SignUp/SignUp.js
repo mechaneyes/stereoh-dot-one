@@ -1,11 +1,12 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import "./SignUp.scss";
 
 // const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const SignUp = () => {
-
   return (
     <div className="single signUp">
       <section className="body-copy">
@@ -28,14 +29,14 @@ const SignUp = () => {
               <div id="mc_embed_signup_scroll">
                 <input
                   type="email"
-                //   value=""
+                  //   value=""
                   name="EMAIL"
                   className="email"
                   id="mce-EMAIL"
                   placeholder="email address"
                   required
                 />
-                <div className='absStyle' aria-hidden="true">
+                <div className="absStyle" aria-hidden="true">
                   <input
                     type="text"
                     name="b_55b1042094d7ceee5fdf20bf9_996675cb7c"
@@ -59,11 +60,7 @@ const SignUp = () => {
 
       <nav className="related-nav">
         <ul>
-          <li
-            className="active-item"
-          >
-            our experiences
-          </li>
+          <li className="active-item">our experiences</li>
         </ul>
       </nav>
 
@@ -72,43 +69,43 @@ const SignUp = () => {
           <article className="one-related-item">
             <img
               className="home-hero-img"
-              src="/assets/jenAndMe.png"
+              src="/assets/saturn6_002.jpg"
               alt="neonPlatform hero"
             />
             <div className="related-copy">
-              <h3>It's just (House of Dupree)</h3>
+              <h3>Saturn 6</h3>
               <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-              <a href="#">
+              <Link to="/saturn6">
                 <button className="transp-bg">Explore</button>
-              </a>
+              </Link>
             </div>
           </article>
           <article className="one-related-item">
             <img
               className="home-hero-img"
-              src="/assets/tropicalFreeze_066.png"
+              src="/assets/tropicalFreeze_014.png"
               alt="neonPlatform hero"
             />
             <div className="related-copy">
-              <h3>Pier Children</h3>
-              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-              <a href="#">
+              <h3>Tropical Freeze</h3>
+              <h5>Birthdays and Going Aways</h5>
+              <Link to="/tropical-freeze">
                 <button className="transp-bg">Explore</button>
-              </a>
+              </Link>
             </div>
           </article>
           <article className="one-related-item">
             <img
               className="home-hero-img"
-              src="/assets/jenAndMe.png"
+              src="/assets/neoneon_001.jpg"
               alt="neonPlatform hero"
             />
             <div className="related-copy">
-              <h3>It's just (House of Dupree)</h3>
-              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-              <a href="#">
+              <h3>neoneon</h3>
+              <h5>Our first event. Feels like forever ago</h5>
+              <Link to="/neoneon">
                 <button className="transp-bg">Explore</button>
-              </a>
+              </Link>
             </div>
           </article>
         </div>

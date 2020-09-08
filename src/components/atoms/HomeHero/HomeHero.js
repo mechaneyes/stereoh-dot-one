@@ -31,27 +31,26 @@ const HomeHero = (props) => {
           />
         )}
         {/* <img className="neoneon-logo" src={imgPath + "neonTron.png"} alt="neoneon logo" /> */}
+        <h3>Welcome to the launch of Stereoh!</h3>
         <p className="home-hero-subheadline">
-          Stereoh is empowering musical creators and their fans to connect
-          through interactive, social, easy-to-host 3D shows accessible from a
-          browser window of any recent internet-connected device. Our platform
-          makes it easy to monetize your performance for a widest audience
-          possible, and to find like-minded music fans from around the world.
+          Stereoh is a content platform making hosting and attending virtual
+          shows in social 3D environments easy, cost-effective, and accessible.
         </p>
-        {/* <div className="home-hero-ctas">
-          {enterUrl ? (
-            <Button btnUrl={enterUrl} btnTxt="enter space one" />
-          ) : (
-            <button className="transp-bg">explore {headline}</button>
-          )}
-          {showFeedback ? (
-            <button className="transp-bg">Feedback</button>
-          ) : (
-            <></>
-          )}
-        </div> */}
+        <p className="home-hero-subheadline">
+          Have a look around, please give us feedback about the site and
+          experiences using the link up top add your email to our list so we can
+          keep you informed.
+        </p>
+        <p className="home-hero-subheadline">
+          Our most recent experience is Saturn 6. Give it a spin.
+        </p>
       </div>
       <div className="gradient"></div>
+      <div class="scroll-down">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </section>
   );
 };

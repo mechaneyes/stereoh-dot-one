@@ -28,10 +28,16 @@ const Neoneon = () => {
   return (
     <div className="single anima">
       <EventHero
-        homeHeroImg={imgPath + "anima_iki_03.jpg"}
+        homeHeroImg={imgPath + "neoneon_001.jpg"}
         headline="neoneon"
         showFeedback={false}
       />
+      
+      <div class="scroll-down">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
       <PullImgLeft {...quoteOne} />
 

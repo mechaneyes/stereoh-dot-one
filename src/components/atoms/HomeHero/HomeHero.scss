@@ -16,6 +16,10 @@
       rgba(0, 18, 37, 1) 0%,
       rgba(0, 0, 0, 0) 55%
     );
+
+    + .scroll-down {
+      top: calc(100vh - 150px);
+    }
   }
 
   .home-hero-img {

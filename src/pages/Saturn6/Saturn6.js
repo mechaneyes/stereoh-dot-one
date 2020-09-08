@@ -75,6 +75,12 @@ const Saturn6 = () => {
           <Carousel items={caroElements} />
         </div>
       </section>
+      
+      <div class="scroll-down">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
       <nav className="related-nav">
         <ul>
