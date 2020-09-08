@@ -20,27 +20,18 @@ const EventInfo = (props) => {
   // } = props
   return (
     <div className="event-info">
-      {/* <h1 className="event-name">{defaultProps.title}</h1> */}
-      {/* <img
-        className="event-logo"
-        src={imgPath + "wipeout.png"}
-        alt="single event page hero"
-      /> */}
-      <h1>Mr Fingers</h1>
-      <h2 className="event-name">Lorem ipsum dolor sit amet, consectetur</h2>
+      <h1>Tropical Freeze</h1>
+      <h2 className="event-name">Birthdays and Going Aways</h2>
       <div className="event-body">
-        <p>{defaultProps.body}</p>
-        <p>{defaultProps.body}</p>
-        <p>{defaultProps.body}</p>
+        <p>Andrey, Kelly, Jen, Ray and Sam all celebrated another trip around the sun. David and Liz packed up for a new chapter in LA</p>
         <p>{defaultProps.body}</p>
       </div>
       <div className="cta-container">
         <Button
           className="large-cta"
-          btnUrl="theLink"
-          btnTxt="enter mr fingers"
+          btnUrl="https://space.neoneon.one/VY3mMZa/tropical-freeze"
+          btnTxt="enter tropical freeze"
         />
-        <Button className="match-cta" btnUrl="feedback" btnTxt="feedback" />
       </div>
     </div>
   );

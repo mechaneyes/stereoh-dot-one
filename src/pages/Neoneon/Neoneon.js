@@ -57,7 +57,6 @@ const Neoneon = () => {
           create an immersive and captivating experience.
         </p>
         <Button btnUrl="https://hubs.mozilla.com/f6HM9iE/neoneon" btnTxt="enter neoneon" />
-        <Button btnUrl="feedback" btnTxt="feedback" />
       </section>
 
       <nav className="related-nav">
@@ -75,15 +74,15 @@ const Neoneon = () => {
           <article className="one-related-item">
             <img
               className="home-hero-img"
-              src="/assets/jenAndMe.png"
+              src="/assets/neoneon_001.jpg"
               alt="neonPlatform hero"
             />
             <div className="related-copy">
-              <h3>It's just (House of Dupree)</h3>
-              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-              <a href="https://neoneon.one/space/">
+              <h3>neoneon</h3>
+              <h5>Our first event. Feels like forever ago</h5>
+              <Link to="/neoneon">
                 <button className="transp-bg">Explore</button>
-              </a>
+              </Link>
             </div>
           </article>
           <article className="one-related-item">
@@ -94,10 +93,10 @@ const Neoneon = () => {
             />
             <div className="related-copy">
             <h3>Tropical Freeze</h3>
-              <h5>Andrey, Kelly, Jen, Ray and Sam celebrated another trip around the sun. David and Liz packed up for a new chapter in LA.</h5>
+              <h5>Birthdays and Going Aways</h5>
               <Link to="/mrfingers">
                 <button className="transp-bg">Explore</button>
-              </Link>
+                </Link>
             </div>
           </article>
         </div>

@@ -20,7 +20,7 @@ const MenuItem = (href) => {
             <Link to="/saturn6">saturn&nbsp;6</Link>
           </li>
           <li className="menu-item">
-            <Link to="/mrfingers">mrfingers</Link>
+            <Link to="/mrfingers">tropical freeze</Link>
           </li>
           <li className="menu-item">
             <Link to="/neoneon">Neoneon</Link>

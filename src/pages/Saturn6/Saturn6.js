@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import HomeHero from "../../components/atoms/EventHero/EventHero";
 import Carousel from "../../components/atoms/Carousel/Carousel";
 import Button from "../../components/atoms/Button/Button";
@@ -65,7 +67,6 @@ const Saturn6 = () => {
         </p>
         <div className="ctas">
           <Button btnUrl="//space.neoneon.one/aMggN3t/striking-mature-soiree" btnTxt="enter saturn 6" targetBlank="true" />
-          <Button btnUrl="feedback" btnTxt="feedback" />
         </div>
       </section>
 
@@ -95,9 +96,9 @@ const Saturn6 = () => {
             <div className="related-copy">
               <h3>neoneon</h3>
               <h5>Our first event. Feels like forever ago</h5>
-              <a href="https://hubs.mozilla.com/f6HM9iE/neoneon">
+              <Link to="/neoneon">
                 <button className="transp-bg">Explore</button>
-              </a>
+              </Link>
             </div>
           </article>
           <article className="one-related-item">
@@ -108,10 +109,10 @@ const Saturn6 = () => {
             />
             <div className="related-copy">
             <h3>Tropical Freeze</h3>
-              <h5>Andrey, Kelly, Jen, Ray and Sam are all celebrating another trip around the sun. David and Liz are packing up soon for a new chapter in LA</h5>
-              <a href="https://space.neoneon.one/VY3mMZa/tropical-freeze">
+              <h5>Birthdays and Going Aways</h5>
+              <Link to="/mrfingers">
                 <button className="transp-bg">Explore</button>
-              </a>
+                </Link>
             </div>
           </article>
         </div>

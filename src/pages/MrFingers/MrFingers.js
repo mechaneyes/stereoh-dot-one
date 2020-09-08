@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import GradientHero from "../../components/atoms/GradientHero/GradientHero";
 import { defaultValues } from "../../components/constants";
 import "./MrFingers.scss";
@@ -31,15 +33,15 @@ const MrFingers = () => {
           <article className="one-related-item">
             <img
               className="home-hero-img"
-              src="/assets/jenAndMe.png"
+              src="/assets/neoneon_001.jpg"
               alt="neonPlatform hero"
             />
             <div className="related-copy">
-              <h3>It's just (House of Dupree)</h3>
-              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-              <a href="#">
+              <h3>neoneon</h3>
+              <h5>Our first event. Feels like forever ago</h5>
+              <Link to="/neoneon">
                 <button className="transp-bg">Explore</button>
-              </a>
+              </Link>
             </div>
           </article>
           <article className="one-related-item">
@@ -49,11 +51,11 @@ const MrFingers = () => {
               alt="neonPlatform hero"
             />
             <div className="related-copy">
-              <h3>Pier Children</h3>
-              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-              <a href="#">
+            <h3>Tropical Freeze</h3>
+              <h5>Birthdays and Going Aways</h5>
+              <Link to="/mrfingers">
                 <button className="transp-bg">Explore</button>
-              </a>
+                </Link>
             </div>
           </article>
         </div>
