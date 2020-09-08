@@ -226,6 +226,23 @@ body {
     align-items: center;
   }
 
+  .one-related-item {
+    display: flex;
+    flex-direction: column;
+    min-height: 340px;
+    margin-bottom: 0;
+
+    .related-copy {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      
+      h5 {
+        flex: 1 0 auto;
+      }
+    }
+  }
+
   //   @import "buttons";
   @import "breakpoints";
   @import "forms";

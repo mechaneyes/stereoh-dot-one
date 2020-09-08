@@ -44,7 +44,7 @@ const Saturn6 = () => {
   return (
     <div className="single saturn6">
       <EventHero
-        homeHeroImg={imgPath + "cybotron_0_1_0.jpg"}
+        homeHeroImg={imgPath + "saturn6_002.jpg"}
         headline="Saturn 6"
         showFeedback={false}
       />

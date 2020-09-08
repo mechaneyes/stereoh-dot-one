@@ -4,6 +4,7 @@
   .homepage-hero {
     h1 {
       font-family: changeling-neo-stencil, sans-serif;
+      color: #00a1ff;
     }
   }
 
@@ -19,6 +20,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+    display: flex;
   }
 
   .one-related-item:first-of-type {

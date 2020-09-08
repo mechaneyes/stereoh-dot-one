@@ -1,23 +1,18 @@
 import React from "react";
 
-import { defaultValues } from "../../constants";
-import Button from "../Button/Button";
 import "./HomeHero.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
-const defaultProps = {
-  title: defaultValues.HERO_TITLE,
-  subhead: defaultValues.SUBHEADLINE,
-};
 
 const HomeHero = (props) => {
-  const { homeHeroImg, headline, enterUrl, showFeedback } = props;
+  const {headline} = props;
 
   return (
     <section className="homepage-hero">
       <img
         className="home-hero-img"
-        src={homeHeroImg}
+        // src={homeHeroImg}
+        src={imgPath + "cybotron_0_1_0.jpg"}
         alt="neonPlatform hero"
       />
       <div className="home-hero-content">
@@ -38,16 +33,16 @@ const HomeHero = (props) => {
         </p>
         <p className="home-hero-subheadline">
           Have a look around, please give us feedback about the site and
-          experiences using the link up top add your email to our list so we can
+          experiences using the link up top and add your email to our list so we can
           keep you in the loop.
         </p>
         <p className="home-hero-subheadline">
           Our most recent experience is Saturn 6. Most of us will be in there
-          this evening. Give it a spin.
+          this evening. Meet us inside.
         </p>
       </div>
       <div className="gradient">
-        <div class="scroll-down">
+        <div className="scroll-down">
           <span></span>
           <span></span>
           <span></span>

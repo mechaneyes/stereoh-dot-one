@@ -35,12 +35,10 @@ const EventHero = (props) => {
         <p className="home-hero-subheadline">{defaultProps.subhead}</p>
       </div>
       <div className="gradient">
-        <div className="gradient">
-          <div class="scroll-down">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+        <div class="scroll-down">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </section>
