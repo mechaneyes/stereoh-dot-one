@@ -44,7 +44,7 @@ const Saturn6 = () => {
   return (
     <div className="single saturn6">
       <HomeHero
-        homeHeroImg={imgPath + "eliasson_001.jpg"}
+        homeHeroImg={imgPath + "cybotron_0_1_0.jpg"}
         headline="Saturn 6"
         showFeedback={false}
       />
@@ -104,7 +104,7 @@ const Saturn6 = () => {
           <article className="one-related-item">
             <img
               className="home-hero-img"
-              src="/assets/tropicalFreeze_066.png"
+              src="/assets/tropicalFreeze_014.png"
               alt="neonPlatform hero"
             />
             <div className="related-copy">

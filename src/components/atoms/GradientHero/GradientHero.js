@@ -9,7 +9,8 @@ const imgPath = process.env.PUBLIC_URL + "/assets/";
 const GradientHero = () => {
     return (
         <article className="gradient-hero">
-            <img className="hero-image" src={imgPath + "mccall.jpg"} alt="single event page hero" />
+            <img className="hero-image hero-shifted" src={imgPath + "tropicalFreeze_014.png"} alt="single event page hero" />
+            <img className="hero-image" src={imgPath + "tropicalFreeze_014.png"} alt="single event page hero" />
             <EventInfo />
             <div className="gradient"></div>
         </article>

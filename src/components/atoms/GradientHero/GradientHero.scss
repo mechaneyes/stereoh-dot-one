@@ -1,11 +1,18 @@
 @import '../../../styles/breakpoints';
 
+.single.mr-fingers {
+  overflow: hidden;
+}
+
 .gradient-hero {
   position: relative;
 
   .hero-image {
       width: 100%;
-      // transform: scaleX(-1);
+      &.hero-shifted {
+        position: absolute;
+        left: 400px;
+      }
   }
 
   .event-info {

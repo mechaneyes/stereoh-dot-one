@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import { Link } from "react-router-dom";
+
 import HomeHero from "../../components/atoms/HomeHero/HomeHero";
 import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
 import { defaultValues } from "../../components/constants";
@@ -42,18 +44,63 @@ export class Homepage extends Component {
     return (
       <div className="homepage">
         <HomeHero
-          headline="saturn 6"
-          homeHeroImg={imgPath + "cybotron_0_1_0.jpg"}
-          exploreCta={true}
+          headline="stereoh"
+          homeHeroImg={imgPath + "eliasson_001.jpg"}
+          exploreCta={false}
           showFeedback={false}
         />
+
+        <nav className="related-nav">
+          <ul>
+            <li className="active-item">our experiences</li>
+          </ul>
+        </nav>
+
         <section className="related-content">
-          <nav className="related-nav">
-            <ul>
-              <li className="active-item">our other spaces</li>
-            </ul>
-          </nav>
-          <div className="related-grid">{relatedList}</div>
+          <div className="related-grid">
+            <article className="one-related-item">
+              <img
+                className="home-hero-img"
+                src="/assets/cybotron_0_1_0.jpg"
+                alt="neonPlatform hero"
+              />
+              <div className="related-copy">
+                <h3>Saturn 6</h3>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                <a href="#">
+                  <button className="transp-bg">Explore</button>
+                </a>
+              </div>
+            </article>
+            <article className="one-related-item">
+              <img
+                className="home-hero-img"
+                src="/assets/tropicalFreeze_014.png"
+                alt="neonPlatform hero"
+              />
+              <div className="related-copy">
+                <h3>Tropical Freeze</h3>
+                <h5>Birthdays and Going Aways</h5>
+                <Link to="/mrfingers">
+                  <button className="transp-bg">Explore</button>
+                </Link>
+              </div>
+            </article>
+            <article className="one-related-item">
+              <img
+                className="home-hero-img"
+                src="/assets/neoneon_001.jpg"
+                alt="neonPlatform hero"
+              />
+              <div className="related-copy">
+                <h3>neoneon</h3>
+                <h5>Our first event. Feels like forever ago</h5>
+                <Link to="/neoneon">
+                  <button className="transp-bg">Explore</button>
+                </Link>
+              </div>
+            </article>
+          </div>
         </section>
       </div>
     );
