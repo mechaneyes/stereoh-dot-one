@@ -12,6 +12,10 @@
       &.hero-shifted {
         position: absolute;
         left: 400px;
+
+        @include bp(vert11) {
+          left: 250px;
+        }
       }
   }
 
@@ -28,10 +32,10 @@
 
     @include bp(vert11) {
       bottom: 7%;
-      width: 52%;
+      width: 66%;
 
       p:nth-child(1):after {
-        content: 'read more';
+        // content: 'read more';
         margin-left: 20px;
         font-size: 16px;
         text-transform: uppercase;
@@ -47,7 +51,7 @@
       }
 
       button {
-        width: 125px;
+        // width: 125px;
         height: 35px;
       }
     }
@@ -66,9 +70,8 @@
       #287a73 70.28%
     );
 
-    // .scroll-down {
-    //   top: auto;
-    //   bottom: 200px;
-    // }
+    @include bp(vert11) {
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0) -20.5%, #287a73 50.28%);
+    }
   }
 }

@@ -229,7 +229,7 @@ body {
   .one-related-item {
     display: flex;
     flex-direction: column;
-    min-height: 340px;
+    min-height: 300px;
     margin-bottom: 0;
 
     .related-copy {
@@ -240,6 +240,20 @@ body {
       h5 {
         flex: 1 0 auto;
       }
+    }
+  }
+
+  .saturn6 {
+    .copy-top {
+      @include bp(vert11) {
+        width: 79%;
+      }
+    }
+  }
+
+  @include bp(vert11) {
+    .scroll-down {
+      display: none;
     }
   }
 

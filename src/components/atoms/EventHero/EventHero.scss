@@ -42,6 +42,10 @@
       bottom: 7%;
       width: 40%;
     }
+
+    @include bp(vert11) {
+      width: 66%;
+    }
   }
 
   h1 {
