@@ -12,7 +12,7 @@ const RelatedItems = (props) => {
             <article className={`one-related-item ${hide === "saturn6" ? "hide-me" : ""}`}>
               <img
                 className="home-hero-img"
-                src="/assets/saturn6_002.jpg"
+                src="/assets/saturn6_015.jpg"
                 alt="neonPlatform hero"
               />
               <div className="related-copy">

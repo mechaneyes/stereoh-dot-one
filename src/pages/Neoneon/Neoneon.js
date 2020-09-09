@@ -10,16 +10,15 @@ import "./Neoneon.scss";
 const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const Neoneon = () => {
-
   const quoteOne = {
-    pullImg: `${imgPath}anima_iki_05.jpg`,
+    pullImg: `${imgPath}neoneon_002.jpg`,
     pullTitle: "Spherical Projection",
     pullPara:
       "developed to explore the relationship between itself and its surroundings through the use of movement, texture, light and sound",
   };
 
   const quoteTwo = {
-    pullImg: `${imgPath}anima_iki_09.jpg`,
+    pullImg: `${imgPath}neoneon_004.jpg`,
     pullTitle: "Fluid Shimmering Patterns",
     pullPara:
       "Through this process of refining behavior and visual complexity, »ANIMA« becomes life-like and impressive.",
@@ -56,16 +55,16 @@ const Neoneon = () => {
           orb and soundscape combine to perpetually influence each other and
           create an immersive and captivating experience.
         </p>
-        <Button btnUrl="https://hubs.mozilla.com/f6HM9iE/neoneon" btnTxt="enter neoneon" />
+        <Button
+          btnUrl="https://hubs.mozilla.com/f6HM9iE/neoneon"
+          btnTxt="enter neoneon"
+          targetBlank="true"
+        />
       </section>
 
       <nav className="related-nav">
         <ul>
-          <li
-            className="active-item"
-          >
-            our other experiences
-          </li>
+          <li className="active-item">our other experiences</li>
         </ul>
       </nav>
 

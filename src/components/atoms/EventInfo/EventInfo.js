@@ -31,6 +31,7 @@ const EventInfo = (props) => {
           className="large-cta"
           btnUrl="https://space.neoneon.one/VY3mMZa/tropical-freeze"
           btnTxt="enter tropical freeze"
+          targetBlank="true"
         />
       </div>
     </div>

@@ -11,9 +11,7 @@ const defaultProps = {
 };
 
 const EventHero = (props) => {
-  const { homeHeroImg, headline, enterUrl } = props;
-
-  console.log("enterUrl", enterUrl);
+  const { homeHeroImg, headline } = props;
 
   return (
     <section className="event-hero">
