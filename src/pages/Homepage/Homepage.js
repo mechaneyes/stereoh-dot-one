@@ -10,6 +10,8 @@ const imgPath = process.env.PUBLIC_URL + "/assets/";
 export class Homepage extends Component {
 
   render() {
+    document.title = "Stereoh";
+
     return (
       <div className="homepage">
         <HomeHero

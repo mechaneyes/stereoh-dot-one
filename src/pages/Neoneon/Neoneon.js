@@ -24,6 +24,8 @@ const Neoneon = () => {
       "Through this process of refining behavior and visual complexity, »ANIMA« becomes life-like and impressive.",
   };
 
+  document.title = "Stereoh | neoneon";
+
   return (
     <div className="single anima">
       <EventHero

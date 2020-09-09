@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+import ScrollToTop from "./components/atoms/ScrollToTop/ScrollToTop";
 import TopNav from "./components/molecules/TopNav/TopNav";
 import Homepage from "./pages/Homepage/Homepage";
 import MrFingers from "./pages/MrFingers/MrFingers";
@@ -19,6 +20,7 @@ export class App extends Component {
       <Router>
         <div className="App">
           {/* <AnonymousID /> */}
+          <ScrollToTop />
           <TopNav />
           <Switch>
             <Route exact path="/" component={Homepage} />

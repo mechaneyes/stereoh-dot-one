@@ -7,6 +7,9 @@ import "./SignUp.scss";
 // const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const SignUp = () => {
+
+  document.title = "Stereoh | Sign Up";
+
   return (
     <div className="single signUp">
       <section className="body-copy">

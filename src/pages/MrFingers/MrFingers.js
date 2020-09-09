@@ -6,6 +6,9 @@ import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
 import "./MrFingers.scss";
 
 const MrFingers = () => {
+  
+  document.title = "Stereoh | Tropical Freeze";
+
   return (
     <div className="single mr-fingers">
       <GradientHero />

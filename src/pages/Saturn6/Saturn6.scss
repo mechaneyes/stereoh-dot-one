@@ -95,7 +95,9 @@
   .slick-next:before {
     font-family: din-2014, sans-serif;
     font-size: 60px;
-    color: #001225;
+    color: white;
+    color: #00a1ff;
+    mix-blend-mode: exclusion;
   }
 
   .slick-prev:before {

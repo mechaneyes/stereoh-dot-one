@@ -7,6 +7,7 @@ import "./Feedback.scss";
 
 export class Homepage extends Component {
   render() {
+    document.title = "Stereoh | Feedback";
     return (
       <div className="feedback">
         <iframe

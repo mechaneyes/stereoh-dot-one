@@ -7,6 +7,9 @@ import "../../components/molecules/RelatedItems/RelatedItems.scss";
 import "./Saturn6.scss";
 
 const Saturn6 = () => {
+
+  document.title = "Stereoh | Saturn 6";
+
   return (
     <div className="single saturn6">
       <CarouselHero headline="Saturn 6" />
