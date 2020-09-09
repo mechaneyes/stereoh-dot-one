@@ -2,52 +2,17 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import EventHero from "../../components/atoms/EventHero/EventHero";
-import Carousel from "../../components/atoms/Carousel/Carousel";
+import CarouselHero from "../../components/atoms/CarouselHero/CarouselHero";
 import Button from "../../components/atoms/Button/Button";
 import "../../components/molecules/RelatedItems/RelatedItems.scss";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./Saturn6.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const Saturn6 = () => {
-
-  let caroElements = [
-    {
-      src: "eliasson_009.jpg",
-      alt: "olafur eliasson 009",
-    },
-    {
-      src: "eliasson_005.jpg",
-      alt: "olafur eliasson 005",
-    },
-    {
-      src: "eliasson_006.jpg",
-      alt: "olafur eliasson 006",
-    },
-    {
-      src: "eliasson_007.jpg",
-      alt: "olafur eliasson 007",
-    },
-    {
-      src: "eliasson_010.jpg",
-      alt: "olafur eliasson 010",
-    },
-    {
-      src: "eliasson_011.jpg",
-      alt: "olafur eliasson 011",
-    },
-  ];
-
   return (
     <div className="single saturn6">
-      <EventHero
-        homeHeroImg={imgPath + "saturn6_002.jpg"}
-        headline="Saturn 6"
-        showFeedback={false}
-      />
+      <CarouselHero headline="Saturn 6" />
 
       <section className="copy-top">
         <h2>Saturn 6 becomes a spherical projection. </h2>
@@ -66,23 +31,17 @@ const Saturn6 = () => {
           and resonated back as feedback to the atmosphere.
         </p>
         <div className="ctas">
-          <Button btnUrl="//space.neoneon.one/aMggN3t/striking-mature-soiree" btnTxt="enter saturn 6" targetBlank="true" />
-        </div>
-      </section>
-
-      <section className="image-carousel">
-        <div className="inner-carousel">
-          <Carousel items={caroElements} />
+          <Button
+            btnUrl="//space.neoneon.one/aMggN3t/striking-mature-soiree"
+            btnTxt="enter saturn 6"
+            targetBlank="true"
+          />
         </div>
       </section>
 
       <nav className="related-nav">
         <ul>
-          <li
-            className="active-item"
-          >
-            our other experiences
-          </li>
+          <li className="active-item">our other experiences</li>
         </ul>
       </nav>
       <section className="related-content">
@@ -94,11 +53,11 @@ const Saturn6 = () => {
               alt="neonPlatform hero"
             />
             <div className="related-copy">
-            <h3>Tropical Freeze</h3>
+              <h3>Tropical Freeze</h3>
               <h5>Birthdays and Going Aways</h5>
               <Link to="/tropical-freeze">
                 <button className="transp-bg">Explore</button>
-                </Link>
+              </Link>
             </div>
           </article>
           <article className="one-related-item">
