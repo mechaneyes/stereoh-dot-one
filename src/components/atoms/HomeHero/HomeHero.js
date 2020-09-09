@@ -37,8 +37,7 @@ const HomeHero = (props) => {
           keep you in the loop.
         </p>
         <p className="home-hero-subheadline">
-          Our most recent experience is Saturn 6. Most of us will be in there
-          this evening. Meet us inside.
+          Our most recent experience is Saturn 6. Meet us inside!
         </p>
       </div>
       <div className="gradient">

@@ -11,10 +11,6 @@
   }
 
   .related-content {
-    z-index: 3;
-    position: relative;
-    margin: -90px 30px 0;
-    margin: 0 30px;
     max-width: none;
   }
 
@@ -23,11 +19,5 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     display: flex;
-  }
-
-  .one-related-item:first-of-type {
-    .home-hero-img {
-      // transform: scaleX(-1);
-    }
   }
 }

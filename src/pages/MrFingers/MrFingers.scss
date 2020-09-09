@@ -60,4 +60,20 @@
       }
     }
   }
+
+  nav.related-nav {
+    position: absolute;
+    top: calc(100vh - 130px);
+    background: #001226;
+    position: relative;
+    top: auto;
+  }
+
+  .related-content {
+    position: absolute;
+    top: calc(100vh - 20px);
+    background: #001226;
+    position: relative;
+    top: auto;
+  }
 }

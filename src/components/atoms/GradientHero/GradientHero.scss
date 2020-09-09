@@ -27,7 +27,7 @@
 
     @include bp(land13) {
       bottom: 7%;
-      width: 46%;
+      width: 50%;
     }
 
     @include bp(vert11) {
@@ -69,6 +69,10 @@
       rgba(255, 255, 255, 0) -12.5%,
       #287a73 70.28%
     );
+
+    @include bp(land13) {
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0) -12.5%, #287a73 63.28%);
+    }
 
     @include bp(vert11) {
       background: linear-gradient(270deg, rgba(255, 255, 255, 0) -20.5%, #287a73 50.28%);
