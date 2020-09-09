@@ -18,7 +18,7 @@ const Carousel = (props) => {
   const slickSettings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 400,
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
