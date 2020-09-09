@@ -1,13 +1,10 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
-
 import CarouselHero from "../../components/atoms/CarouselHero/CarouselHero";
+import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
 import Button from "../../components/atoms/Button/Button";
 import "../../components/molecules/RelatedItems/RelatedItems.scss";
 import "./Saturn6.scss";
-
-const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const Saturn6 = () => {
   return (
@@ -44,38 +41,7 @@ const Saturn6 = () => {
           <li className="active-item">our other experiences</li>
         </ul>
       </nav>
-      <section className="related-content">
-        <div className="related-grid">
-          <article className="one-related-item">
-            <img
-              className="home-hero-img"
-              src="/assets/tropicalFreeze_014.png"
-              alt="neonPlatform hero"
-            />
-            <div className="related-copy">
-              <h3>Tropical Freeze</h3>
-              <h5>Birthdays and Going Aways</h5>
-              <Link to="/tropical-freeze">
-                <button className="transp-bg">Explore</button>
-              </Link>
-            </div>
-          </article>
-          <article className="one-related-item">
-            <img
-              className="home-hero-img"
-              src="/assets/neoneon_001.jpg"
-              alt="neonPlatform hero"
-            />
-            <div className="related-copy">
-              <h3>neoneon</h3>
-              <h5>Our first event. Feels like forever ago</h5>
-              <Link to="/neoneon">
-                <button className="transp-bg">Explore</button>
-              </Link>
-            </div>
-          </article>
-        </div>
-      </section>
+      <RelatedItems hide="saturn6" />
     </div>
   );
 };

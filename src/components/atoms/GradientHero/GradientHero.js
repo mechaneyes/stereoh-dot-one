@@ -21,7 +21,7 @@ const GradientHero = () => {
       />
       <EventInfo />
       <div className="gradient">
-        <div class="scroll-down">
+        <div className="scroll-down">
           <span></span>
           <span></span>
           <span></span>

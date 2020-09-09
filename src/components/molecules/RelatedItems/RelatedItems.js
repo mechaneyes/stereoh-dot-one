@@ -1,33 +1,58 @@
 import React from "react";
 
-const RelatedItems = () => {
+import { Link } from "react-router-dom";
+
+
+const RelatedItems = (props) => {
+  let { hide } = props
   return (
     <>
-      <nav className="related-nav">
-        <ul>
-          <li
-            className={`${extras === 0 ? "active-item" : ""}`}
-            onClick={() => setExtras(0)}
-          >
-            earlier
-          </li>
-          <li
-            className={`${extras === 1 ? "active-item" : ""}`}
-            onClick={() => setExtras(1)}
-          >
-            you may also like
-          </li>
-          {/* <li
-            className={`${extras === 2 ? "active-item" : ""}`}
-            onClick={() => setExtras(2)}
-          >
-            details
-          </li> */}
-        </ul>
-      </nav>
       <section className="related-content">
-        <div className="related-grid">{relatedList}</div>
-      </section>
+          <div className="related-grid">
+            <article className={`one-related-item ${hide === "saturn6" ? "hide-me" : ""}`}>
+              <img
+                className="home-hero-img"
+                src="/assets/saturn6_002.jpg"
+                alt="neonPlatform hero"
+              />
+              <div className="related-copy">
+                <h3>Saturn 6</h3>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                <Link to="/saturn6">
+                  <button className="transp-bg">Explore</button>
+                </Link>
+              </div>
+            </article>
+            <article className={`one-related-item ${hide === "tropical" ? "hide-me" : ""}`}>
+              <img
+                className="home-hero-img"
+                src="/assets/tropicalFreeze_014.png"
+                alt="neonPlatform hero"
+              />
+              <div className="related-copy">
+                <h3>Tropical Freeze</h3>
+                <h5>Birthdays and Going Aways</h5>
+                <Link to="/tropical-freeze">
+                  <button className="transp-bg">Explore</button>
+                </Link>
+              </div>
+            </article>
+            <article className={`one-related-item ${hide === "neoneon" ? "hide-me" : ""}`}>
+              <img
+                className="home-hero-img"
+                src="/assets/neoneon_001.jpg"
+                alt="neonPlatform hero"
+              />
+              <div className="related-copy">
+                <h3>neoneon</h3>
+                <h5>Our first event. Feels like forever ago</h5>
+                <Link to="/neoneon">
+                  <button className="transp-bg">Explore</button>
+                </Link>
+              </div>
+            </article>
+          </div>
+        </section>
     </>
   );
 };

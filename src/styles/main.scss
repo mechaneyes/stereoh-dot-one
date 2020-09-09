@@ -232,6 +232,10 @@ body {
     min-height: 300px;
     margin-bottom: 0;
 
+    &.hide-me {
+      display: none;
+    }
+
     .related-copy {
       display: flex;
       flex-direction: column;
