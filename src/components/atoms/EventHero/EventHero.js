@@ -1,14 +1,8 @@
 import React from "react";
 
-import { defaultValues } from "../../constants";
-// import Button from "../Button/Button";
 import "./EventHero.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
-const defaultProps = {
-  title: defaultValues.HERO_TITLE,
-  subhead: defaultValues.SUBHEADLINE,
-};
 
 const EventHero = (props) => {
   const { homeHeroImg, headline } = props;

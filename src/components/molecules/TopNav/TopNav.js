@@ -2,27 +2,44 @@
 // https://www.nts.live/shows/boom-bip/episodes/boom-bip-18th-may-2020
 
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import "./TopNav.scss"
 
 const MenuItem = (href) => {
-  // let { label, src, href, description } = props;
+  let location = useLocation();
+  // console.log(location.pathname);
+
+  let saturnActive
+  let tropicalActive
+  let basslineActive
+
+  switch(location.pathname) {
+    case "/saturn6":
+      saturnActive = true
+      break;
+    case '/tropical-freeze':
+      tropicalActive = true
+      break;
+    case '/bassline-basin':
+        basslineActive = true
+        break;
+    default:
+      // code block
+  } 
+
   return (
     <nav className="top-nav">
       <div className="top-nav-left">
       <Link to="/"><h2>Stereoh</h2></Link>
         <ul>
-          {/* <li className="menu-item">
-            <Link to="/">Home</Link>
-          </li> */}
-          <li className="menu-item">
+          <li className={`menu-item saturn6 ${saturnActive ? "active" : ""}`}>
             <Link to="/saturn6">saturn&nbsp;6</Link>
           </li>
-          <li className="menu-item">
+          <li className={`menu-item tropical-freeze ${tropicalActive ? "active" : ""}`}>
             <Link to="/tropical-freeze">tropical&nbsp;freeze</Link>
           </li>
-          <li className="menu-item">
+          <li className={`menu-item bassline-basin ${basslineActive ? "active" : ""}`}>
             <Link to="/bassline-basin">Bassline&nbsp;Basin</Link>
           </li>
           {/* <li className="menu-item">

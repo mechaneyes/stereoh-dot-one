@@ -55,6 +55,10 @@ nav.top-nav {
     font-family: dead-history, sans-serif;
     font-family: changeling-neo-stencil, sans-serif;
     font-weight: 700;
+
+    @include bp(vert11) {
+      // padding-left: 0;
+    }
   }
 
   a {
@@ -78,6 +82,11 @@ nav.top-nav {
     &:hover {
       color: white;
     }
+
+    @include bp(vert11) {
+      font-size: 14px;
+    }
+
   }
 
   a h2 {
@@ -92,8 +101,12 @@ nav.top-nav {
     margin: 0;
     padding-left: 10px;
 
+    li.active a {
+      color: white;
+    }
+
     @include bp(vert11) {
-      padding-left: 5px;
+      padding-left: 0;
     }
   }
 
@@ -109,7 +122,7 @@ nav.top-nav {
     line-height: 1;
 
     @include bp(vert11) {
-      padding-left: 20px;
+      padding-left: 15px;
     }
   }
 
@@ -129,7 +142,8 @@ nav.top-nav {
     }
 
     @include bp(vert11) {
-      width: 120px;
+      width: 105px;
+      min-width: 105px;
       padding: 0;
     }
   }
