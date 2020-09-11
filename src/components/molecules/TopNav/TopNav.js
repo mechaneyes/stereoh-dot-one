@@ -23,7 +23,7 @@ const MenuItem = (href) => {
             <Link to="/tropical-freeze">tropical&nbsp;freeze</Link>
           </li>
           <li className="menu-item">
-            <Link to="/neoneon">Neoneon</Link>
+            <Link to="/bassline-basin">Bassline&nbsp;Basin</Link>
           </li>
           {/* <li className="menu-item">
             <Link to="/pnew">pnew</Link>

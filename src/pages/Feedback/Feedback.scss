@@ -14,4 +14,10 @@
         min-width: 125px;
       }
     }
+
+    nav.related-nav,
+    .related-content {
+      position: relative;
+      top: auto;
+    }
 }

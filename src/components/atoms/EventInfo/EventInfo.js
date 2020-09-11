@@ -21,10 +21,18 @@ const EventInfo = (props) => {
   return (
     <div className="event-info">
       <h1>Tropical Freeze</h1>
-      <h2 className="event-name">Birthdays and Going Aways</h2>
+      <h2 className="event-name">
+        Hidden oasis filled with organic house formations
+      </h2>
       <div className="event-body">
-        <p>Andrey, Kelly, Jen, Ray and Sam all celebrated another trip around the sun. David and Liz packed up for a new chapter in LA</p>
-        <p>{defaultProps.body}</p>
+        <p>
+          Hidden within the rings of a barren super-planet is an oasis asteroid
+          unlike any other in the universe. Unique cosmic phenomena produce a
+          climate that is able to host both abundant vegetation and unusual
+          singing crystal formations. Land with the advance party to shelter in
+          the warm grooves of interstellar house crustaceans found only in this
+          ecosystem.
+        </p>
       </div>
       <div className="cta-container">
         <Button

@@ -60,7 +60,7 @@ const CarouselHero = (props) => {
       </section>
       <div className="home-hero-content">
         <h1>{headline}</h1>
-        <p className="home-hero-subheadline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc dolor, porttitor non felis et, auctor elementum dolor.</p>
+        <p className="home-hero-subheadline">Cybernetic techno factory for the robo-funk bots</p>
       </div>
     </section>
   );

@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./HomeHero.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const HomeHero = (props) => {
-  const {headline} = props;
+  const { headline } = props;
 
   return (
     <section className="homepage-hero">
@@ -28,16 +29,9 @@ const HomeHero = (props) => {
         {/* <img className="neoneon-logo" src={imgPath + "neonTron.png"} alt="neoneon logo" /> */}
         <h3>Welcome to Stereoh 0.1.0!</h3>
         <p className="home-hero-subheadline">
-          Stereoh is a content platform making hosting and attending virtual
-          shows in social 3D environments easy, cost-effective, and accessible.
-        </p>
-        <p className="home-hero-subheadline">
-          Have a look around, please give us feedback about the site and
-          experiences using the link up top and add your email to our list so we can
-          keep you in the loop.
-        </p>
-        <p className="home-hero-subheadline">
-          Our most recent experience is Saturn 6. Meet us inside!
+          We are building a platform for virtual music shows that are more
+          interactive, social, and accessible. <Link to="/signup">Sign up</Link> to hear about
+          future events and new features. We’d also love to hear your <Link to="/feedback">feedback</Link>
         </p>
       </div>
       <div className="gradient">

@@ -12,16 +12,10 @@ const imgPath = process.env.PUBLIC_URL + "/assets/";
 const Neoneon = () => {
   const quoteOne = {
     pullImg: `${imgPath}neoneon_002.jpg`,
-    pullTitle: "Spherical Projection",
-    pullPara:
-      "developed to explore the relationship between itself and its surroundings through the use of movement, texture, light and sound",
   };
 
   const quoteTwo = {
     pullImg: `${imgPath}neoneon_004.jpg`,
-    pullTitle: "Fluid Shimmering Patterns",
-    pullPara:
-      "Through this process of refining behavior and visual complexity, »ANIMA« becomes life-like and impressive.",
   };
 
   document.title = "Stereoh | neoneon";
@@ -30,32 +24,20 @@ const Neoneon = () => {
     <div className="single anima">
       <EventHero
         homeHeroImg={imgPath + "neoneon_001.jpg"}
-        headline="neoneon"
+        headline="Bassline Basin"
         showFeedback={false}
       />
 
       <PullImgLeft {...quoteOne} />
 
-      <PullImgRight {...quoteTwo} />
-
       <section className="body-copy">
         <p>
-          The spherical projection is achieved from inside the globe with a
-          powerful wide angle projector and fisheye lens, producing images in a
-          full 360 degree directional beam. Modulating frequencies audible in
-          the installation respond to those in the space as sound is picked up
-          and resonated back as feedback to the atmosphere.
-        </p>
-
-        <p>
-          Through this process of refining behavior and visual complexity,
-          »ANIMA« becomes life-like and impressive. Installed in the round, the
-          piece is experienced from all sides. In a unique way, »ANIMA« creates
-          an intelligent reactive dialogue with all bodies within its
-          surroundings. The sculpture takes on an ethereal life of its own, as
-          it and the viewer continue their dynamic exchange. Participants, the
-          orb and soundscape combine to perpetually influence each other and
-          create an immersive and captivating experience.
+          Left behind by an extinct civilization of advanced space-farers is a
+          planetary formation traversable only in full protective gear. Shrouded
+          by corrosive atmosphere here lies an acid lake surrounded by remnants
+          of alien technology. Jagged basslines and abstract signals are
+          broadcast from the hard core of this destination for the adventurous
+          travelers.
         </p>
         <Button
           btnUrl="https://hubs.mozilla.com/f6HM9iE/neoneon"
@@ -63,6 +45,8 @@ const Neoneon = () => {
           targetBlank="true"
         />
       </section>
+
+      <PullImgRight {...quoteTwo} />
 
       <nav className="related-nav">
         <ul>

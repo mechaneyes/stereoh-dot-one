@@ -26,7 +26,7 @@ export class App extends Component {
             <Route exact path="/" component={Homepage} />
             <Route path="/saturn6" component={Saturn6} />
             <Route path="/tropical-freeze" component={MrFingers} />
-            <Route path="/neoneon" component={Neoneon} />
+            <Route path="/bassline-basin" component={Neoneon} />
             <Route path="/signup" component={SignUp} />
             <Route path="/feedback" component={Feedback} />
             <Route path="/pnew" component={PromoterNew} />

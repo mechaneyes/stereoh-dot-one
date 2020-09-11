@@ -15,20 +15,9 @@ const Saturn6 = () => {
       <CarouselHero headline="Saturn 6" />
 
       <section className="copy-top">
-        <h2>Saturn 6 becomes a spherical projection. </h2>
+        {/* <h2>Saturn 6</h2> */}
         <p>
-          The spherical projection is achieved from inside the globe with a
-          powerful wide angle projector and fisheye lens, producing images in a
-          full 360 degree directional beam. Modulating frequencies audible in
-          the installation respond to those in the space as sound is picked up
-          and resonated back as feedback to the atmosphere.
-        </p>
-        <p>
-          The spherical projection is achieved from inside the globe with a
-          powerful wide angle projector and fisheye lens, producing images in a
-          full 360 degree directional beam. Modulating frequencies audible in
-          the installation respond to those in the space as sound is picked up
-          and resonated back as feedback to the atmosphere.
+        Far in the reaches of deep space lies a secret robotics factory churning out restless machines controled by a cybernetic funk-mind entity. They move to the clanging beat of techno signals and they sway to the sounds of synthetic code melodies. Enter the network of automatons, join the cybernetic hive.
         </p>
         <div className="ctas">
           <Button

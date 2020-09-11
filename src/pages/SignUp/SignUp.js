@@ -7,7 +7,6 @@ import "./SignUp.scss";
 // const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const SignUp = () => {
-
   document.title = "Stereoh | Sign Up";
 
   return (
@@ -16,8 +15,10 @@ const SignUp = () => {
         <div className="home-hero-content">
           <h1>Let's Stay In Touch!</h1>
           <p className="home-hero-subheadline">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            nunc dolor, porttitor non felis et, auctor elementum dolor.
+            We are getting ready to launch a complete virtual concert platform
+            that will connect music creators and music fans in new and exciting
+            ways. Sign up to receive the latest updates and be the first to gain
+            exclusive early access.
           </p>
           <div id="mc_embed_signup">
             <form
@@ -68,7 +69,6 @@ const SignUp = () => {
       </nav>
 
       <RelatedItems />
-
     </div>
   );
 };

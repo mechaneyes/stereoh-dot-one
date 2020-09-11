@@ -30,7 +30,7 @@ const EventHero = (props) => {
             alt="neoneon logo"
           />
         )}
-        <p className="home-hero-subheadline">{defaultProps.subhead}</p>
+        <p className="home-hero-subheadline">Corrosive environment filled with radioactive beats</p>
       </div>
       <div className="gradient">
         <div className="scroll-down">
