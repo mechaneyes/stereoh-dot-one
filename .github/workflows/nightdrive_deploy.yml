@@ -17,7 +17,8 @@ jobs:
         key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         port: ${{ secrets.NIGHTDRIVE_PORT }}
         script: |
-          cd neon-platform
-          git pull origin master
-          git status
+          cd /var/www/stereoh.one/private
+          touch action.txt
+          # git pull origin master
+          # git status
 
