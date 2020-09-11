@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: testing nightdrive server ssh connection
-      uses: appleboy/ssh-actions@master
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.NIGHTDRIVE_HOST }}
         username: ${{ secrets.NIGHTDRIVE_USERNAME }}
