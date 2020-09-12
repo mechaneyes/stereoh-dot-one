@@ -82,12 +82,6 @@ const Neoneon = () => {
 
       <PullImgRight {...quoteTwo} />
 
-      <nav className="related-nav">
-        <ul>
-          <li className="active-item">our other experiences</li>
-        </ul>
-      </nav>
-
       <RelatedItems hide="neoneon" />
     </div>
   );

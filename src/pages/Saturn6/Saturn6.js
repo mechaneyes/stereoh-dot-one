@@ -35,11 +35,6 @@ const Saturn6 = () => {
         </div>
       </section>
 
-      <nav className="related-nav">
-        <ul>
-          <li className="active-item">our other experiences</li>
-        </ul>
-      </nav>
       <RelatedItems hide="saturn6" />
     </div>
   );

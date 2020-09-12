@@ -12,13 +12,6 @@ const MrFingers = () => {
   return (
     <div className="single mr-fingers">
       <GradientHero />
-
-      <nav className="related-nav">
-        <ul>
-          <li className="active-item">our other spaces</li>
-        </ul>
-      </nav>
-
       <RelatedItems hide="tropical" />
     </div>
   );
