@@ -62,12 +62,6 @@ const SignUp = () => {
         </div>
       </section>
 
-      <nav className="related-nav">
-        <ul>
-          <li className="active-item">our experiences</li>
-        </ul>
-      </nav>
-
       <RelatedItems />
     </div>
   );
