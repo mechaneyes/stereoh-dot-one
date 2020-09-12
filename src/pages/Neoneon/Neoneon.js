@@ -22,11 +22,6 @@ const Neoneon = () => {
 
   return (
     <div className="single anima">
-      {/* <EventHero
-        homeHeroImg={imgPath + "neoneon_001.jpg"}
-        headline="Bassline Basin"
-        showFeedback={false}
-      /> */}
 
       <section className="event-hero">
         <img

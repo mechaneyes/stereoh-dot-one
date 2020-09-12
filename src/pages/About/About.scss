@@ -101,6 +101,10 @@
     }
   }
 
+  .related-content {
+    top: calc(100vh - 150px);
+  }
+
   .related-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
