@@ -63,9 +63,6 @@ nav.top-nav {
 
   a {
     margin: 0;
-    // font-family: din-2014, sans-serif;
-    // font-style: normal;
-    // font-weight: 700;
     font-family: industry, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -78,6 +75,7 @@ nav.top-nav {
     color: #bfbfbf;
     text-transform: uppercase;
     text-decoration: none;
+    border: none;
 
     &:hover {
       color: white;

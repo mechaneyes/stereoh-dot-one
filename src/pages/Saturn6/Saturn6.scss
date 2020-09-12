@@ -1,3 +1,6 @@
+// Saturn6.scss
+
+
 .saturn6.single {
   padding-bottom: 100px;
 
@@ -23,12 +26,6 @@
         rgba(186, 207, 233, 0) 75%
       );
     }
-  }
-
-  nav.related-nav,
-  .related-content {
-    position: relative;
-    top: auto;
   }
 
   .event-hero {
@@ -119,18 +116,9 @@
 
   .copy-body {
     overflow: hidden;
-    width: 79.5833%;
+    // width: 79.5833%;
     width: 63.4722%;
     margin: 0 auto 170px;
-
-    .ctas {
-      // display: flex;
-      // width: 50%;
-      // display: grid;
-      // grid-template-columns: 1fr 1fr;
-      // gap: 25px;
-      // margin-top: 40px;
-    }
 
     button {
       &:hover {
@@ -138,5 +126,10 @@
         background-color: white;
       }
     }
+  }
+
+  .related-content {
+    position: relative;
+    top: 0;
   }
 }

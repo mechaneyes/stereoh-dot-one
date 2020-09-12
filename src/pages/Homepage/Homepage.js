@@ -21,12 +21,6 @@ export class Homepage extends Component {
           showFeedback={false}
         />
 
-        <nav className="related-nav">
-          <ul>
-            <li className="active-item">our experiences</li>
-          </ul>
-        </nav>
-
         <RelatedItems />
       </div>
     );

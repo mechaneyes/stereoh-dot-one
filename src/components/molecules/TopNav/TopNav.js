@@ -43,7 +43,7 @@ const MenuItem = (href) => {
             <Link to="/saturn6">saturn&nbsp;6</Link>
           </li>
           <li
-            className={`menu-item tropical-freeze ${
+            className={`menu-item tropical ${
               tropicalActive ? "active" : ""
             }`}
           >

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
 import "./About.scss";
@@ -26,7 +27,7 @@ const Neoneon = () => {
             freely traversable social 3D environments, where audience members
             can talk and interact naturally, and artists can meet their fans
             personally. We are constantly adding new functionality and plotting
-            new experiences, so keep in touch /hyperlink to signup/ and drop by
+            new experiences, so <Link to="/signup">keep in touch</Link> and drop by
             to check out the latest events.
           </p>
         </div>
