@@ -1,0 +1,45 @@
+@import "../../styles/breakpoints";
+
+.anima {
+  padding-bottom: 100px;
+
+  .homepage-hero {
+    margin-bottom: 50px;
+  }
+
+  .event-hero {
+    @include bp(land13) {
+    }
+
+    @include bp(vert11) {
+      margin-bottom: 50px;
+    }
+
+    .gradient {
+      background: linear-gradient(0deg, #001225 0%, rgba(0, 0, 0, 0) 65%);
+    }
+  }
+
+  .pull-quote {
+    margin-bottom: 100px;
+  }
+
+  section.body-copy {
+    overflow: hidden;
+    width: 65%;
+    width: 48%;
+    margin-bottom: 100px;
+    margin-left: 10%;
+  }
+
+  .related-content {
+    max-width: none;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    display: flex;
+  }
+}

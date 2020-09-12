@@ -4,9 +4,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./components/atoms/ScrollToTop/ScrollToTop";
 import TopNav from "./components/molecules/TopNav/TopNav";
 import Homepage from "./pages/Homepage/Homepage";
+import Saturn6 from "./pages/Saturn6/Saturn6";
 import MrFingers from "./pages/MrFingers/MrFingers";
 import Neoneon from "./pages/Neoneon/Neoneon";
-import Saturn6 from "./pages/Saturn6/Saturn6";
+import About from "./pages/About/About";
 import Feedback from "./pages/Feedback/Feedback";
 import SignUp from "./pages/SignUp/SignUp";
 import PromoterNew from "./pages/PromoterNew/PromoterNew";
@@ -27,6 +28,7 @@ export class App extends Component {
             <Route path="/saturn6" component={Saturn6} />
             <Route path="/tropical-freeze" component={MrFingers} />
             <Route path="/bassline-basin" component={Neoneon} />
+            <Route path="/about" component={About} />
             <Route path="/signup" component={SignUp} />
             <Route path="/feedback" component={Feedback} />
             <Route path="/pnew" component={PromoterNew} />

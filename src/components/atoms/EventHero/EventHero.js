@@ -5,7 +5,7 @@ import "./EventHero.scss";
 const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const EventHero = (props) => {
-  const { homeHeroImg, headline } = props;
+  const { homeHeroImg, headline, subheadline } = props;
 
   return (
     <section className="event-hero">
@@ -24,7 +24,11 @@ const EventHero = (props) => {
             alt="neoneon logo"
           />
         )}
-        <p className="home-hero-subheadline">Corrosive environment filled with radioactive beats</p>
+        {subheadline ? (
+          <p className="home-hero-subheadline">{subheadline}</p>
+        ) : (
+          <p className="home-hero-subheadline">Corrosive environment filled with radioactive beats</p>
+        )}
       </div>
       <div className="gradient">
         <div className="scroll-down">
