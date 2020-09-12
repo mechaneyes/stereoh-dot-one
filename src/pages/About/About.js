@@ -1,6 +1,5 @@
 import React from "react";
 
-import EventHero from "../../components/atoms/EventHero/EventHero";
 import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
 import "./About.scss";
 
