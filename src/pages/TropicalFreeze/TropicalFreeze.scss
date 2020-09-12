@@ -13,6 +13,14 @@
 
   .event-info {
     bottom: 20%;
+    
+    @include bp(land13) {
+      width: 66%;
+    }
+
+    @include bp(vert11) {
+      width: 66%;
+    }
   }
 
   .event-body {

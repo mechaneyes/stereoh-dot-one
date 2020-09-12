@@ -1,5 +1,6 @@
 // Saturn6.scss
 
+@import "../../styles/breakpoints";
 
 .saturn6.single {
   padding-bottom: 100px;
@@ -36,6 +37,14 @@
     width: 39.0972%;
     // width: 66%;
     margin: 100px 0 170px 10.2083%;
+
+    @include bp(land13) {
+      width: 66%;
+    }
+  
+    @include bp(vert11) {
+      width: 66%;
+    }
   }
 
   .image-carousel {

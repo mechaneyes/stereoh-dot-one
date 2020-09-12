@@ -12,6 +12,16 @@
 
   .related-content {
     top: calc(100vh - 150px);
+
+    @include bp(land13) {
+      position: relative;
+      top: auto;
+    }
+  
+    @include bp(vert11) {
+      position: relative;
+      top: auto;
+    }
   }
 
   .related-grid {

@@ -1,3 +1,5 @@
+// Neoneon.scss
+
 @import "../../styles/breakpoints";
 
 .anima {
@@ -8,6 +10,16 @@
   }
 
   .event-hero {
+    .home-hero-content {
+      @include bp(land13) {
+        width: 66%;
+      }
+
+      @include bp(vert11) {
+        width: 66%;
+      }
+    }
+
     @include bp(land13) {
     }
 
