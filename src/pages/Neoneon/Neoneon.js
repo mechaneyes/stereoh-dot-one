@@ -40,6 +40,7 @@ const Neoneon = () => {
           travelers.
         </p>
         <Button
+          type="enter-space"
           btnUrl="https://hubs.mozilla.com/f6HM9iE/neoneon"
           btnTxt="enter neoneon"
           targetBlank="true"

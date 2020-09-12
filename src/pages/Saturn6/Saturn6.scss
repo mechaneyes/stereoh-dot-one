@@ -4,6 +4,7 @@
   .home-hero-content {
     bottom: 8%;
     margin-left: 10.2083%;
+    margin-left: calc(10.2083% - 30px);
   }
   
   .homepage-hero {
@@ -44,9 +45,9 @@
     overflow: hidden;
     position: relative;
     width: 79.5833%;
-    width: calc(100% - 60px);
-    margin: 0 30px 100px;
-    padding-top: 47%;
+    // width: calc(100% - 200px);
+    margin: 0 auto 100px;
+    padding-top: 38%;
     // border: 1px solid deepskyblue
   }
 
@@ -63,6 +64,7 @@
 
   .slick-list {
     margin: 0 -60px;
+    // margin: 0;
     overflow: visible;
   }
 

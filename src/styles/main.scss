@@ -200,8 +200,8 @@ body {
     line-height: 1;
 
     &:hover {
-      color: #001225;
-      background-color: white;
+      // color: #001225;
+      // background-color: white;
       cursor: pointer;
 
       a {
@@ -259,11 +259,11 @@ body {
     }
   }
 
-  @include bp(vert11) {
-    .scroll-down {
-      display: none;
-    }
-  }
+  // @include bp(vert11) {
+  //   .scroll-down {
+  //     display: none;
+  //   }
+  // }
   
   .scroll-down {
     display: none;

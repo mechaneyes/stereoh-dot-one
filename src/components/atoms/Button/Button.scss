@@ -1,3 +1,5 @@
+// Button.scss
+
 button {
   float: left;
   display: block;
@@ -26,12 +28,22 @@ button {
 }
 
 button.transp-bg {
-  //   color: black;
+  color: white;
   background-color: transparent;
   transition: all 0.4s;
+
+  &.enter-space {
+    color: #001225;
+    background: white;
+
+    &:hover {
+      color: white;
+      background-color: transparent;
+    }
+  }
 }
 
 button.transp-bg:hover {
-  color: white;
-  background-color: #001225;
+  color: #001225;
+  background-color: white;
 }

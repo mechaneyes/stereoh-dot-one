@@ -11,13 +11,12 @@ export class Homepage extends Component {
     return (
       <div className="feedback">
         <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLScEhf1kn6wU-glMrEMbruQkZG5mjCWQU0Iq__Ux4OOGxsHD9A/viewform?embedded=true"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeBpuU3V0xwW8snidXiu4W2A6s0aJ5fINangc6EHPFCeRU9-A/viewform?embedded=true"
           width="640"
-          height="2983"
-          frameBorder="0"
-          marginHeight="0"
-          marginWidth="0"
-          title="Feedback form for Stereoh website"
+          height="4300"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
         >
           Loading…
         </iframe>

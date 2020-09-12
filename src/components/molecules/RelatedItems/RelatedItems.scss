@@ -56,7 +56,7 @@ nav.related-nav {
   z-index: 3;
   position: absolute;
   top: calc(100vh - 20px);
-  max-width: 1280px;
+  // max-width: 1280px;
   margin: 0 30px;
 
   @include bp(land13) {
@@ -75,6 +75,23 @@ nav.related-nav {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-bottom: 60px;
+  
+  button {
+    &:hover {
+      color: #001225;
+      background-color: white;
+      cursor: pointer;
+
+      a {
+        color: #001225;
+      }
+    }
+
+    &.slick-next:hover,
+    &.slick-prev:hover {
+      background-color: transparent;
+    }
+  }
 }
 
 .one-related-item {

@@ -11,7 +11,7 @@ const Neoneon = () => {
   document.title = "Stereoh | About";
 
   return (
-    <div className="single anima">
+    <div className="single about">
 
       <section className="event-hero">
         <img

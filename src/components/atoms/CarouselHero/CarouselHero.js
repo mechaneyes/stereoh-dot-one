@@ -58,10 +58,10 @@ const CarouselHero = (props) => {
           <Carousel items={caroElements} />
         </div>
       </section>
-      <div className="home-hero-content">
+      {/* <div className="home-hero-content">
         <h1>{headline}</h1>
         <p className="home-hero-subheadline">Cybernetic techno factory for the robo-funk bots</p>
-      </div>
+      </div> */}
     </section>
   );
 };

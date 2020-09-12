@@ -17,7 +17,7 @@ const RelatedItems = (props) => {
               />
               <div className="related-copy">
                 <h3>Saturn 6</h3>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                <h5>Cybernetic techno factory for the robo-funk bots</h5>
                 <Link to="/saturn6">
                   <button className="transp-bg">Explore</button>
                 </Link>
@@ -31,7 +31,7 @@ const RelatedItems = (props) => {
               />
               <div className="related-copy">
                 <h3>Tropical Freeze</h3>
-                <h5>Birthdays and Going Aways</h5>
+                <h5>Hidden oasis filled with organic house formations</h5>
                 <Link to="/tropical-freeze">
                   <button className="transp-bg">Explore</button>
                 </Link>
@@ -44,9 +44,9 @@ const RelatedItems = (props) => {
                 alt="neonPlatform hero"
               />
               <div className="related-copy">
-                <h3>neoneon</h3>
-                <h5>Our first event. Feels like forever ago</h5>
-                <Link to="/neoneon">
+                <h3>Bassline-Basin</h3>
+                <h5>Corrosive environment filled with radioactive beats</h5>
+                <Link to="/bassline-basin">
                   <button className="transp-bg">Explore</button>
                 </Link>
               </div>
