@@ -1,0 +1,75 @@
+@import '../../styles/breakpoints';
+
+.event-hero {
+  position: relative;
+  background: rgb(0, 18, 37);
+
+  .gradient {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    // background: rgb(0, 18, 37);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 18, 37, 1) 0%,
+      rgba(0, 0, 0, 0) 55%
+    );
+
+    // .scroll-down {
+    //   top: auto;
+    //   bottom: 230px;
+    // }
+  }
+
+  .home-hero-img {
+    width: 100%;
+  }
+
+  .home-hero-content {
+    z-index: 2;
+    position: absolute;
+    // width: 31%;
+    width: 56%;
+    left: 31px;
+    bottom: 20%;
+
+    .neoneon-logo {
+      width: 65%;
+    }
+
+    @include bp(land13) {
+      bottom: 7%;
+      width: 40%;
+    }
+
+    @include bp(vert11) {
+      width: 66%;
+    }
+  }
+
+  h1 {
+    font-family: changeling-neo-stencil, sans-serif;
+    font-family: changeling-neo-inline, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .home-hero-ctas {
+    width: 340px;
+    width: auto;
+
+    button {
+      margin: 10px 20px 0 0;
+      color: white;
+      background-color: transparent;
+      border-color: white;
+
+      &:hover {
+        color: #001225;
+        background-color: white;
+      }
+    }
+  }
+}
