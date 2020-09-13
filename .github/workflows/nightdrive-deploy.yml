@@ -23,4 +23,5 @@ jobs:
           script: |
             cd /var/www/nyseecrets.com/actions/stereoh-dot-one
             ls -al
-            git pull
+            git pull origin master
+            echo "pull complete"
