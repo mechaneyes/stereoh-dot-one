@@ -15,9 +15,9 @@ export class Homepage extends Component {
           src="https://docs.google.com/forms/d/e/1FAIpQLSeBpuU3V0xwW8snidXiu4W2A6s0aJ5fINangc6EHPFCeRU9-A/viewform?embedded=true"
           width="640"
           height="4300"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
         >
           Loading…
         </iframe>

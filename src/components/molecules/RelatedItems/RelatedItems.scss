@@ -115,5 +115,20 @@ nav.related-nav {
 }
 
 .one-related-item {
-    margin-bottom: 50px;
+  width: 100%;
+  margin-bottom: 50px;
+
+  img {
+    width: 100%;
+  }
+
+  h3 {
+    margin: 10px 0 5px;
+  }
+
+  h5 {
+    margin: 0 0 3px;
+    text-align: left;
+  }
 }
+

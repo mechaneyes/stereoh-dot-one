@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 import HomeHero from "../../components/atoms/HomeHero/HomeHero";
 import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
-import RelatedItem from "../../components/atoms/RelatedItem/RelatedItem";
 import "./Homepage.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";

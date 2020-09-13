@@ -6,7 +6,7 @@ import TopNav from "./components/molecules/TopNav/TopNav";
 import Homepage from "./pages/Homepage/Homepage";
 import Saturn6 from "./pages/Saturn6/Saturn6";
 import TropicalFreeze from "./pages/TropicalFreeze/TropicalFreeze";
-import Neoneon from "./pages/Neoneon/Neoneon";
+import BasslineBasin from "./pages/BasslineBasin/BasslineBasin";
 import About from "./pages/About/About";
 import Feedback from "./pages/Feedback/Feedback";
 import SignUp from "./pages/SignUp/SignUp";
@@ -27,7 +27,7 @@ export class App extends Component {
             <Route exact path="/" component={Homepage} />
             <Route path="/saturn6" component={Saturn6} />
             <Route path="/tropical-freeze" component={TropicalFreeze} />
-            <Route path="/bassline-basin" component={Neoneon} />
+            <Route path="/bassline-basin" component={BasslineBasin} />
             <Route path="/about" component={About} />
             <Route path="/signup" component={SignUp} />
             <Route path="/feedback" component={Feedback} />

@@ -4,7 +4,7 @@ import PullImgLeft from "../../components/atoms/PullQuotes/PullImgLeft";
 import PullImgRight from "../../components/atoms/PullQuotes/PullImgRight";
 import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
 import Button from "../../components/atoms/Button/Button";
-import "./Neoneon.scss";
+import "./BasslineBasin.scss";
 import "./EventHero.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
