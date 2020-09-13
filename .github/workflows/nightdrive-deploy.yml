@@ -1,0 +1,22 @@
+name: deploy to nightdrive
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build + Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands to build stereoh-dot-one
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.NIGHTDRIVE_HOST }}
+        username: ${{ secrets.NIGHTDRIVE_USERNAME }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: ${{ secrets.NIGHTDRIVE_PORT }}
+        script:  |
+          ls -al
+          cd /var/www/nyseecrets.com/actions/stereoh-dot-one
+          git pull
