@@ -42,7 +42,7 @@ const Neoneon = () => {
           </p>
           <Button
             type="enter-space"
-            btnUrl="https://hubs.mozilla.com/f6HM9iE/neoneon"
+            btnUrl="https://hubs.mozilla.com/8exPtiS/bassline-basin"
             btnTxt="enter bassline basin"
             targetBlank="true"
           />
