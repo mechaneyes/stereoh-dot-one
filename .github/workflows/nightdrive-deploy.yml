@@ -22,4 +22,5 @@ jobs:
           #   npm run build
           script: |
             cd /var/www/nyseecrets.com/actions/stereoh-dot-one
-            ls
+            ls -al
+            git pull
