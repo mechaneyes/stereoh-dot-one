@@ -21,6 +21,5 @@ jobs:
           #   git pull
           #   npm run build
           script: |
-            echo "Crank er up"
+            cd /var/www/nyseecrets.com/actions/stereoh-dot-one
             ls
-            echo "Wind er down"
