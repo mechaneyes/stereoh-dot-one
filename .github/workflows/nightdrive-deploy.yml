@@ -2,7 +2,7 @@ name: deploy to nightdrive
 on:
   push:
     branches:
-      - master
+      - "*"
 
 jobs:
   build:
@@ -16,7 +16,11 @@ jobs:
           username: ${{ secrets.NIGHTDRIVE_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.NIGHTDRIVE_PORT }}
+          # script: |
+          #   cd /var/www/nyseecrets.com/actions/stereoh-dot-one
+          #   git pull
+          #   npm run build
           script: |
-            cd /var/www/nyseecrets.com/actions/stereoh-dot-one
-            git pull
-            npm run build
+            echo "Crank er up"
+            ls
+            echo "Wind er down"
