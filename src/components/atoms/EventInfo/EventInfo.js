@@ -22,7 +22,7 @@ const EventInfo = () => {
       <div className="cta-container">
         <Button
           type="enter-space"
-          btnUrl="https://space.neoneon.one/VY3mMZa/tropical-freeze"
+          btnUrl="https://hubs.mozilla.com/bKat284/tropical-freeze"
           btnTxt="enter tropical freeze"
           targetBlank="true"
         />

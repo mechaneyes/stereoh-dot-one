@@ -28,7 +28,7 @@ const Saturn6 = () => {
         <div className="ctas">
           <Button
             type="enter-space"
-            btnUrl="//space.neoneon.one/aMggN3t/striking-mature-soiree"
+            btnUrl="https://hubs.mozilla.com/vaUfRRi/saturn6"
             btnTxt="enter saturn 6"
             targetBlank="true"
           />
