@@ -1,6 +1,6 @@
 import React from "react";
 
-import GradientHero from "../../components/atoms/GradientHero/GradientHero";
+import GradientHero from "../../components/atoms/GradientHero/GradientHero";  // Left here just for styling. will figure that out
 import EventInfo from "../../components/atoms/EventInfo/EventInfo";
 import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
 

@@ -39,9 +39,11 @@ const Neoneon = () => {
           src={imgPath + "neoneon_001.jpg"}
           alt="Bassline Basin hero"
         />
+
         <div className="home-hero-content">
           <EventInfo {...eventInfo} />
         </div>
+        
         <div className="gradient"></div>
       </section>
 

@@ -10,6 +10,7 @@
   }
 
   .event-hero {
+
     .home-hero-content {
       left: 0;
       
@@ -23,10 +24,11 @@
     }
 
     @include bp(land13) {
+      margin-bottom: 80px;
     }
 
     @include bp(vert11) {
-      margin-bottom: 50px;
+      margin-bottom: 80px;
     }
   }
 
