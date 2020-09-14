@@ -11,6 +11,8 @@
 
   .event-hero {
     .home-hero-content {
+      left: 0;
+      
       @include bp(land13) {
         width: 66%;
       }
