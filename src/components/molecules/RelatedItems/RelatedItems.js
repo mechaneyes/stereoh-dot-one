@@ -25,7 +25,7 @@ const RelatedItems = (props) => {
             />
             <div className="related-copy">
               <h3>Saturn 6</h3>
-              <h5>Cybernetic techno factory for the robo-funk bots</h5>
+              <h4>Cybernetic techno factory for the robo-funk bots</h4>
               <Link to="/saturn6">
                 <button className="transp-bg">Explore</button>
               </Link>
@@ -43,7 +43,7 @@ const RelatedItems = (props) => {
             />
             <div className="related-copy">
               <h3>Tropical Freeze</h3>
-              <h5>Hidden oasis filled with organic house formations</h5>
+              <h4>Hidden oasis filled with organic house formations</h4>
               <Link to="/tropical-freeze">
                 <button className="transp-bg">Explore</button>
               </Link>
@@ -60,8 +60,8 @@ const RelatedItems = (props) => {
               alt="neonPlatform hero"
             />
             <div className="related-copy">
-              <h3>Bassline-Basin</h3>
-              <h5>Corrosive environment filled with radioactive beats</h5>
+              <h3>Bassline Basin</h3>
+              <h4>Corrosive environment filled with radioactive beats</h4>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
               </Link>

@@ -76,7 +76,6 @@ nav.related-nav {
   z-index: 3;
   position: absolute;
   top: calc(100vh - 20px);
-  // max-width: 1280px;
   padding: 0px;
 
   @include bp(land13) {
@@ -126,9 +125,11 @@ nav.related-nav {
     margin: 10px 0 5px;
   }
 
-  h5 {
-    margin: 0 0 3px;
-    text-align: left;
+  .related-copy {
+    h4 {
+      margin: 3px 0;
+      text-align: left;
+    }
   }
 }
 
