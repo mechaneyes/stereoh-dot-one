@@ -1,8 +1,5 @@
 name: deploy to nightdrive
-on:
-  push:
-    branches:
-      - "act"
+on: push
 
 jobs:
   build:
