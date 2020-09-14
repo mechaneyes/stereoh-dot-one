@@ -13,13 +13,10 @@ jobs:
           username: ${{ secrets.NIGHTDRIVE_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.NIGHTDRIVE_PORT }}
-          # script: |
-          #   cd /var/www/nyseecrets.com/actions/stereoh-dot-one
-          #   git pull
-          #   npm run build
           script: |
             cd /var/www/fourthsequence.com/actions/stereoh-dot-one
-            ls -al
-            echo "- - - - - - - - -"
-            git pull origin act
-            echo "pull complete"
+            git pull
+            echo "<!-- ————————————————————————————————————o PULL COMPLETE -->"
+            echo
+            npm run build
+            echo "<!-- ————————————————————————————————————o BUILD COMPLETE -->"
