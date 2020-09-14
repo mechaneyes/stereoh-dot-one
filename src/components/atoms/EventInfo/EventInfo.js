@@ -1,30 +1,22 @@
 import React from "react";
-import "./EventInfo.scss";
-import Button from "../Button/Button";
 
-const EventInfo = () => {
+import Button from "../Button/Button";
+import "./EventInfo.scss";
+
+const EventInfo = (props) => {
   return (
     <div className="event-info">
-      <h1>Tropical Freeze</h1>
-      <h2 className="event-name">
-        Hidden oasis filled with organic house formations
-      </h2>
+      <h1>{props.title}</h1>
+      <h5>{props.subHeadline}</h5>
       <div className="event-body">
-        <p>
-          Hidden within the rings of a barren super-planet is an oasis asteroid
-          unlike any other in the universe. Unique cosmic phenomena produce a
-          climate that is able to host both abundant vegetation and unusual
-          singing crystal formations. Land with the advance party to shelter in
-          the warm grooves of interstellar house crustaceans found only in this
-          ecosystem.
-        </p>
+        <p>{props.description}</p>
       </div>
       <div className="cta-container">
         <Button
-          type="enter-space"
-          btnUrl="https://hubs.mozilla.com/bKat284/tropical-freeze"
-          btnTxt="enter tropical freeze"
-          targetBlank="true"
+          buttonUse="enter-space"
+          btnUrl={props.btnUrl}
+          btnTxt={props.btnTxt}
+          targetBlank={props.targetBlank}
         />
       </div>
     </div>

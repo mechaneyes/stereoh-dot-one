@@ -25,9 +25,9 @@ const EventHero = (props) => {
           />
         )}
         {subheadline ? (
-          <p className="home-hero-subheadline">{subheadline}</p>
+          <h5 className="home-hero-subheadline">{subheadline}</h5>
         ) : (
-          <p className="home-hero-subheadline">Corrosive environment filled with radioactive beats</p>
+          <h5 className="home-hero-subheadline">Corrosive environment filled with radioactive beats</h5>
         )}
       </div>
       <div className="gradient">

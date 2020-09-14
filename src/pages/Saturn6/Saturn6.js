@@ -15,9 +15,7 @@ const Saturn6 = () => {
 
       <section className="copy-top">
         <h1>Saturn 6</h1>
-        <p className="home-hero-subheadline">
-          Cybernetic techno factory for the robo-funk bots
-        </p>
+        <h5>Cybernetic techno factory for the robo-funk bots</h5>
         <p>
           Far in the reaches of deep space lies a secret robotics factory
           churning out restless machines controled by a cybernetic funk-mind
@@ -27,7 +25,7 @@ const Saturn6 = () => {
         </p>
         <div className="ctas">
           <Button
-            type="enter-space"
+            buttonUse="enter-space"
             btnUrl="https://hubs.mozilla.com/vaUfRRi/saturn6"
             btnTxt="enter saturn 6"
             targetBlank="true"

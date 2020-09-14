@@ -41,7 +41,7 @@ const Neoneon = () => {
             adventurous travelers.
           </p>
           <Button
-            type="enter-space"
+            buttonUse="enter-space"
             btnUrl="https://hubs.mozilla.com/8exPtiS/bassline-basin"
             btnTxt="enter bassline basin"
             targetBlank="true"

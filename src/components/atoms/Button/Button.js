@@ -12,7 +12,7 @@ let Button = (props) => {
       <button
         onClick={props.onClick}
         disabled={props.disabled}
-        className={"button " + props.type + " transp-bg"}
+        className={"button " + props.buttonUse + " transp-bg"}
       >
         {props.children}
         {props.btnTxt ? props.btnTxt : "explore"}

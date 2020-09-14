@@ -10,7 +10,6 @@ import BasslineBasin from "./pages/BasslineBasin/BasslineBasin";
 import About from "./pages/About/About";
 import Feedback from "./pages/Feedback/Feedback";
 import SignUp from "./pages/SignUp/SignUp";
-import PromoterNew from "./pages/PromoterNew/PromoterNew";
 
 import "./App.css";
 import "./styles/main.scss";
@@ -31,7 +30,6 @@ export class App extends Component {
             <Route path="/about" component={About} />
             <Route path="/signup" component={SignUp} />
             <Route path="/feedback" component={Feedback} />
-            <Route path="/pnew" component={PromoterNew} />
           </Switch>
         </div>
       </Router>
