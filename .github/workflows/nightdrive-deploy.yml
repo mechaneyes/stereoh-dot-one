@@ -2,7 +2,7 @@ name: deploy to nightdrive
 on:
   push:
     branches:
-      - "*"
+      - "act"
 
 jobs:
   build:
@@ -21,7 +21,8 @@ jobs:
           #   git pull
           #   npm run build
           script: |
-            cd /var/www/nyseecrets.com/actions/stereoh-dot-one
+            cd /var/www/fourthsequence.com/actions/stereoh-dot-one
             ls -al
-            git pull origin master
+            echo "- - - - - - - - -"
+            git pull origin act
             echo "pull complete"
