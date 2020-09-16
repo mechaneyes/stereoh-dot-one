@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./CarouselHero.scss";
 
-const CarouselHero = (props) => {
+const CarouselHero = () => {
 
   let caroElements = [
     {
@@ -13,39 +13,59 @@ const CarouselHero = (props) => {
       alt: "olafur eliasson 009",
     },
     {
-      src: "saturn6_004.jpg",
+      src: "saturn6_002.jpg",
       alt: "olafur eliasson 007",
     },
     {
-      src: "saturn6_006.jpg",
+      src: "saturn6_003.jpg",
       alt: "olafur eliasson 010",
     },
     {
-      src: "saturn6_008.jpg",
+      src: "saturn6_004.jpg",
       alt: "olafur eliasson 011",
     },
     {
-      src: "saturn6_010.jpg",
+      src: "saturn6_005.jpg",
       alt: "olafur eliasson 009",
     },
     {
-      src: "saturn6_012.jpg",
+      src: "saturn6_006.jpg",
       alt: "olafur eliasson 005",
     },
     {
-      src: "saturn6_015.jpg",
+      src: "saturn6_007.jpg",
       alt: "olafur eliasson 006",
     },
     {
-      src: "saturn6_019.jpg",
+      src: "saturn6_008.jpg",
       alt: "olafur eliasson 007",
     },
     {
-      src: "saturn6_020.jpg",
+      src: "saturn6_009.jpg",
       alt: "olafur eliasson 010",
     },
     {
-      src: "saturn6_022.jpg",
+      src: "saturn6_010.jpg",
+      alt: "olafur eliasson 011",
+    },
+    {
+      src: "saturn6_011.jpg",
+      alt: "olafur eliasson 005",
+    },
+    {
+      src: "saturn6_012.jpg",
+      alt: "olafur eliasson 006",
+    },
+    {
+      src: "saturn6_013.jpg",
+      alt: "olafur eliasson 007",
+    },
+    {
+      src: "saturn6_014.jpg",
+      alt: "olafur eliasson 010",
+    },
+    {
+      src: "saturn6_015.jpg",
       alt: "olafur eliasson 011",
     },
   ];
