@@ -12,7 +12,7 @@
   }
 
   .event-info {
-    bottom: 20%;
+    bottom: 31%;
     
     @include bp(land13) {
       width: 66%;
@@ -35,5 +35,8 @@
     top: calc(100vh - 150px);
     top: 0;
     background: #001226;
+
+    position: absolute;
+    top: calc(100vh - 180px);
   }
 }

@@ -20,7 +20,7 @@ const RelatedItems = (props) => {
           >
             <img
               className="home-hero-img"
-              src="/assets/saturn6_015.jpg"
+              src="/assets/saturn6_009.jpg"
               alt="neonPlatform hero"
             />
             <div className="related-copy">
@@ -45,7 +45,7 @@ const RelatedItems = (props) => {
               <h3>Tropical Freeze</h3>
               <h4>Hidden oasis filled with organic house formations</h4>
               <Link to="/tropical-freeze">
-                <button className="transp-bg">Explore</button>
+                <button className="transp-bg">Coming Soon</button>
               </Link>
             </div>
           </article>
@@ -63,7 +63,7 @@ const RelatedItems = (props) => {
               <h3>Bassline Basin</h3>
               <h4>Corrosive environment filled with radioactive beats</h4>
               <Link to="/bassline-basin">
-                <button className="transp-bg">Explore</button>
+                <button className="transp-bg">Coming Soon</button>
               </Link>
             </div>
           </article>
