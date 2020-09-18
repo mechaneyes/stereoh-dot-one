@@ -11,7 +11,7 @@
   }
 
   .related-content {
-    top: calc(100vh - 150px);
+    top: calc(100vh - 120px);
 
     @include bp(land13) {
       position: relative;
