@@ -34,7 +34,7 @@ const Neoneon = () => {
         <div className="gradient"></div>
       </section>
 
-      <RelatedItems />
+      <RelatedItems relThree="true" />
     </div>
   );
 };

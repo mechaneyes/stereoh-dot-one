@@ -15,10 +15,10 @@
   //   top: auto;
   // }
 
-  // @include bp(vert11) {
-  //   position: relative;
-  //   top: auto;
-  // }
+  @include bp(oriPort) {
+    position: relative;
+    top: auto;
+  }
 }
 
 nav.related-nav {
@@ -62,7 +62,7 @@ nav.related-nav {
 
     &.active-item {
       color: white;
-      border-bottom: 3px solid #00C1B2;
+      border-bottom: 3px solid #00c1b2;
     }
 
     &:hover {
@@ -76,6 +76,19 @@ nav.related-nav {
   position: absolute;
   top: calc(100vh - 20px);
   padding: 0px;
+
+  &.rel-three-tiles {
+    .related-grid {
+      display: flex;
+      margin: 0 15px;
+
+      .one-related-item {
+        flex: 1;
+        width: 33%;
+        padding: 0 10px;
+      }
+    }
+  }
 
   @include bp(land13) {
     position: relative;
@@ -92,8 +105,32 @@ nav.related-nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  margin: 0  30px 60px;
+  margin: 0 30px 60px;
+
+  .one-related-item {
+    width: 100%;
+    margin-bottom: 50px;
   
+    a {
+      border: 0;
+    }
+  
+    img {
+      width: 100%;
+    }
+  
+    h3 {
+      margin: 10px 0 5px;
+    }
+  
+    .related-copy {
+      h4 {
+        margin: 3px 0;
+        text-align: left;
+      }
+    }
+  }
+
   button {
     &:hover {
       color: #001225;
@@ -111,24 +148,3 @@ nav.related-nav {
     }
   }
 }
-
-.one-related-item {
-  width: 100%;
-  margin-bottom: 50px;
-
-  img {
-    width: 100%;
-  }
-
-  h3 {
-    margin: 10px 0 5px;
-  }
-
-  .related-copy {
-    h4 {
-      margin: 3px 0;
-      text-align: left;
-    }
-  }
-}
-

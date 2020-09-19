@@ -25,6 +25,10 @@
       @include bp(vert11) {
         width: 66%;
       }
+
+      @include bp(oriPort) {
+        bottom: 15%;
+      }
     }
 
     @include bp(land13) {
@@ -41,6 +45,15 @@
     top: 98vh;
     z-index: 1;
 
+    
+    @include bp(oriPort) {
+      position: relative;
+      top: auto;
+    }
+
+    @include bp(oriLand) {
+      // width: 66%;
+    }
   }
 
   .pull-quote {

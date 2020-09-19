@@ -20,7 +20,7 @@ export class Homepage extends Component {
           showFeedback={false}
         />
 
-        <RelatedItems />
+        <RelatedItems relThree="true" />
       </div>
     );
   }

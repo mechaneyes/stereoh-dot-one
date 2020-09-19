@@ -119,8 +119,12 @@ nav.top-nav {
   .menu-item {
     float: left;
     // height: 100%;
-    padding-left: 30px;
+    padding-left: 15px;
     line-height: 1;
+
+    @include bp(lg) {
+      padding-left: 30px;
+    }
 
     @include bp(vert11) {
       padding-left: 15px;

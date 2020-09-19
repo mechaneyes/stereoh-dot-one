@@ -15,6 +15,7 @@
     bottom: 31%;
     
     @include bp(land13) {
+      bottom: 15%;
       width: 66%;
     }
 
@@ -35,8 +36,16 @@
     top: calc(100vh - 150px);
     top: 0;
     background: #001226;
-
     position: absolute;
     top: calc(100vh - 180px);
+    
+    @include bp(oriPort) {
+      position: relative;
+      top: auto;
+    }
+
+    @include bp(oriLand) {
+      // width: 66%;
+    }
   }
 }
