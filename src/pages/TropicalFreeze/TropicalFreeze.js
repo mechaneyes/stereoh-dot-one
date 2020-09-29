@@ -13,7 +13,7 @@ const eventInfo = {
   subHeadline: "Hidden oasis filled with organic house formations",
   description:
     "Hidden within the rings of a barren super-planet is an oasis asteroid unlike any other in the universe. Unique cosmic phenomena produce a climate that is able to host both abundant vegetation and unusual singing crystal formations. Land with the advance party to shelter in the warm grooves of interstellar house crustaceans found only in this ecosystem.",
-  btnUrl: "https://hubs.mozilla.com/bKat284/tropical-freeze",
+  btnUrl: "https://space.stereoh.one/j9N7XHT/tropical-freeze",
   btnTxt: "enter tropical freeze",
   targetBlank: "true",
 };

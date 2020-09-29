@@ -7,6 +7,7 @@ const EventInfo = (props) => {
   return (
     <div className="event-info">
       <h1>{props.title}</h1>
+      <h2 className="disclaimer">{props.coming}</h2>
       <h5>{props.subHeadline}</h5>
       <div className="event-body">
         <p>{props.description}</p>

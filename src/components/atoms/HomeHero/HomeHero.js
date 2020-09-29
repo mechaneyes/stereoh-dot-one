@@ -16,6 +16,7 @@ const HomeHero = (props) => {
         src={imgPath + "cybotron_0_1_0.jpg"}
         alt="neonPlatform hero"
       />
+      <img className="home-flyer" src={imgPath + "launch2020.10.02.jpg"} />
       <div className="home-hero-content">
         {headline ? (
           <h1>{headline}</h1>
@@ -27,7 +28,7 @@ const HomeHero = (props) => {
           />
         )}
         {/* <img className="neoneon-logo" src={imgPath + "neonTron.png"} alt="neoneon logo" /> */}
-        <h3>Welcome to Stereoh 0.1.0!</h3>
+        <h3>Welcome to Stereoh 0.1.1!</h3>
         <p className="home-hero-subheadline">
           We are building a platform for virtual music shows that are more
           interactive, social, and accessible. <Link to="/signup">Sign up</Link> to hear about

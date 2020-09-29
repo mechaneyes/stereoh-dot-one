@@ -16,7 +16,7 @@ const eventInfo = {
   subHeadline: "Corrosive environment filled with radioactive beats",
   description:
     "Left behind by an extinct civilization of advanced space-farers is a planetary formation traversable only in full protective gear. Shrouded by corrosive atmosphere here lies an acid lake surrounded by remnants of alien technology. Jagged basslines and abstract signals are broadcast from the hard core of this destination for the adventurous travelers.",
-  btnUrl: "https://hubs.mozilla.com/8exPtiS/bassline-basin",
+  btnUrl: "https://space.stereoh.one/ehrRnaD/bassline-basin",
   btnTxt: "enter bassline basin",
   targetBlank: "true",
   buttonUse: "enter-space",
