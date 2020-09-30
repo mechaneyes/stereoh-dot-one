@@ -35,10 +35,11 @@
     opacity: 0.3;                                   // For Launch Event 2020.10.02
   }
 
-  .home-flyer {
+  .home-flyer {                                   // For Launch Event 2020.10.02
     position: absolute;
-    top: 3vw;
-    right: 15vw;
+    // top: 3vw;
+    bottom: 31.5%;
+    right: 13vw;
     // transform: translateX(50%);
     width: 35%;
   }
@@ -48,6 +49,7 @@
     position: absolute;
     width: 31%;
     left: 31px;
+    left: 10vw;                                   // For Launch Event 2020.10.02
     bottom: 20%;
     bottom: 30%;
 

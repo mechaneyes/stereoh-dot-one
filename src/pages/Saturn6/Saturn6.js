@@ -4,10 +4,12 @@ import CarouselHero from "../../components/atoms/CarouselHero/CarouselHero";
 import EventInfo from "../../components/atoms/EventInfo/EventInfo";
 import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
 import "../../components/molecules/RelatedItems/RelatedItems.scss";
+import "../../components/atoms/EventInfo/EventInfo.scss";
 import "./Saturn6.scss";
 
 // import Button from "../../components/atoms/Button/Button";
 // import "./EventInfo.scss";
+const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const eventInfo = {
   title: "Saturn 6",
@@ -28,6 +30,14 @@ const Saturn6 = () => {
 
   return (
     <div className="single saturn6">
+      <section className="event-hero">
+        <img
+          className="home-hero-img"
+          src={imgPath + "saturn6_001.jpg"}
+          alt="Bassline Basin hero"
+        />
+        <div className="gradient"></div>
+      </section>
       <section className="copy-top">
         {/* <EventInfo {...eventInfo} /> */}
         <div className="event-info">

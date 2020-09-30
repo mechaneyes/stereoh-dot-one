@@ -9,29 +9,29 @@ const CarouselHero = () => {
 
   let caroElements = [
     {
-      src: "saturn6_001.jpg",
-      alt: "olafur eliasson 009",
-    },
-    {
-      src: "saturn6_002.jpg",
-      alt: "olafur eliasson 007",
-    },
-    {
       src: "saturn6_003.jpg",
       alt: "olafur eliasson 010",
+    },
+    {
+      src: "saturn6_001.jpg",
+      alt: "olafur eliasson 009",
     },
     {
       src: "saturn6_004.jpg",
       alt: "olafur eliasson 011",
     },
+    // {
+    //   src: "saturn6_002.jpg",
+    //   alt: "olafur eliasson 007",
+    // },
     {
       src: "saturn6_005.jpg",
       alt: "olafur eliasson 009",
     },
-    {
-      src: "saturn6_006.jpg",
-      alt: "olafur eliasson 005",
-    },
+    // {
+    //   src: "saturn6_006.jpg",
+    //   alt: "olafur eliasson 005",
+    // },
     {
       src: "saturn6_007.jpg",
       alt: "olafur eliasson 006",
@@ -40,14 +40,14 @@ const CarouselHero = () => {
       src: "saturn6_008.jpg",
       alt: "olafur eliasson 007",
     },
-    {
-      src: "saturn6_009.jpg",
-      alt: "olafur eliasson 010",
-    },
-    {
-      src: "saturn6_010.jpg",
-      alt: "olafur eliasson 011",
-    },
+    // {
+    //   src: "saturn6_009.jpg",
+    //   alt: "olafur eliasson 010",
+    // },
+    // {
+    //   src: "saturn6_010.jpg",
+    //   alt: "olafur eliasson 011",
+    // },
     {
       src: "saturn6_011.jpg",
       alt: "olafur eliasson 005",
@@ -71,7 +71,7 @@ const CarouselHero = () => {
   ];
 
   return (
-    <section className="event-hero">
+    <section className="carousel-hero">
       <section className="image-carousel">
         <div className="inner-carousel">
           <Carousel items={caroElements} />
