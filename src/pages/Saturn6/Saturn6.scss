@@ -46,7 +46,7 @@
     position: relative;
     width: 39.0972%;
     // width: 66%;
-    margin: 270px 0 170px calc(10.2083% - 30px);
+    margin: 360px 0 170px calc(10.2083% - 30px);
 
     @include bp(land13) {
       width: 66%;
@@ -54,6 +54,21 @@
 
     @include bp(vert11) {
       width: 66%;
+    }
+
+    .count-container {
+      color: #00a1ff;
+      font-size: 30px;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    #countdown {
+      display: inline;
+    }
+
+    button {
+      width: 280px;
     }
   }
 
@@ -66,7 +81,7 @@
     position: relative;
     width: 79.5833%;
     // width: calc(100% - 200px);
-    margin: 0 auto 100px;
+    margin: 0 auto 170px;
     padding-top: 38%;
     padding-bottom: 10px;
     // border: 1px solid deepskyblue
@@ -152,8 +167,17 @@
     }
   }
 
+  .home-flyer {
+    margin: 0 0 170px calc(10.2083%);
+    margin: 0 auto 170px;
+  }
+
   .related-content {
     position: relative;
     top: 0;
+  }
+
+  .related-grid {
+    margin-bottom: 0;
   }
 }

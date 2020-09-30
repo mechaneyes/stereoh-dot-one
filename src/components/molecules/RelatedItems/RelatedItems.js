@@ -20,7 +20,7 @@ const RelatedItems = (props) => {
           >
             <img
               className="home-hero-img"
-              src="/assets/saturn6_009.jpg"
+              src="/assets/saturn6_001.jpg"
               alt="neonPlatform hero"
             />
             <div className="related-copy">
