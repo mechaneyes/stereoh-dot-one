@@ -33,35 +33,53 @@ const SignUp = () => {
               <div id="mc_embed_signup_scroll">
                 <input
                   type="email"
-                  //   value=""
                   name="EMAIL"
                   className="email"
                   id="mce-EMAIL"
                   placeholder="email address"
                   required
                 />
-                <div className="absStyle" aria-hidden="true">
-                  <input
-                    type="text"
-                    name="b_55b1042094d7ceee5fdf20bf9_996675cb7c"
-                    tabIndex="-1"
-                  />
-                  <div className="submitStyle">
-                    <input
-                      type="submit"
-                      value="Subscribe"
-                      name="subscribe"
-                      id="mc-embedded-subscribe"
-                      className="button"
-                    />
-                  </div>
-                </div>
+              </div>
+              <div className="absStyle" aria-hidden="true">
+                <input
+                  type="text"
+                  name="b_55b1042094d7ceee5fdf20bf9_996675cb7c"
+                  tabIndex="-1"
+                />
+              </div>
+              <div class="mc-field-group">
+                <input
+                  type="text"
+                  value=""
+                  name="FNAME"
+                  className="email"
+                  placeholder="first name"
+                  id="mce-FNAME"
+                />
+              </div>
+              <div class="mc-field-group">
+                <input
+                  type="text"
+                  value=""
+                  name="LNAME"
+                  className="email"
+                  placeholder="last name"
+                  id="mce-LNAME"
+                />
+              </div>
+              <div className="submitStyle">
+                <input
+                  type="submit"
+                  value="Subscribe"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  className="button"
+                />
               </div>
             </form>
           </div>
         </div>
       </section>
-
       <RelatedItems />
     </div>
   );
