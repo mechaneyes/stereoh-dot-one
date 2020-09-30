@@ -70,7 +70,7 @@ const SignUp = () => {
               <div className="submitStyle">
                 <input
                   type="submit"
-                  value="Subscribe"
+                  value="submit"
                   name="subscribe"
                   id="mc-embedded-subscribe"
                   className="button"

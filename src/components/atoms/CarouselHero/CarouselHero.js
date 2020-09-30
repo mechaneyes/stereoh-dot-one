@@ -9,6 +9,10 @@ const CarouselHero = () => {
 
   let caroElements = [
     {
+      src: "saturn6_007.jpg",
+      alt: "olafur eliasson 006",
+    },
+    {
       src: "saturn6_003.jpg",
       alt: "olafur eliasson 010",
     },
@@ -33,10 +37,6 @@ const CarouselHero = () => {
     //   alt: "olafur eliasson 005",
     // },
     {
-      src: "saturn6_007.jpg",
-      alt: "olafur eliasson 006",
-    },
-    {
       src: "saturn6_008.jpg",
       alt: "olafur eliasson 007",
     },
@@ -60,10 +60,10 @@ const CarouselHero = () => {
       src: "saturn6_013.jpg",
       alt: "olafur eliasson 007",
     },
-    {
-      src: "saturn6_014.jpg",
-      alt: "olafur eliasson 010",
-    },
+    // {
+    //   src: "saturn6_014.jpg",
+    //   alt: "olafur eliasson 010",
+    // },
     {
       src: "saturn6_015.jpg",
       alt: "olafur eliasson 011",

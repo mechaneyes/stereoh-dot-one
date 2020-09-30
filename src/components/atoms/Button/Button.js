@@ -8,6 +8,7 @@ let Button = (props) => {
     <a
       href={props.btnUrl === "feedback" ? "feedback" : props.btnUrl}
       target={props.targetBlank ? "_blank" : "_self"}
+      className={props.isDisabled ? "isDisabled" : ''}
     >
       <button
         onClick={props.onClick}

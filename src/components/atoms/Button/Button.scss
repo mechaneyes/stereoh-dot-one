@@ -47,3 +47,7 @@ button.transp-bg:hover {
   color: #001225;
   background-color: white;
 }
+
+.isDisabled {
+  pointer-events: none;
+}

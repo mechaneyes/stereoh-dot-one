@@ -17,9 +17,11 @@ const eventInfo = {
   description:
     "Left behind by an extinct civilization of advanced space-farers is a planetary formation traversable only in full protective gear. Shrouded by corrosive atmosphere here lies an acid lake surrounded by remnants of alien technology. Jagged basslines and abstract signals are broadcast from the hard core of this destination for the adventurous travelers.",
   btnUrl: "https://space.stereoh.one/ehrRnaD/bassline-basin",
-  btnTxt: "enter bassline basin",
+  // btnTxt: "enter bassline basin",
+  btnTxt: 'coming soon',
   targetBlank: "true",
-  buttonUse: "enter-space",
+  // buttonUse: "enter-space",
+  isDisabled: "true",
 };
 
 const Neoneon = () => {

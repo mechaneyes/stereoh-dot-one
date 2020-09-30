@@ -14,10 +14,11 @@ const EventInfo = (props) => {
       </div>
       <div className="cta-container">
         <Button
-          buttonUse="enter-space"
+          // buttonUse="enter-space"
           btnUrl={props.btnUrl}
           btnTxt={props.btnTxt}
           targetBlank={props.targetBlank}
+          disabled={props.isDisabled}
         />
       </div>
     </div>

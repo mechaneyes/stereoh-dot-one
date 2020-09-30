@@ -46,7 +46,7 @@ const RelatedItems = (props) => {
               <h4>Hidden oasis filled with organic house formations</h4>
             </div>
               <Link to="/tropical-freeze">
-                <button className="transp-bg">Explore</button>
+                <button className="transp-bg" disabled>Coming Soon</button>
               </Link>
           </article>
           <article
@@ -64,7 +64,7 @@ const RelatedItems = (props) => {
               <h4>Corrosive environment filled with radioactive beats</h4>
             </div>
               <Link to="/bassline-basin">
-                <button className="transp-bg">Explore</button>
+              <button className="transp-bg" disabled>Coming Soon</button>
               </Link>
           </article>
         </div>

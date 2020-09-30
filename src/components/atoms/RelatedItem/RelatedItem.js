@@ -10,7 +10,7 @@ const RelatedItem = (props) => {
       <div className="related-copy">
         <h3>{relTitle}</h3>
         <h5>{relSubhead}</h5>
-        <a href={relLinkUrl}><button className="transp-bg">Explore</button></a>
+        <a href={relLinkUrl}><button {isDisable ? 'disabled' : ''} className="transp-bg">Explore</button></a>
       </div>
     </article>
   );
