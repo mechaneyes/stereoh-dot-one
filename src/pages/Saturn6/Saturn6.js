@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 import CarouselHero from "../../components/atoms/CarouselHero/CarouselHero";
-import EventInfo from "../../components/atoms/EventInfo/EventInfo";
+// import EventInfo from "../../components/atoms/EventInfo/EventInfo";
 import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
 import "../../components/molecules/RelatedItems/RelatedItems.scss";
 import "../../components/atoms/EventInfo/EventInfo.scss";
@@ -16,7 +16,7 @@ const eventInfo = {
   coming: "Launching Friday, October 02",
   subHeadline: "Cybernetic techno factory for the robo-funk bots",
   description:
-    "Far in the reaches of deep space lies a secret robotics factory churning out restless machines controled by a cybernetic funk-mind entity. They move to the clanging beat of techno signals and they sway to the sounds of synthetic code melodies. Enter the network of automatons, join the cybernetic hive.",
+    "Stereoh is welcoming Heidi Sabertooth and R.Gamble to the inaugural Saturn6 party. They will be broadcasting an icy mix of no-wave, electro punk, and analog techno straight into the cavernous confines of the deep space cybernetic factory.",
   // btnUrl: "https://space.stereoh.one/cxFQhV6/saturn6",
   btnUrl: "",
   // btnTxt: "enter saturn 6",
@@ -26,6 +26,9 @@ const eventInfo = {
 };
 
 const Saturn6 = () => {
+
+  let [isBefore, setBefore] = useState(true)
+
   document.title = "Stereoh | Saturn 6";
 
   // Set the date we're counting down to
@@ -47,16 +50,16 @@ const Saturn6 = () => {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    if(document.getElementById("countdown") != null) {
+    if (document.getElementById("countdown") != null) {
       document.getElementById("countdown").innerHTML =
         days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-  
+
       // If the count down is finished, write some text
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
+        setBefore(false)
       }
-  }
+    }
   }, 1000);
 
   return (
@@ -79,8 +82,10 @@ const Saturn6 = () => {
             <p>{eventInfo.description}</p>
           </div>
           <div className="cta-container">
-            {/* <button>Enter Saturn 6</button> */}
-            <div className="count-container">Launching in <div id="countdown"></div></div>
+            <a className={(isBefore) ? 'hide-me' : ''} href="https://space.stereoh.one/suJFdn4/saturn6-v21" target="_blank"><button> Enter Saturn 6</button></a>
+            <div className={`count-container ${(isBefore) ? '' : 'hide-me'}`}>
+              Launching in <div id="countdown"></div>
+            </div>
           </div>
         </div>
       </section>

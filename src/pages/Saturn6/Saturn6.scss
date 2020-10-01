@@ -168,8 +168,11 @@
   }
 
   .home-flyer {
+    width: 100%;
+    max-width: 1024px;
     margin: 0 0 170px calc(10.2083%);
     margin: 0 auto 170px;
+    padding: 0 30px;
   }
 
   .related-content {
@@ -179,5 +182,27 @@
 
   .related-grid {
     margin-bottom: 0;
+  }
+
+  .cta-container {
+    a {
+      display: inline;
+
+      &.hide-me {
+        display: none;
+      }
+    }
+
+    button {
+      width: 190px;
+    }
+
+    .count-container {
+      display: block;
+    
+      &.hide-me {
+        display: none;
+      }
+    }
   }
 }
