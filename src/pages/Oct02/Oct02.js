@@ -13,12 +13,10 @@ const SignUp = () => {
     <div className="single signUp">
       <section className="body-copy">
         <div className="home-hero-content">
-          <h1>give us your first born</h1>
+          <h1>Verification</h1>
           <p className="home-hero-subheadline">
-            We are getting ready to launch a complete virtual concert platform
-            that will connect music creators and music fans in new and exciting
-            ways. Sign up to receive the latest updates and be the first to gain
-            exclusive early access.
+            We are building a friendly and secure communal space - please
+            provide info to proceed to the venue.
           </p>
           <div id="mc_embed_signup">
             <form
@@ -47,7 +45,7 @@ const SignUp = () => {
                   tabIndex="-1"
                 />
               </div>
-              <div class="mc-field-group">
+              {/* <div class="mc-field-group">
                 <input
                   type="text"
                   value=""
@@ -56,8 +54,8 @@ const SignUp = () => {
                   placeholder="first name"
                   id="mce-FNAME"
                 />
-              </div>
-              <div class="mc-field-group">
+              </div> */}
+              {/* <div class="mc-field-group">
                 <input
                   type="text"
                   value=""
@@ -66,7 +64,7 @@ const SignUp = () => {
                   placeholder="last name"
                   id="mce-LNAME"
                 />
-              </div>
+              </div> */}
               <div className="submitStyle">
                 <input
                   type="submit"

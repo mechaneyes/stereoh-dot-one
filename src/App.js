@@ -11,6 +11,7 @@ import About from "./pages/About/About";
 import Feedback from "./pages/Feedback/Feedback";
 import SignUp from "./pages/SignUp/SignUp";
 import Oct02 from "./pages/Oct02/Oct02";
+import ThankYou from "./pages/ThankYou/ThankYou";
 
 import "./App.css";
 import "./styles/main.scss";
@@ -32,6 +33,7 @@ export class App extends Component {
             <Route path="/signup" component={SignUp} />
             <Route path="/feedback" component={Feedback} />
             <Route path="/octtwo" component={Oct02} />
+            <Route path="/thankyou" component={ThankYou} />
           </Switch>
         </div>
       </Router>

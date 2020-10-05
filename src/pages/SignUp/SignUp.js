@@ -20,6 +20,9 @@ const SignUp = () => {
             ways. Sign up to receive the latest updates and be the first to gain
             exclusive early access.
           </p>
+          <p className="home-hero-subheadline">
+          You will receive an email with a link to to the party.
+          </p>
           <div id="mc_embed_signup">
             <form
               action="https://one.us17.list-manage.com/subscribe/post?u=55b1042094d7ceee5fdf20bf9&amp;id=996675cb7c"

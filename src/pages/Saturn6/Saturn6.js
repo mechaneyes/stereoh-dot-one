@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import CarouselHero from "../../components/atoms/CarouselHero/CarouselHero";
 // import EventInfo from "../../components/atoms/EventInfo/EventInfo";
@@ -17,7 +18,7 @@ const eventInfo = {
   subHeadline: "Cybernetic techno factory for the robo-funk bots",
   description:
     "Stereoh is welcoming Heidi Sabertooth and R.Gamble to the inaugural Saturn6 party. They will be broadcasting an icy mix of no-wave, electro punk, and analog techno straight into the cavernous confines of the deep space cybernetic factory.",
-  // btnUrl: "https://space.stereoh.one/cxFQhV6/saturn6",
+  btnUrl: "https://space.stereoh.one/suJFdn4/saturn6-v21",
   btnUrl: "",
   // btnTxt: "enter saturn 6",
   btnTxt: "coming soon",
@@ -32,7 +33,7 @@ const Saturn6 = () => {
   document.title = "Stereoh | Saturn 6";
 
   // Set the date we're counting down to
-  var countDownDate = new Date("Oct 2, 2020 21:00:00").getTime();
+  var countDownDate = new Date("Oct 2, 2010 21:00:00").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function () {
@@ -52,7 +53,7 @@ const Saturn6 = () => {
 
     if (document.getElementById("countdown") != null) {
       document.getElementById("countdown").innerHTML =
-        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        hours + "h " + minutes + "m " + seconds + "s ";
 
       // If the count down is finished, write some text
       if (distance < 0) {
@@ -82,7 +83,7 @@ const Saturn6 = () => {
             <p>{eventInfo.description}</p>
           </div>
           <div className="cta-container">
-            <a className={(isBefore) ? 'hide-me' : ''} href="https://space.stereoh.one/suJFdn4/saturn6-v21" target="_blank"><button> Enter Saturn 6</button></a>
+          {(isBefore) ? <a className="hide-me"></a>  : <Link to="/octtwo"><button>Enter Saturn6</button></Link>}
             <div className={`count-container ${(isBefore) ? '' : 'hide-me'}`}>
               Launching in <div id="countdown"></div>
             </div>
