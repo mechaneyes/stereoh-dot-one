@@ -70,6 +70,12 @@
 
     button {
       width: 280px;
+      color: white;
+
+      &:hover {
+        color: #001225;
+        background-color: white;
+      }
     }
   }
 
