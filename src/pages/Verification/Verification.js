@@ -2,7 +2,7 @@ import React from "react";
 
 import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
 
-import "./Oct02.scss";
+import "./Verification.scss";
 
 // const imgPath = process.env.PUBLIC_URL + "/assets/";
 
@@ -10,7 +10,7 @@ const SignUp = () => {
   document.title = "Stereoh | Sign Up";
 
   return (
-    <div className="single signUp">
+    <div className="single verification">
       <section className="body-copy">
         <div className="home-hero-content">
           <h1>Verification</h1>
@@ -45,26 +45,24 @@ const SignUp = () => {
                   tabIndex="-1"
                 />
               </div>
-              {/* <div class="mc-field-group">
+              <div class="mc-field-group">
                 <input
                   type="text"
-                  value=""
                   name="FNAME"
                   className="email"
                   placeholder="first name"
                   id="mce-FNAME"
                 />
-              </div> */}
-              {/* <div class="mc-field-group">
+              </div>
+              <div class="mc-field-group">
                 <input
                   type="text"
-                  value=""
                   name="LNAME"
                   className="email"
                   placeholder="last name"
                   id="mce-LNAME"
                 />
-              </div> */}
+              </div>
               <div className="submitStyle">
                 <input
                   type="submit"

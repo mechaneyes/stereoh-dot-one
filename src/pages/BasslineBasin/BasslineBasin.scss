@@ -74,6 +74,29 @@
 
   button {
     min-width: 170px;
+    width: 190px;
+    width: auto;
+    background-color: transparent;
+  }
+
+  .count-container {
+    // color: #00a1ff;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  #countdown {
+    display: inline;
+  }
+
+  .count-container {
+    display: block;
+  
+    &.hide-me {
+      display: none;
+    }
   }
 
   nav.related-nav,

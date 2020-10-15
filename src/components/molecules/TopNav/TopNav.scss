@@ -119,15 +119,35 @@ nav.top-nav {
   .menu-item {
     float: left;
     // height: 100%;
-    padding-left: 15px;
+    margin-left: 15px;
     line-height: 1;
 
     @include bp(lg) {
-      padding-left: 30px;
+      margin-left: 30px;
     }
 
     @include bp(vert11) {
-      padding-left: 15px;
+      margin-left: 15px;
+    }
+
+    &.upcoming {
+      border-bottom: 1px solid #00a1ff;
+
+      a {
+        color: #00a1ff;
+      }
+
+      &:hover {
+        border-color: white;
+
+        a {
+          color: white;
+        }
+      }
+    }
+
+    &.bassline-basin {
+      
     }
   }
 

@@ -22,6 +22,10 @@
     align-items: flex-start;
     margin-bottom: 20px;
 
+    .mc-field-group {
+      margin-bottom: 0;
+    }
+
     input {
         height: 35px;
         padding-left: 10px;
@@ -51,11 +55,12 @@
 
   .email {
     display: block;
+    margin-bottom: 20px;
   }
 
   .absStyle {
     display: block;
-    margin-top: 20px;
+    // margin-top: 20px;
   }
 
   .absStyle > input {
@@ -99,7 +104,8 @@
     overflow: hidden;
     // position: absolute;
     width: 71.5%;
-    height: 600px;
+    height: 800px;
+    height: auto;
     margin-bottom: 100px;
     margin-left: 10%;
     padding-top: 20vh;

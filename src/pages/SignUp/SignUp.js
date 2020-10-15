@@ -43,6 +43,24 @@ const SignUp = () => {
                   placeholder="email address"
                   required
                 />
+                <div class="mc-field-group">
+                  <input
+                    type="text"
+                    name="FNAME"
+                    className="email"
+                    placeholder="first name"
+                    id="mce-FNAME"
+                  />
+                </div>
+                <div class="mc-field-group">
+                  <input
+                    type="text"
+                    name="LNAME"
+                    className="email"
+                    placeholder="last name"
+                    id="mce-LNAME"
+                  />
+                </div>
                 <div className="absStyle" aria-hidden="true">
                   <input
                     type="text"

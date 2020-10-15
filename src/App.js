@@ -10,7 +10,7 @@ import BasslineBasin from "./pages/BasslineBasin/BasslineBasin";
 import About from "./pages/About/About";
 import Feedback from "./pages/Feedback/Feedback";
 import SignUp from "./pages/SignUp/SignUp";
-import Oct02 from "./pages/Oct02/Oct02";
+import Verification from "./pages/Verification/Verification";
 import ThankYou from "./pages/ThankYou/ThankYou";
 
 import "./App.css";
@@ -29,10 +29,11 @@ export class App extends Component {
             <Route path="/saturn6" component={Saturn6} />
             <Route path="/tropical-freeze" component={TropicalFreeze} />
             <Route path="/bassline-basin" component={BasslineBasin} />
+            <Route path="/reactor" component={BasslineBasin} />
             <Route path="/about" component={About} />
             <Route path="/signup" component={SignUp} />
             <Route path="/feedback" component={Feedback} />
-            <Route path="/octtwo" component={Oct02} />
+            <Route path="/verification" component={Verification} />
             <Route path="/thankyou" component={ThankYou} />
           </Switch>
         </div>
