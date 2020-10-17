@@ -15,9 +15,10 @@ document.title = "Stereoh | neoneon";
 
 const eventInfo = {
   title: "Bassline Reactor",
-  subHeadline: "Corrosive environment filled with radioactive beats",
+  // subHeadline: "Corrosive environment filled with radioactive beats",
+  subHeadline: "Drummer B | MPC Set | Transmat, Detroit",
   description:
-    "Left behind by an extinct civilization of advanced space-farers is a planetary formation traversable only in full protective gear. Shrouded by corrosive atmosphere here lies an acid lake surrounded by remnants of alien technology. Jagged basslines and abstract signals are broadcast from the hard core of this destination for the adventurous travelers.",
+    "Stereoh is welcoming Detroit native musician, DJ and tastemaker Drummer B. Known internationally for his deep knowledge of the art and science of music production, he has released and contributed his skill to records on such storied labels as Transmat, Fool's Gold, and his own Soul Touch Recordings. Spanning styles from funk and hip-hop to ghetto tech, electro and techno, Drummer B will showcase his influences on this special live MPC mix - beaming direct from Detroit warehouse into the radioactive lagoon of the Bassline Basin.",
   btnUrl: "https://space.stereoh.one/ehrRnaD/bassline-basin",
   btnTxt: "enter bassline reactor",
   btnTxt: "coming soon",
@@ -82,6 +83,11 @@ const Neoneon = () => {
         <div className="home-hero-content">
           {/* <EventInfo {...eventInfo} /> */}
           <div className="event-info">
+            {/* <img
+              className="event-flyer"
+              src={imgPath + "bassline-reactor.jpg"}
+              alt="Bassline Reactor Flyer"
+            /> */}
             <h1>{eventInfo.title}</h1>
             <h2 className="disclaimer">{eventInfo.coming}</h2>
             <h5>{eventInfo.subHeadline}</h5>

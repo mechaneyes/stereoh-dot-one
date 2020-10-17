@@ -20,6 +20,8 @@ const eventInfo = {
   isDisabled: "true",
 };
 
+
+
 const TropicalFreeze = () => {
   document.title = "Stereoh | Tropical Freeze";
 

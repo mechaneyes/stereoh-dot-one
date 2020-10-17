@@ -16,7 +16,7 @@ const HomeHero = (props) => {
         src={imgPath + "cybotron_0_1_0.jpg"}
         alt="neonPlatform hero"
       />
-      <img className="home-flyer" src={imgPath + "reactor900px.jpg"} alt="Oct Two Flyer" />
+      <img className="home-flyer" src={imgPath + "bassline-reactor.jpg"} alt="Bassline Reactor Flyer" />
       <div className="home-hero-content">
         {headline ? (
           <h1>{headline}</h1>
