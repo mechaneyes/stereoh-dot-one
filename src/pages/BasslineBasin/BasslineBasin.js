@@ -64,7 +64,7 @@ const Neoneon = () => {
   }, 1000);
 
   const quoteOne = {
-    pullImg: `${imgPath}neoneon_002.jpg`,
+    pullImg: `${imgPath}bassline-reactor.jpg`,
   };
 
   const quoteTwo = {
