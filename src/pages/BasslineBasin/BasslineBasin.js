@@ -19,7 +19,7 @@ const eventInfo = {
   subHeadline: "Drummer B | MPC Set | Transmat, Detroit",
   description:
     "Stereoh is welcoming Detroit native musician, DJ and tastemaker Drummer B. Known internationally for his deep knowledge of the art and science of music production, he has released and contributed his skill to records on such storied labels as Transmat, Fool's Gold, and his own Soul Touch Recordings. Spanning styles from funk and hip-hop to ghetto tech, electro and techno, Drummer B will showcase his influences on this special live MPC mix - beaming direct from Detroit warehouse into the radioactive lagoon of the Bassline Basin.",
-  btnUrl: "https://space.stereoh.one/ehrRnaD/bassline-basin",
+  btnUrl: "https://hubs.mozilla.com/pSxkF3u/bassline-reactor",
   btnTxt: "enter bassline reactor",
   btnTxt: "coming soon",
   targetBlank: "true",
@@ -104,6 +104,7 @@ const Neoneon = () => {
               )}
               <div className={`count-container ${isBefore ? "" : "hide-me"}`}>
                 Launching in <div id="countdown"></div>
+                {/* Launching in a Few */}
                 <p>Look for the link here at the time of the event</p>
               </div>
               {/* <Button

@@ -17,7 +17,7 @@ const eventInfo = {
   // btnTxt: "enter tropical freeze",
   btnTxt: "coming soon",
   targetBlank: "true",
-  isDisabled: "true",
+  isDisabled: true,
 };
 
 
