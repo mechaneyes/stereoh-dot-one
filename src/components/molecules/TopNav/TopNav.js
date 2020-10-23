@@ -43,19 +43,18 @@ const MenuItem = (href) => {
             <Link to="/saturn6">saturn&nbsp;6</Link>
           </li>
           <li
-            className={`menu-item tropical ${
-              tropicalActive ? "active" : ""
-            }`}
+            className={`menu-item tropical ${tropicalActive ? "active" : ""}`}
           >
             <Link to="/tropical-freeze">tropical&nbsp;freeze</Link>
           </li>
           <li
-            className={`menu-item bassline-basin upcoming ${
+            // className={`menu-item bassline-basin upcoming ${
+            className={`menu-item bassline-basin ${
               basslineActive ? "active" : ""
             }`}
           >
-            {/* <Link to="/bassline-basin">Bassline&nbsp;Basin</Link> */}
-            <Link to="/bassline-basin">October&nbsp;18th</Link>
+            <Link to="/bassline-basin">Bassline&nbsp;Reactor</Link>
+            {/* <Link to="/bassline-basin">October&nbsp;18th</Link> */}
           </li>
           <li className={`menu-item about ${aboutActive ? "active" : ""}`}>
             <Link to="/about">About</Link>
