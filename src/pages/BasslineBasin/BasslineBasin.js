@@ -4,6 +4,7 @@ import PullImgLeft from "../../components/atoms/PullQuotes/PullImgLeft";
 import PullImgRight from "../../components/atoms/PullQuotes/PullImgRight";
 import EventInfo from "../../components/atoms/EventInfo/EventInfo";
 import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
+import Countdown from "../../components/atoms/Countdown/Countdown";
 import "./BasslineBasin.scss";
 import "./EventHero.scss";
 
@@ -44,6 +45,7 @@ const Neoneon = () => {
 
         <div className="home-hero-content">
           <EventInfo {...eventInfo} />
+          {/* <Countdown /> */}
         </div>
 
         <div className="gradient"></div>
