@@ -54,7 +54,7 @@
     }
 
     @include bp(vert11) {
-      width: 66%;
+      width: 79%;
     }
 
     .count-container {
@@ -210,6 +210,38 @@
       &.hide-me {
         display: none;
       }
+    }
+  }
+
+  @include bp(sm) {
+    padding-bottom: 50px;
+    
+    .gradient {
+      display: none;
+    }
+
+    .event-hero {
+      position: relative;
+    }
+
+    .copy-top {
+      width: 100%;
+      margin: 0;
+      padding: 20px 20px 50px;
+    }
+
+    .event-info {
+      margin: 0;
+    }
+
+    .image-carousel {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    .home-flyer {
+      margin-bottom: 50px;
+      padding: 0;
     }
   }
 }

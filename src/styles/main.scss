@@ -1,6 +1,11 @@
 @import url("https://use.typekit.net/guw0xro.css");
 @import "breakpoints";
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background: #001225;
 }
@@ -177,15 +182,15 @@ body {
     margin: -10px;
     animation: animate 2s infinite;
   }
-  
+
   .scroll-down span:nth-child(2) {
     animation-delay: -0.2s;
   }
-  
+
   .scroll-down span:nth-child(3) {
     animation-delay: -0.4s;
   }
-  
+
   @keyframes animate {
     0% {
       opacity: 0;
@@ -237,7 +242,7 @@ body {
 
   nav.related-nav {
     margin-bottom: 20px;
-    
+
     li {
       padding: 15px 20px 20px;
       font-family: industry, sans-serif;
@@ -256,7 +261,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 300px;
-    margin-bottom: 0;
     border: none;
 
     &.hide-me {
@@ -271,18 +275,16 @@ body {
       a {
         border: none;
       }
-      
+
       h5 {
         flex: 1 0 auto;
       }
     }
   }
 
-  .saturn6 {
-    .copy-top {
-      @include bp(vert11) {
-        width: 79%;
-      }
+  @include bp(sm) {
+    h1 {
+      font-size: 38px;
     }
   }
 
@@ -291,7 +293,7 @@ body {
   //     display: none;
   //   }
   // }
-  
+
   .scroll-down {
     display: none;
   }

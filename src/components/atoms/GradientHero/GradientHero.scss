@@ -78,4 +78,14 @@
       background: linear-gradient(270deg, rgba(255, 255, 255, 0) -20.5%, #287a73 50.28%);
     }
   }
+
+  @include bp(sm) {
+    .hero-image.hero-shifted {
+      display: none;
+    }
+
+    .gradient {
+      display: none;
+    }
+  }
 }

@@ -69,6 +69,18 @@ nav.related-nav {
       cursor: pointer;
     }
   }
+
+  @include bp(sm) {
+    margin-top: 50px;
+    padding: 0;
+    
+    li {
+      float: none;
+      display: flex;
+      justify-content: center;
+      margin: 10px 60px 0;
+    }
+  }
 }
 
 .related-content {
@@ -100,6 +112,21 @@ nav.related-nav {
     position: relative;
     top: auto;
   }
+
+  @include bp(sm) {
+    &.rel-three-tiles {
+      .related-grid {
+        display: block;
+        margin: 30px 20px 0;
+
+        .one-related-item {
+          width: 100%;
+          margin-bottom: 70px;
+          padding: 0;
+        }
+      }
+    }
+  }
 }
 
 .related-grid {
@@ -111,24 +138,43 @@ nav.related-nav {
   .one-related-item {
     width: 100%;
     margin-bottom: 0px;
-  
+
     a {
       border: 0;
     }
-  
+
     img {
       width: 100%;
     }
-  
+
     h3 {
       margin: 10px 0 5px;
     }
-  
+
     .related-copy {
       h4 {
         margin: 3px 0;
         text-align: left;
       }
+    }
+
+    @include bp(sm) {
+      margin-bottom: 50px;
+
+      h3 {
+        margin-top: 15px;
+      }
+      h4 {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @include bp(sm) {
+    grid-template-columns: 1fr;
+    margin: 30px 20px 0;
+
+    .one-related-item {
     }
   }
 

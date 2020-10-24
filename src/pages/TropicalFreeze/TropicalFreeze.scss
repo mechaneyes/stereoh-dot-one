@@ -22,6 +22,14 @@
     @include bp(vert11) {
       width: 66%;
     }
+
+    @include bp(sm) {
+      position: relative;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      padding: 20px 20px 0;
+    }
   }
 
   .event-body {

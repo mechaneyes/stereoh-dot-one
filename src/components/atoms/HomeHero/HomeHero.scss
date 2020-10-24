@@ -97,4 +97,31 @@
       }
     }
   }
+
+  @include bp(sm) {
+    padding: 0 15px;
+
+    .home-hero-img {
+      display: none;
+      position: absolute;
+      top: 60px;
+    }
+    .home-hero-content {
+      position: relative;
+      left: 0;
+      width: 100%;
+
+      h1 {
+        margin-top: 60px;
+        font-size: 38px;
+      }
+      h1, h3, p {
+        text-align: center;
+      }
+    }
+    .home-flyer {
+      position: relative;
+      width: 100%;
+    }
+  }
 }

@@ -11,6 +11,10 @@
 
   .event-info {
     bottom: 31%;
+
+    @include bp(sm) {
+      margin: 20px 20px 0;
+    }
   }
 
   .event-hero {
@@ -28,6 +32,11 @@
 
       @include bp(oriPort) {
         bottom: 15%;
+      }
+
+      @include bp(sm) {
+        position: relative;
+        width: 100%;
       }
     }
 
@@ -49,7 +58,6 @@
     top: 98vh;
     z-index: 1;
 
-    
     @include bp(oriPort) {
       position: relative;
       top: auto;
@@ -97,7 +105,7 @@
 
   .count-container {
     display: block;
-  
+
     &.hide-me {
       display: none;
     }
@@ -112,6 +120,30 @@
   .related-content {
     button {
       min-width: 125px;
+    }
+  }
+
+  @include bp(sm) {
+    section.body-copy {
+      width: 100%;
+      margin: 0;
+      padding: 0 20px 20px;
+    }
+
+    .pull-quote {
+      margin-bottom: 10px;
+
+      .pull-aspect-ratio-box {
+        width: 100%;
+      }
+
+      .pull-quote-copy {
+        display: none;
+      }
+    }
+
+    .pull-img.pull-left-img {
+      width: 100%;
     }
   }
 }
