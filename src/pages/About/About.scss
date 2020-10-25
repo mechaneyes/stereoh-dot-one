@@ -51,6 +51,12 @@
       );
     }
 
+    @include bp(sm) {
+      .gradient {
+        display: none;
+      }
+    }
+
     .home-hero-img {
       width: 100%;
     }
@@ -74,9 +80,18 @@
       @include bp(vert11) {
         width: 66%;
       }
+
+      @include bp(sm) {
+        position: relative;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        padding: 0 20px;
+      }
     }
 
     h1 {
+      margin-top: 0;
       font-family: changeling-neo-stencil, sans-serif;
       font-family: changeling-neo-inline, sans-serif;
       font-weight: 700;

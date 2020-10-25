@@ -4,13 +4,18 @@ import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
 
 import "./SignUp.scss";
 
-// const imgPath = process.env.PUBLIC_URL + "/assets/";
+const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const SignUp = () => {
   document.title = "Stereoh | Sign Up";
 
   return (
     <div className="single signUp">
+    <img
+      className="home-hero-img"
+      src={imgPath + "barclays.jpg"}
+      alt="neonPlatform hero"
+    />
       <section className="body-copy">
         <div className="home-hero-content">
           <h1>Let's Stay In Touch!</h1>
@@ -20,9 +25,9 @@ const SignUp = () => {
             ways. Sign up to receive the latest updates and be the first to gain
             exclusive early access.
           </p>
-          <p className="home-hero-subheadline">
+          {/* <p className="home-hero-subheadline">
           You will receive an email with a link to to the party.
-          </p>
+          </p> */}
           <div id="mc_embed_signup">
             <form
               action="https://one.us17.list-manage.com/subscribe/post?u=55b1042094d7ceee5fdf20bf9&amp;id=996675cb7c"

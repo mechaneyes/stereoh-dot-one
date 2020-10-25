@@ -5,6 +5,7 @@
 nav.top-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: sticky;
   top: 0;
   height: 60px;
@@ -14,6 +15,16 @@ nav.top-nav {
 
   * {
     // z-index: 2;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  @include bp(sm) {
+    .mobile-only {
+      display: block;
+    }
   }
 
   div {
@@ -94,6 +105,10 @@ nav.top-nav {
     text-transform: none;
   }
 
+  .hamburger-icon {
+    display: none;
+  }
+
   ul {
     display: flex;
     align-items: center;
@@ -145,10 +160,6 @@ nav.top-nav {
         }
       }
     }
-
-    &.bassline-basin {
-      
-    }
   }
 
   button {
@@ -177,5 +188,56 @@ nav.top-nav {
     justify-content: center;
     font-size: 14px;
     color: white !important;
+  }
+
+  @include bp(sm) {
+    z-index: 4;
+
+    .hamburger-icon {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+      opacity: 0.7;
+    }
+
+    .top-nav-left {
+      width: 100%;
+    }
+
+    a {
+      font-size: 16px;
+    }
+
+    ul {
+      z-index: 4;
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      position: absolute;
+      // margin-top: 150px;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      height: calc(100vh - 50px);
+      padding: 30px;
+      background-color: #001225;
+      // background-color: tomato;
+
+      &.show-menu {
+        display: flex;
+      }
+    }
+
+    .menu-item {
+      float: none;
+      margin: 0 0 10px;
+      padding-bottom: 10px;
+
+    }
+
+    .top-nav-right {
+      display: none;
+    }
   }
 }

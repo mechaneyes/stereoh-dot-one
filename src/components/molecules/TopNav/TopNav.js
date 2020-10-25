@@ -1,15 +1,21 @@
 // Soundtrack for TopNav:
 // https://www.nts.live/shows/boom-bip/episodes/boom-bip-18th-may-2020
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import "./TopNav.scss";
 
-const MenuItem = (href) => {
-  let location = useLocation();
-  // console.log(location.pathname);
+const imgPath = process.env.PUBLIC_URL + "/assets/";
 
+const MenuItem = (href) => {
+  let [isVisible, setIsVisible] = useState(false);
+
+  let location = useLocation();
+
+  const burgerWidth = {
+    width: "30px",
+  };
   let saturnActive;
   let tropicalActive;
   let basslineActive;
@@ -34,11 +40,11 @@ const MenuItem = (href) => {
 
   return (
     <nav className="top-nav">
-      <div className="top-nav-left">
+      <div className="top-nav-left" onClick={() => setIsVisible(false)}>
         <Link to="/">
           <h2>Stereoh</h2>
         </Link>
-        <ul>
+        <ul className={isVisible === true ? "show-menu" : ""}>
           <li className={`menu-item saturn6 ${saturnActive ? "active" : ""}`}>
             <Link to="/saturn6">saturn&nbsp;6</Link>
           </li>
@@ -59,9 +65,14 @@ const MenuItem = (href) => {
           <li className={`menu-item about ${aboutActive ? "active" : ""}`}>
             <Link to="/about">About</Link>
           </li>
-          {/* <li className="menu-item">
-            <Link to="/pnew">pnew</Link>
-          </li> */}
+          <li className="mobile-only menu-item">
+            <Link to="/feedback">Feedback
+            </Link>
+          </li>
+          <li className="mobile-only menu-item">
+            <Link to="/signup">Sign Up
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="top-nav-right">
@@ -76,6 +87,13 @@ const MenuItem = (href) => {
           </Link>
         </div>
       </div>
+      <img
+        className="hamburger-icon"
+        src={imgPath + "hamburger.png"}
+        alt="hamburger menu"
+        style={burgerWidth}
+        onClick={() => setIsVisible(!isVisible)}
+      />
     </nav>
   );
 };

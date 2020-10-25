@@ -1,23 +1,6 @@
 .feedback {
     iframe {
+        width: 100%;
         margin-top: 50px;
-    }
-
-    .related-content {
-      max-width: none;
-  
-      .related-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-  
-      button {
-        min-width: 125px;
-      }
-    }
-
-    nav.related-nav,
-    .related-content {
-      position: relative;
-      top: auto;
     }
 }

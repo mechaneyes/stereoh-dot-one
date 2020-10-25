@@ -82,11 +82,6 @@ const Neoneon = () => {
         <div className="home-hero-content">
           {/* <EventInfo {...eventInfo} /> */}
           <div className="event-info">
-            {/* <img
-              className="event-flyer"
-              src={imgPath + "bassline-reactor.jpg"}
-              alt="Bassline Reactor Flyer"
-            /> */}
             <h1>{eventInfo.title}</h1>
             <h2 className="disclaimer">{eventInfo.coming}</h2>
             <h5>{eventInfo.subHeadline}</h5>

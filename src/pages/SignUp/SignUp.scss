@@ -11,6 +11,10 @@
     margin-bottom: 30px !important;
   }
 
+  .home-hero-img {
+    width: 100%;
+  }
+
   #mc_embed_signup {
       padding-top: 40px;
   }
@@ -119,26 +123,19 @@
     min-width: 170px;
   }
 
-  .related-content {
-    max-width: none;
-    top: calc(100vh - 150px);
+  @include bp(sm) {
+    section.body-copy {
+      width: 100%;
+      margin: 0;
+      padding: 0px 20px;
 
-    .related-grid {
-      grid-template-columns: 1fr 1fr 1fr;
+      h1 {
+        margin-top: 20px;
+      }
     }
 
-    button {
-      min-width: 125px;
-    }
-
-    @include bp(land13) {
-      position: relative;
-      top: auto;
-    }
-  
-    @include bp(vert11) {
-      position: relative;
-      top: auto;
+    .home-hero-subheadline {
+      width: 100%;
     }
   }
 }

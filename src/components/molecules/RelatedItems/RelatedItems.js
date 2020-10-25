@@ -11,7 +11,7 @@ const RelatedItems = (props) => {
       >
         <nav className="related-nav">
           <ul>
-            <li className="active-item">our other experiences</li>
+            <li className="active-item">our experiences</li>
           </ul>
         </nav>
         <div className="related-grid">

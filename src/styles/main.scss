@@ -1,9 +1,11 @@
 @import url("https://use.typekit.net/guw0xro.css");
 @import "breakpoints";
 
-html,
-body {
-  overflow-x: hidden;
+@include bp(sm) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
 
 body {
@@ -11,11 +13,7 @@ body {
 }
 
 .App {
-  //   font-family: dead-history, sans-serif;
-  //   font-weight: 700;
-  //   font-weight: 400;
-
-  font-family: din-2014, sans-serif;
+  // font-family: din-2014, sans-serif;
   //   font-weight: 200;
   //   font-weight: 300;
   //   font-weight: 400;
