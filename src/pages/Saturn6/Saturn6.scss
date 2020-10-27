@@ -3,7 +3,6 @@
 @import "../../styles/breakpoints";
 
 .saturn6.single {
-  padding-bottom: 100px;
 
   .home-hero-img {
     width: 100%;
@@ -187,10 +186,6 @@
     top: 0;
   }
 
-  .related-grid {
-    margin-bottom: 0;
-  }
-
   .cta-container {
     a {
       display: inline;
@@ -214,7 +209,7 @@
   }
 
   @include bp(sm) {
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
     
     .gradient {
       display: none;

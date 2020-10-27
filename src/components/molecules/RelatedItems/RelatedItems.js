@@ -22,7 +22,7 @@ const RelatedItems = (props) => {
           >
             <img
               className="home-hero-img"
-              src="/assets/saturn6_001.jpg"
+              src="/assets/sat6/saturn6_001.jpg"
               alt="neonPlatform hero"
             />
             <div className="related-copy">
@@ -63,7 +63,7 @@ const RelatedItems = (props) => {
               alt="neonPlatform hero"
             />
             <div className="related-copy">
-              <h3>Bassline Basin</h3>
+              <h3>Bassline Reactor</h3>
               <h4>Corrosive environment filled with radioactive beats</h4>
             </div>
             <Link to="/bassline-basin">

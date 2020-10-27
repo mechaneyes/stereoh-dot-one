@@ -9,63 +9,79 @@ const CarouselHero = () => {
 
   let caroElements = [
     {
-      src: "saturn6_007.jpg",
+      src: "sat6/satSix_021.jpg",
+      alt: "saturn 6 launch party",
+    },
+    {
+      src: "sat6/saturn6_012.jpg",
       alt: "olafur eliasson 006",
     },
     {
-      src: "saturn6_003.jpg",
+      src: "sat6/satSix_009.jpg",
       alt: "olafur eliasson 010",
     },
     {
-      src: "saturn6_001.jpg",
+      src: "sat6/saturn6_007.jpg",
       alt: "olafur eliasson 009",
     },
     {
-      src: "saturn6_004.jpg",
+      src: "sat6/satSix_015.jpg",
       alt: "olafur eliasson 011",
     },
-    // {
-    //   src: "saturn6_002.jpg",
-    //   alt: "olafur eliasson 007",
-    // },
     {
-      src: "saturn6_005.jpg",
+      src: "sat6/satSix_004.jpg",
       alt: "olafur eliasson 009",
     },
-    // {
-    //   src: "saturn6_006.jpg",
-    //   alt: "olafur eliasson 005",
-    // },
     {
-      src: "saturn6_008.jpg",
-      alt: "olafur eliasson 007",
-    },
-    // {
-    //   src: "saturn6_009.jpg",
-    //   alt: "olafur eliasson 010",
-    // },
-    // {
-    //   src: "saturn6_010.jpg",
-    //   alt: "olafur eliasson 011",
-    // },
-    {
-      src: "saturn6_011.jpg",
+      src: "sat6/saturn6_006.jpg",
       alt: "olafur eliasson 005",
     },
     {
-      src: "saturn6_012.jpg",
+      src: "sat6/satSix_024.jpg",
+      alt: "olafur eliasson 007",
+    },
+    {
+      src: "sat6/saturn6_008.jpg",
+      alt: "olafur eliasson 010",
+    },
+    {
+      src: "sat6/saturn6_003.jpg",
+      alt: "olafur eliasson 011",
+    },
+    {
+      src: "sat6/satSix_001.jpg",
+      alt: "olafur eliasson 005",
+    },
+    {
+      src: "sat6/saturn6_004.jpg",
       alt: "olafur eliasson 006",
     },
     {
-      src: "saturn6_013.jpg",
+      src: "sat6/satSix_018.jpg",
       alt: "olafur eliasson 007",
     },
-    // {
-    //   src: "saturn6_014.jpg",
-    //   alt: "olafur eliasson 010",
-    // },
     {
-      src: "saturn6_015.jpg",
+      src: "sat6/saturn6_009.jpg",
+      alt: "olafur eliasson 010",
+    },
+    {
+      src: "sat6/saturn6_013.jpg",
+      alt: "olafur eliasson 011",
+    },
+    {
+      src: "sat6/saturn6_015.jpg",
+      alt: "olafur eliasson 006",
+    },
+    {
+      src: "sat6/satSix_010.jpg",
+      alt: "olafur eliasson 007",
+    },
+    {
+      src: "sat6/satSix_016.jpg",
+      alt: "olafur eliasson 010",
+    },
+    {
+      src: "sat6/satSix_023.jpg",
       alt: "olafur eliasson 011",
     },
   ];

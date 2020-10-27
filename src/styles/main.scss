@@ -8,19 +8,29 @@
   }
 }
 
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@include bp(sm) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+}
+
 body {
   background: #001225;
 }
 
 .App {
-  // font-family: din-2014, sans-serif;
-  //   font-weight: 200;
-  //   font-weight: 300;
-  //   font-weight: 400;
-  //   font-style: italic;    //   font-weight: 400;
-  //   font-weight: 600;
-  //   font-weight: 700;
-
   // Changeling Neo Regular
   font-family: changeling-neo, sans-serif;
   font-weight: 400;

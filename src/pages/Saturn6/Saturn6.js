@@ -32,7 +32,7 @@ const Saturn6 = () => {
       <section className="event-hero">
         <img
           className="home-hero-img"
-          src={imgPath + "saturn6_001.jpg"}
+          src={imgPath + "sat6/saturn6_007.jpg"}
           alt="Bassline Basin hero"
         />
         <div className="gradient"></div>

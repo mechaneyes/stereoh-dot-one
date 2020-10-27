@@ -13,7 +13,7 @@ const HomeHero = (props) => {
       <img
         className="home-hero-img"
         // src={homeHeroImg}
-        src={imgPath + "cybotron_0_1_0.jpg"}
+        src={imgPath + "sat6/satSix_021.jpg"}
         alt="neonPlatform hero"
       />
       {/* <img className="home-flyer" src={imgPath + "bassline-reactor.jpg"} alt="Bassline Reactor Flyer" /> */}

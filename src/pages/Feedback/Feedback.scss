@@ -1,6 +1,29 @@
+// Feedback.scss
+
+@import "../../styles/breakpoints";
+
 .feedback {
-    iframe {
-        width: 100%;
-        margin-top: 50px;
+  iframe {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .related-content {
+    position: relative;
+    top: 50px;
+  }
+
+  .related-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .one-related-item {
+    margin-bottom: 50px;
+  }
+
+  @include bp(sm) {
+    .related-grid {
+      grid-template-columns: 1fr;
     }
+  }
 }

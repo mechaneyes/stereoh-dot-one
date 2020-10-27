@@ -14,10 +14,23 @@ export class Homepage extends Component {
           title="Stereoh Feedback"
           src="https://docs.google.com/forms/d/e/1FAIpQLSeBpuU3V0xwW8snidXiu4W2A6s0aJ5fINangc6EHPFCeRU9-A/viewform?embedded=true"
           width="640"
-          height="4300"
+          height="5000"
           frameBorder="0"
           marginHeight="0"
           marginWidth="0"
+          className="mobile-only"
+        >
+          Loading…
+        </iframe>
+        <iframe
+          title="Stereoh Feedback"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeBpuU3V0xwW8snidXiu4W2A6s0aJ5fINangc6EHPFCeRU9-A/viewform?embedded=true"
+          width="640"
+          height="4000"
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
+          className="desktop-only"
         >
           Loading…
         </iframe>
