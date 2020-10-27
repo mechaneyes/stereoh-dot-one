@@ -22,6 +22,7 @@
   }
 
   @include bp(sm) {
+      height: 6400px;
     .related-grid {
       grid-template-columns: 1fr;
     }
