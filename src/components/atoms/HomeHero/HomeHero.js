@@ -10,12 +10,15 @@ const HomeHero = (props) => {
 
   return (
     <section className="homepage-hero">
-      <img
+      {/* <img
         className="home-hero-img"
         // src={homeHeroImg}
         src={imgPath + "sat6/satSix_021.jpg"}
         alt="neonPlatform hero"
-      />
+      /> */}
+      <video width="100%" autoPlay loop>
+        <source src={imgPath + "sat6/3dObjectsVid_v2.mp4"} type="video/mp4" />
+      </video>
       {/* <img className="home-flyer" src={imgPath + "bassline-reactor.jpg"} alt="Bassline Reactor Flyer" /> */}
       <div className="home-hero-content">
         {headline ? (
@@ -31,8 +34,9 @@ const HomeHero = (props) => {
         <h3>Welcome to Stereoh 0.1.1!</h3>
         <p className="home-hero-subheadline">
           We are building a platform for virtual music shows that are more
-          interactive, social, and accessible. <Link to="/signup">Sign up</Link> to hear about
-          future events and new features. We’d also love to hear your <Link to="/feedback">feedback</Link>
+          interactive, social, and accessible. <Link to="/signup">Sign up</Link>{" "}
+          to hear about future events and new features. We’d also love to hear
+          your <Link to="/feedback">feedback</Link>
         </p>
       </div>
       <div className="gradient">
