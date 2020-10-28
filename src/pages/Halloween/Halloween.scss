@@ -1,8 +1,8 @@
 // TropicalFreeze.scss
 
-@import '../../styles/breakpoints';
+@import "../../styles/breakpoints";
 
-.tropical-freeze {
+.halloween {
   position: relative;
   min-height: 100vh;
   // padding-bottom: 50px;
@@ -11,17 +11,32 @@
     overflow: hidden;
 
     .gradient {
-      background: linear-gradient(
-        270deg,
-        rgba(255, 255, 255, 0) -12.5%,
-        #287a73 70.28%
-      );
+    //   background-color: #0f2d52;
+      background: rgba(15, 45, 82, 0.9);
+    }
+  }
+
+  .hero-image {
+    visibility: hidden;
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &.spooky-flyer {
+      z-index: 2;
+      top: 10%;
+      right: 11%;
+      width: 600px;
+      height: 600px;
     }
   }
 
   .event-info {
     bottom: 31%;
-    
+
     @include bp(land13) {
       bottom: 15%;
       width: 66%;
@@ -54,7 +69,11 @@
     background: #001226;
     position: absolute;
     top: calc(100vh - 180px);
-    
+
+    .related-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
     @include bp(oriPort) {
       position: relative;
       top: auto;

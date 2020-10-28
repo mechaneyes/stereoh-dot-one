@@ -19,6 +19,7 @@ const MenuItem = (href) => {
   let saturnActive;
   let tropicalActive;
   let basslineActive;
+  let spookyActive
   let aboutActive;
 
   switch (location.pathname) {
@@ -30,6 +31,9 @@ const MenuItem = (href) => {
       break;
     case "/bassline-basin":
       basslineActive = true;
+      break;
+    case "/spooky":
+      spookyActive = true;
       break;
     case "/about":
       aboutActive = true;
@@ -62,16 +66,23 @@ const MenuItem = (href) => {
             <Link to="/bassline-basin">Bassline&nbsp;Reactor</Link>
             {/* <Link to="/bassline-basin">October&nbsp;18th</Link> */}
           </li>
+          <li
+            className={`menu-item spooky upcoming ${
+              // className={`menu-item bassline-basin ${
+              spookyActive ? "active" : ""
+            }`}
+          >
+            <Link to="/spooky">halloween</Link>
+            {/* <Link to="/bassline-basin">October&nbsp;18th</Link> */}
+          </li>
           <li className={`menu-item about ${aboutActive ? "active" : ""}`}>
             <Link to="/about">About</Link>
           </li>
           <li className="mobile-only menu-item">
-            <Link to="/feedback">Feedback
-            </Link>
+            <Link to="/feedback">Feedback</Link>
           </li>
           <li className="mobile-only menu-item">
-            <Link to="/signup">Sign Up
-            </Link>
+            <Link to="/signup">Sign Up</Link>
           </li>
         </ul>
       </div>
