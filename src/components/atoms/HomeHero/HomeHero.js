@@ -11,13 +11,13 @@ const HomeHero = (props) => {
   return (
     <section className="homepage-hero">
       {/* <img
-        className="home-hero-img"
+        className="mobile-only home-hero-img"
         // src={homeHeroImg}
         src={imgPath + "sat6/satSix_021.jpg"}
         alt="neonPlatform hero"
       /> */}
-      <video width="100%" autoPlay loop>
-        <source src={imgPath + "sat6/3dObjectsVid_v2.mp4"} type="video/mp4" />
+      <video className="desktop-only" width="100%" autoPlay muted loop>
+        <source src={imgPath + "sat6/3dObjectsVid.mp4"} type="video/mp4" />
       </video>
       {/* <img className="home-flyer" src={imgPath + "bassline-reactor.jpg"} alt="Bassline Reactor Flyer" /> */}
       <div className="home-hero-content">

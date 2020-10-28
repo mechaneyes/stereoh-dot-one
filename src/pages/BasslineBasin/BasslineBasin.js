@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Button from "../../components/atoms/Button/Button";
 import PullImgLeft from "../../components/atoms/PullQuotes/PullImgLeft";
 import PullImgRight from "../../components/atoms/PullQuotes/PullImgRight";
-import EventInfo from "../../components/atoms/EventInfo/EventInfo";
+// import EventInfo from "../../components/atoms/EventInfo/EventInfo";
 import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
 import "./BasslineBasin.scss";
 import "./EventHero.scss";
@@ -90,7 +90,7 @@ const Neoneon = () => {
             </div>
             <div className="cta-container">
               {isBefore ? (
-                <a className="hide-me"></a>
+                <div className="hide-me"></div>
               ) : (
                 <Link to="/verification">
                   <button>Enter Bassline Reactor</button>

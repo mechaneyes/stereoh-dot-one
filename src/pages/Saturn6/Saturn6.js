@@ -2,7 +2,7 @@ import React from "react";
 
 import CarouselHero from "../../components/atoms/CarouselHero/CarouselHero";
 import EventInfo from "../../components/atoms/EventInfo/EventInfo";
-import Button from "../../components/atoms/Button/Button";
+// import Button from "../../components/atoms/Button/Button";
 import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
 import "../../components/molecules/RelatedItems/RelatedItems.scss";
 import "../../components/atoms/EventInfo/EventInfo.scss";

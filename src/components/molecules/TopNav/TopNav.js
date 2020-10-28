@@ -1,7 +1,7 @@
 // Soundtrack for TopNav:
 // https://www.nts.live/shows/boom-bip/episodes/boom-bip-18th-may-2020
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import "./TopNav.scss";
