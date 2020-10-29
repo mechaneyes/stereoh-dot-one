@@ -21,7 +21,7 @@ const EventInfo = (props) => {
           targetBlank={props.targetBlank}
           disabled={props.isDisabled}
         />
-        {window.location.pathname == "/spooky" ? <Countdown /> : ""}
+        {/* {window.location.pathname == "/spooky" ? <Countdown /> : ""} */}
       </div>
     </div>
   );
