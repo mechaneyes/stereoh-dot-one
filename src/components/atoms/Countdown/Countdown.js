@@ -1,14 +1,14 @@
-import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-// import "./Countdown.scss";
+import "./Countdown.scss";
 
 let Countdown = (props) => {
   let [isBefore, setBefore] = useState(true);
 
   // Countdown
   // Set the date we're counting down to
-  var countDownDate = new Date("Oct 18, 2030 20:00:00").getTime();
+  var countDownDate = new Date("Oct 30, 2020 21:00:00 GMT-4:00").getTime();
   // console.log('countDownDate', countDownDate)
 
   // Update the count down every 1 second
@@ -39,17 +39,19 @@ let Countdown = (props) => {
     }
   }, 1000);
   return (
-    <div className="cta-container">
-      {isBefore ? (
-        <a className="hide-me"></a>
-      ) : (
-        <Link to="/verification">
-          <button>Enter Bassline Reactor</button>
-        </Link>
-      )}
-      <div className={`count-container ${isBefore ? "" : "hide-me"}`}>
-        Launching in <div id="countdown"></div>
-        <p>Look for the link here at the time of the event</p>
+    <div className="countdown-comp">
+      <div className="cta-container">
+        {isBefore ? (
+          <a className="hide-me"></a>
+        ) : (
+          <Link to="/verification">
+            <button>Enter Spooky</button>
+          </Link>
+        )}
+        <div className={`count-container ${isBefore ? "" : "hide-me"}`}>
+          <h3>Launching in <span id="countdown"></span></h3>
+          <p>Look for the link here at the time of the event</p>
+        </div>
       </div>
     </div>
   );

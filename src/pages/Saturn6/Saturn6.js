@@ -19,9 +19,10 @@ const eventInfo = {
   description:
     "Stereoh is welcoming Heidi Sabertooth and R.Gamble to the inaugural Saturn6 party. They will be broadcasting an icy mix of no-wave, electro punk, and analog techno straight into the cavernous confines of the deep space cybernetic factory.",
   btnUrl: "https://space.stereoh.one/suJFdn4/saturn6-v21",
-  btnTxt: "enter saturn 6",
+  btnTxt: "coming soon",
   targetBlank: "true",
   buttonUse: "enter-space",
+  isDisabled: true,
 };
 
 const Saturn6 = () => {

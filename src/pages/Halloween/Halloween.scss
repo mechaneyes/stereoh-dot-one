@@ -7,17 +7,22 @@
   min-height: 100vh;
   // padding-bottom: 50px;
 
+  * {
+    box-sizing: border-box;
+  }
+
   .gradient-hero {
     overflow: hidden;
 
     .gradient {
-    //   background-color: #0f2d52;
+      //   background-color: #0f2d52;
       background: rgba(15, 45, 82, 0.9);
     }
   }
 
   .hero-image {
     visibility: hidden;
+    height: calc(100vh - 165px);
   }
 
   video {
@@ -28,22 +33,87 @@
     &.spooky-flyer {
       z-index: 2;
       top: 10%;
-      right: 11%;
+      right: 6%;
       width: 600px;
       height: 600px;
     }
   }
 
+  @include bp(sm) {
+    .hero-image {
+      display: none;
+    }
+
+    video.spooky-flyer {
+      position: relative;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @include bp(land13) {
+    .gradient-hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 100px;
+    }
+
+    .hero-image {
+      display: none;
+    }
+
+    video.spooky-flyer {
+      position: relative;
+      top: auto;
+      right: auto;
+    }
+  }
+
+  @include bp(vert11) {
+    .gradient-hero {
+      padding: 100px;
+    }
+
+    video.spooky-flyer {
+      position: relative;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: auto;
+      max-width: 600px;
+    }
+  }
+
+  @include bp(sm) {
+    .gradient-hero {
+      padding: 0;
+    }
+  }
+
   .event-info {
-    bottom: 31%;
+    z-index: 3;
+    position: absolute;
+    bottom: 30.5%;
+    bottom: auto;
+    top: 280px;
+    width: 45%;
 
     @include bp(land13) {
+      position: relative;
+      top: auto;
       bottom: 15%;
-      width: 66%;
+      width: 90%;
+      margin: 0;
+      padding: 40px 30px 90px;
     }
 
     @include bp(vert11) {
-      width: 66%;
+      width: 100%;
+      margin: 0;
+      padding: 30px;
     }
 
     @include bp(sm) {
@@ -63,24 +133,12 @@
   }
 
   .related-content {
-    position: relative;
-    top: calc(100vh - 150px);
-    top: 0;
-    background: #001226;
-    position: absolute;
-    top: calc(100vh - 180px);
-
-    .related-grid {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    @include bp(oriPort) {
       position: relative;
       top: auto;
-    }
+      margin: 0;
+  }
 
-    @include bp(oriLand) {
-      // width: 66%;
-    }
+  .related-grid {
+    display: flex;
   }
 }

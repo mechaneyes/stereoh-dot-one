@@ -1,6 +1,7 @@
 import React from "react";
 
 import Button from "../Button/Button";
+import Countdown from "../Countdown/Countdown";
 import "./EventInfo.scss";
 
 const EventInfo = (props) => {
@@ -20,6 +21,7 @@ const EventInfo = (props) => {
           targetBlank={props.targetBlank}
           disabled={props.isDisabled}
         />
+        <Countdown />
       </div>
     </div>
   );

@@ -19,8 +19,7 @@ const ThankYou = () => {
         <div className="home-hero-content">
           <h1>Thank you</h1>
           <p className="home-hero-subheadline">
-            You will receive an email with a link to to the party any minute
-            now.
+            You will receive an email with a link to to the party on the day of the event.
           </p>
         </div>
         <div className="gradient"></div>
