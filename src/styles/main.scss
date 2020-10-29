@@ -298,6 +298,14 @@ body {
     }
   }
 
+  .count-container {
+    display: block;
+
+    &.hide-me {
+      display: none;
+    }
+  }
+
   // @include bp(vert11) {
   //   .scroll-down {
   //     display: none;

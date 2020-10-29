@@ -6,4 +6,13 @@
     h3 {
         text-transform: uppercase;
     }
+
+    button {
+        background-color: transparent;
+
+        &:hover  {
+            color: #0056b1;
+            background-color: white;
+        }
+    }
 }
