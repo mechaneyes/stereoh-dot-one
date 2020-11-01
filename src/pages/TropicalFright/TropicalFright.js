@@ -7,19 +7,19 @@ import Button from "../../components/atoms/Button/Button";
 import Countdown from "../../components/atoms/Countdown/Countdown";
 import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
 
-import "./Halloween.scss";
+import "./TropicalFright.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const eventInfo = {
-  title: "Freaks Come Out",
-  //   subHeadline: "Hidden oasis filled with organic house formations",
+  title: "Tropical Fright",
+    subHeadline: "Freaks Come Out",
   description:
     "Stereoh presents Halloween spooktacular edition with Detroit techno songstress Milan Ariel. As a singer, songwriter and performer she fuses hip-hop, techno and nu-soul to create modern pop music with unique Motor City sound. As a DJ Milan proudly carries her family heritage inspired by her father the originator of techno Juan Atkins. Join us and Milan this Friday night on a floating frozen oasis, complete with spooky avatars for you to try on, and eerie artifacts to discover.",
-  btnUrl: "signup",
-  // btnTxt: "enter tropical freeze",
-  btnTxt: "sign up",
-  targetBlank: false,
+  btnUrl: "https://space.stereoh.one/SCRMjqL/tropical-fright",
+  btnTxt: "enter tropical fright",
+//   btnTxt: "sign up",
+  targetBlank: true,
   //   isDisabled: true,
 };
 
@@ -33,7 +33,7 @@ const TropicalFreeze = () => {
   };
 
   return (
-    <div className="single halloween">
+    <div className="single tropical-fright">
       <article className="gradient-hero">
         <img
           className="hero-image"
@@ -74,14 +74,14 @@ const TropicalFreeze = () => {
           <p>{eventInfo.description}</p>
         </div>
         <div className="cta-container">
-          {/* <Button
+          <Button
             // buttonUse="enter-space"
             btnUrl={eventInfo.btnUrl}
             btnTxt={eventInfo.btnTxt}
             targetBlank={eventInfo.targetBlank}
             disabled={eventInfo.isDisabled}
-          /> */}
-          <Countdown />
+          />
+          {/* <Countdown /> */}
         </div>
       </div>
       {/* <Countdown /> */}

@@ -8,7 +8,7 @@ let Countdown = (props) => {
 
   // Countdown
   // Set the date we're counting down to
-  var countDownDate = new Date("Oct 30, 2020 21:00:00 GMT-4:00").getTime();
+  var countDownDate = new Date("Oct 30, 2010 21:00:00 GMT-4:00").getTime();
   // console.log('countDownDate', countDownDate)
 
   // Update the count down every 1 second
@@ -29,7 +29,8 @@ let Countdown = (props) => {
 
     if (document.getElementById("countdown") != null) {
       document.getElementById("countdown").innerHTML =
-        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        // days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        minutes + "m " + seconds + "s ";
 
       // If the count down is finished, write some text
       if (distance < 0) {
@@ -45,12 +46,18 @@ let Countdown = (props) => {
           <a className="hide-me"></a>
         ) : (
           <Link to="/verification">
-            <button>Enter Spooky</button>
+            <button>Sign Up for Link to Tropical Fright</button>
           </Link>
         )}
         <div className={`count-container ${isBefore ? "" : "hide-me"}`}>
-          <h3>Launching in <span id="countdown"></span></h3>
-          <p>Look for the link here at the time of the event</p>
+          <h3>
+            Launching in <span id="countdown"></span>
+          </h3>
+          {isBefore ? (
+            <p>Look for the link here at the time of the event</p>
+          ) : (
+            <div></div>
+          )}
         </div>
       </div>
     </div>
