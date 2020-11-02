@@ -222,9 +222,9 @@ const Neoneon = () => {
           </article>
         </div>
 
-        {/* // ————————————————————————————————————o————————————————————————————————————o SINGLE SQUARES -->
-// SINGLE SQUARES -->
-// ———————————————————————————————————— SINGLE SQUARES —> */}
+        {/* // ————————————————————————————————————o————————————————————————————————————o VERT TILES -->
+        // VERT TILES -->
+        // ———————————————————————————————————— VERT TILES —> */}
         <div className="events-tiles event-tiles-vert">
           <article className="one-event-tile">
             <img
@@ -234,10 +234,7 @@ const Neoneon = () => {
             />
             <div className="one-tile-copy">
               <h2>Tropical Fright</h2>
-              <p>
-                Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
-                of Lost Soul Enterprises to the inaugural Saturn6 party.
-              </p>
+              <p>Stereoh welcome New Yorkers Heidi Sabertooth and R.Gamble</p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
               </Link>
@@ -251,10 +248,7 @@ const Neoneon = () => {
             />
             <div className="one-tile-copy">
               <h2>Saturn 6</h2>
-              <p>
-                Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
-                of Lost Soul Enterprises to the inaugural Saturn6 party.
-              </p>
+              <p>Stereoh welcome New Yorkers Heidi Sabertooth and R.Gamble</p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
               </Link>
@@ -267,11 +261,8 @@ const Neoneon = () => {
               alt="neonPlatform hero"
             />
             <div className="one-tile-copy">
-            <h2>Tropical Fright</h2>
-              <p>
-                Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
-                of Lost Soul Enterprises to the inaugural Saturn6 party.
-              </p>
+              <h2>Tropical Fright</h2>
+              <p>Stereoh welcome New Yorkers Heidi Sabertooth and R.Gamble</p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
               </Link>
@@ -285,10 +276,7 @@ const Neoneon = () => {
             />
             <div className="one-tile-copy">
               <h2>Saturn 6</h2>
-              <p>
-                Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
-                of Lost Soul Enterprises to the inaugural Saturn6 party.
-              </p>
+              <p>Stereoh welcome New Yorkers Heidi Sabertooth and R.Gamble</p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
               </Link>
