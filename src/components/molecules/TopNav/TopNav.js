@@ -20,6 +20,7 @@ const MenuItem = (href) => {
   let tropicalActive;
   let basslineActive;
   let spookyActive;
+  let experiencesActive;
   let aboutActive;
 
   switch (location.pathname) {
@@ -35,6 +36,9 @@ const MenuItem = (href) => {
     case "/tropical-fright":
       spookyActive = true;
       break;
+    case "/experiences":
+      experiencesActive = true;
+      break;
     case "/about":
       aboutActive = true;
       break;
@@ -49,24 +53,8 @@ const MenuItem = (href) => {
           <h2>Stereoh</h2>
         </Link>
         <ul className={isVisible === true ? "show-menu" : ""}>
-          <li className={`menu-item saturn6 ${saturnActive ? "active" : ""}`}>
-            <Link to="/saturn6">saturn&nbsp;6</Link>
-          </li>
-          <li
-            className={`menu-item tropical ${tropicalActive ? "active" : ""}`}
-          >
-            <Link to="/tropical-freeze">tropical&nbsp;freeze</Link>
-          </li>
-          <li className={`menu-item spooky ${spookyActive ? "active" : ""}`}>
-            <Link to="/tropical-fright">tropical&nbsp;fright</Link>
-          </li>
-          <li
-            // className={`menu-item bassline-basin upcoming ${
-            className={`menu-item bassline-basin ${
-              basslineActive ? "active" : ""
-            }`}
-          >
-            <Link to="/bassline-basin">Bassline&nbsp;Reactor</Link>
+          <li className={`menu-item events ${experiencesActive ? "events" : ""}`}>
+            <Link to="/experiences">experiences</Link>
           </li>
           <li className={`menu-item about ${aboutActive ? "active" : ""}`}>
             <Link to="/about">About</Link>

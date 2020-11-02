@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
-import "./Events.scss";
+import "./Experiences.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
 
