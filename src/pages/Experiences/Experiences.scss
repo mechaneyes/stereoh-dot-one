@@ -82,8 +82,8 @@
         width: 66%;
         margin: auto;
         margin-top: 100px;
-        padding-top: 100px;
-        border-top: 10px solid deepskyblue;
+        // padding-top: 100px;
+        // border-top: 10px solid deepskyblue;
     }
 
     .events-tiles.single-fifty {
@@ -118,6 +118,12 @@
             position: relative;
             padding-top: 20px;
         }
+    }
+
+    .events-tiles.two-across {
+        margin-top: 100px;
+        padding-top: 100px;
+        border-top: 10px solid deepskyblue;
     }
 
     .events-tiles.single-square {
