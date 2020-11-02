@@ -13,7 +13,7 @@ const Neoneon = () => {
     <div className="all-events">
       <section className="all-events-main">
         <div className="events-info-content">
-          <h1>Stereoh Events</h1>
+          <h1>Stereoh Experiences</h1>
           <p className="events-info-subheadline">
             Stereoh is a platform for live music shows and interactive
             experiences in a novel format that combines streaming video with
@@ -25,6 +25,8 @@ const Neoneon = () => {
           </p>
         </div>
         {/* <div className="gradient"></div> */}
+
+        <hr />
 
         {/* // ————————————————————————————————————o————————————————————————————————————o SINGLE COLUMN WIDE -->
         // SINGLE COLUMN WIDE -->
