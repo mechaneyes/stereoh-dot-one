@@ -86,6 +86,40 @@
         border-top: 10px solid deepskyblue;
     }
 
+    .events-tiles.single-fifty {
+        grid-template-columns: 1fr;
+        // gap: 70px;
+        width: 66%;
+        margin: auto;
+        margin-top: 100px;
+        padding-top: 100px;
+        border-top: 10px solid deepskyblue;
+
+        .one-event-tile {
+            grid-template-columns: 50% 50%;;
+            gap: 35px;
+            gap: 0;
+            // padding: 0;
+            padding-bottom: 0px;
+            border: 0;
+        }
+
+        .one-tile-copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 0;
+            padding-left: 30px;
+            border-top: 1px solid #676767;
+            border-bottom: 1px solid #676767;
+        }
+
+        a {
+            position: relative;
+            padding-top: 20px;
+        }
+    }
+
     .events-tiles.single-square {
         grid-template-columns: 1fr;
         width: 60%;
@@ -111,6 +145,7 @@
         border-top: 10px solid deepskyblue;
 
         .one-event-tile {
+            overflow: hidden;
             // width: 25%;
             display: flex;
             flex-direction: column;
@@ -122,9 +157,15 @@
                 position: relative;
                 bottom: auto;
             }
+
+            img {
+                position: relative;
+                top: -50px;
+            }
         }
 
         .one-tile-copy {
+            margin-top: -50px;
             padding: 0 20px 30px 20px;
         }
     }
