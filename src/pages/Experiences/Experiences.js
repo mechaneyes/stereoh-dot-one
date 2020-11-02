@@ -72,6 +72,26 @@ const Neoneon = () => {
               </Link>
             </div>
           </article>
+          <article className="one-event-tile">
+            <img
+              className="one-event-img"
+              src="/assets/sat6/satSix_021.jpg"
+              alt="neonPlatform hero"
+            />
+            <div className="one-tile-copy">
+              <h2>Tropical Fright</h2>
+              <p>
+                Stereoh presents Halloween spooktacular edition with Detroit
+                techno songstress Milan Ariel. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Proin eu arcu lacinia, lobortis
+                ante vel. Proin eu arcu lacinia, lobortis ante vel. Proin eu
+                arcu lacinia, lobortis.
+              </p>
+              <Link to="/bassline-basin">
+                <button className="transp-bg">Explore</button>
+              </Link>
+            </div>
+          </article>
         </div>
 
         {/* // ————————————————————————————————————o————————————————————————————————————o SINGLE COLUMN 50x50 -->
@@ -277,6 +297,31 @@ const Neoneon = () => {
               <p>
                 Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
                 of Lost Soul Enterprises to the inaugural Saturn6 party.
+              </p>
+              <p>
+                Stereoh presents Halloween spooktacular edition with Detroit
+                techno songstress Milan Ariel. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Proin eu arcu lacinia.
+              </p>
+              <Link to="/bassline-basin">
+                <button className="transp-bg">Explore</button>
+              </Link>
+            </div>
+          </article>
+          <article className="one-event-tile">
+            <img
+              className="one-event-img"
+              src="/assets/tropicalFright_008.jpg"
+              alt="neonPlatform hero"
+            />
+            <div className="one-tile-copy">
+              <h2>Tropical Fright</h2>
+              <p>
+                Stereoh presents Halloween spooktacular edition with Detroit
+                techno songstress Milan Ariel. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Proin eu arcu lacinia, lobortis
+                ante vel. Proin eu arcu lacinia, lobortis ante vel. Proin eu
+                arcu lacinia, lobortis.
               </p>
               <p>
                 Stereoh presents Halloween spooktacular edition with Detroit
