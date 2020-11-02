@@ -25,7 +25,11 @@ const Neoneon = () => {
           </p>
         </div>
         {/* <div className="gradient"></div> */}
-        <div className="events-tiles">
+
+        {/* // ————————————————————————————————————o————————————————————————————————————o TWO ACROSS -->
+        // TWO ACROSS -->
+        // ———————————————————————————————————— TWO ACROSS —> */}
+        <div className="events-tiles two-across">
           <article className="one-event-tile">
             <img
               className="one-event-img"
@@ -37,6 +41,12 @@ const Neoneon = () => {
               <p>
                 Stereoh presents Halloween spooktacular edition with Detroit
                 techno songstress Milan Ariel.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                eu arcu lacinia, lobortis ante vel, mattis justo. Maecenas non
+                nisl vitae quam dictum volutpat egestas ac magna. Aliquam eget
+                neque tincidunt.
               </p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
@@ -55,6 +65,11 @@ const Neoneon = () => {
                 Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
                 of Lost Soul Enterprises to the inaugural Saturn6 party.
               </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                eu arcu lacinia, lobortis ante vel, mattis justo. Maecenas non
+                nisl vitae quam dictum volutpat egestas ac magna.
+              </p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
               </Link>
@@ -72,6 +87,11 @@ const Neoneon = () => {
                 Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
                 of Lost Soul Enterprises to the inaugural Saturn6 party.
               </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                eu arcu lacinia, lobortis ante vel, mattis justo. Maecenas non
+                nisl vitae quam dictum volutpat egestas ac magna.
+              </p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
               </Link>
@@ -86,8 +106,188 @@ const Neoneon = () => {
             <div className="one-tile-copy">
               <h2>Tropical Fright</h2>
               <p>
+                Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
+                of Lost Soul Enterprises to the inaugural Saturn6 party.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                eu arcu lacinia, lobortis ante vel, mattis justo. Maecenas non
+                nisl vitae quam dictum volutpat egestas ac magna.
+              </p>
+              <Link to="/bassline-basin">
+                <button className="transp-bg">Explore</button>
+              </Link>
+            </div>
+          </article>
+        </div>
+
+        {/* // ————————————————————————————————————o————————————————————————————————————o SINGLE COLUMN WIDE -->
+        // SINGLE COLUMN WIDE -->
+        // ———————————————————————————————————— SINGLE COLUMN WIDE —> */}
+        <div className="events-tiles single-column">
+          <article className="one-event-tile">
+            <img
+              className="one-event-img"
+              src="/assets/sat6/satSix_021.jpg"
+              alt="neonPlatform hero"
+            />
+            <div className="one-tile-copy">
+              <h2>Tropical Fright</h2>
+              <p>
                 Stereoh presents Halloween spooktacular edition with Detroit
-                techno songstress Milan Ariel.
+                techno songstress Milan Ariel. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Proin eu arcu lacinia, lobortis
+                ante vel. Proin eu arcu lacinia, lobortis ante vel. Proin eu
+                arcu lacinia, lobortis.
+              </p>
+              <Link to="/bassline-basin">
+                <button className="transp-bg">Explore</button>
+              </Link>
+            </div>
+          </article>
+          <article className="one-event-tile">
+            <img
+              className="one-event-img"
+              src="/assets/tropicalFreeze_014.png"
+              alt="neonPlatform hero"
+            />
+            <div className="one-tile-copy">
+              <h2>Saturn 6</h2>
+              <p>
+                Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
+                of Lost Soul Enterprises to the inaugural Saturn6 party.
+              </p>
+              <p>
+                Stereoh presents Halloween spooktacular edition with Detroit
+                techno songstress Milan Ariel. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Proin eu arcu lacinia.
+              </p>
+              <Link to="/bassline-basin">
+                <button className="transp-bg">Explore</button>
+              </Link>
+            </div>
+          </article>
+        </div>
+
+        {/* // ————————————————————————————————————o————————————————————————————————————o SINGLE SQUARES -->
+        // SINGLE SQUARES -->
+        // ———————————————————————————————————— SINGLE SQUARES —> */}
+        <div className="events-tiles single-square">
+          <article className="one-event-tile">
+            <img
+              className="one-event-img"
+              src="/assets/tropicalFright_008.jpg"
+              alt="neonPlatform hero"
+            />
+            <div className="one-tile-copy">
+              <h2>Tropical Fright</h2>
+              <p>
+                Stereoh presents Halloween spooktacular edition with Detroit
+                techno songstress Milan Ariel. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Proin eu arcu lacinia, lobortis
+                ante vel. Proin eu arcu lacinia, lobortis ante vel. Proin eu
+                arcu lacinia, lobortis.
+              </p>
+              <p>
+                Stereoh presents Halloween spooktacular edition with Detroit
+                techno songstress Milan Ariel. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Proin eu arcu lacinia.
+              </p>
+              <Link to="/bassline-basin">
+                <button className="transp-bg">Explore</button>
+              </Link>
+            </div>
+          </article>
+          <article className="one-event-tile">
+            <img
+              className="one-event-img"
+              src="/assets/sat6/satSixSideRoom_017.jpg"
+              alt="neonPlatform hero"
+            />
+            <div className="one-tile-copy">
+              <h2>Saturn 6</h2>
+              <p>
+                Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
+                of Lost Soul Enterprises to the inaugural Saturn6 party.
+              </p>
+              <p>
+                Stereoh presents Halloween spooktacular edition with Detroit
+                techno songstress Milan Ariel. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Proin eu arcu lacinia.
+              </p>
+              <Link to="/bassline-basin">
+                <button className="transp-bg">Explore</button>
+              </Link>
+            </div>
+          </article>
+        </div>
+
+        {/* // ————————————————————————————————————o————————————————————————————————————o SINGLE SQUARES -->
+// SINGLE SQUARES -->
+// ———————————————————————————————————— SINGLE SQUARES —> */}
+        <div className="events-tiles event-tiles-vert">
+          <article className="one-event-tile">
+            <img
+              className="one-event-img"
+              src="/assets/eventTileVert.jpg"
+              alt="neonPlatform hero"
+            />
+            <div className="one-tile-copy">
+              <h2>Tropical Fright</h2>
+              <p>
+                Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
+                of Lost Soul Enterprises to the inaugural Saturn6 party.
+              </p>
+              <Link to="/bassline-basin">
+                <button className="transp-bg">Explore</button>
+              </Link>
+            </div>
+          </article>
+          <article className="one-event-tile">
+            <img
+              className="one-event-img"
+              src="/assets/eventTileVert.jpg"
+              alt="neonPlatform hero"
+            />
+            <div className="one-tile-copy">
+              <h2>Saturn 6</h2>
+              <p>
+                Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
+                of Lost Soul Enterprises to the inaugural Saturn6 party.
+              </p>
+              <Link to="/bassline-basin">
+                <button className="transp-bg">Explore</button>
+              </Link>
+            </div>
+          </article>
+          <article className="one-event-tile">
+            <img
+              className="one-event-img"
+              src="/assets/eventTileVert.jpg"
+              alt="neonPlatform hero"
+            />
+            <div className="one-tile-copy">
+            <h2>Tropical Fright</h2>
+              <p>
+                Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
+                of Lost Soul Enterprises to the inaugural Saturn6 party.
+              </p>
+              <Link to="/bassline-basin">
+                <button className="transp-bg">Explore</button>
+              </Link>
+            </div>
+          </article>
+          <article className="one-event-tile">
+            <img
+              className="one-event-img"
+              src="/assets/eventTileVert.jpg"
+              alt="neonPlatform hero"
+            />
+            <div className="one-tile-copy">
+              <h2>Saturn 6</h2>
+              <p>
+                Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
+                of Lost Soul Enterprises to the inaugural Saturn6 party.
               </p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
