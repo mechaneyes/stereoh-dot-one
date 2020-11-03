@@ -6,7 +6,7 @@ import "./Experiences.scss";
 
 const imgPath = process.env.PUBLIC_URL + "/assets/";
 
-const Neoneon = () => {
+const experiences = () => {
   document.title = "Stereoh | Events";
 
   return (
@@ -190,12 +190,6 @@ const Neoneon = () => {
                 Stereoh presents Halloween spooktacular edition with Detroit
                 techno songstress Milan Ariel.
               </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                eu arcu lacinia, lobortis ante vel, mattis justo. Maecenas non
-                nisl vitae quam dictum volutpat egestas ac magna. Aliquam eget
-                neque tincidunt.
-              </p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
               </Link>
@@ -213,11 +207,6 @@ const Neoneon = () => {
                 Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
                 of Lost Soul Enterprises to the inaugural Saturn6 party.
               </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                eu arcu lacinia, lobortis ante vel, mattis justo. Maecenas non
-                nisl vitae quam dictum volutpat egestas ac magna.
-              </p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
               </Link>
@@ -234,11 +223,6 @@ const Neoneon = () => {
               <p>
                 Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
                 of Lost Soul Enterprises to the inaugural Saturn6 party.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                eu arcu lacinia, lobortis ante vel, mattis justo. Maecenas non
-                nisl vitae quam dictum volutpat egestas ac magna.
               </p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
@@ -256,11 +240,6 @@ const Neoneon = () => {
               <p>
                 Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
                 of Lost Soul Enterprises to the inaugural Saturn6 party.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                eu arcu lacinia, lobortis ante vel, mattis justo. Maecenas non
-                nisl vitae quam dictum volutpat egestas ac magna.
               </p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
@@ -284,9 +263,7 @@ const Neoneon = () => {
               <p>
                 Stereoh presents Halloween spooktacular edition with Detroit
                 techno songstress Milan Ariel. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Proin eu arcu lacinia, lobortis
-                ante vel. Proin eu arcu lacinia, lobortis ante vel. Proin eu
-                arcu lacinia, lobortis.
+                consectetur adipiscing elit.
               </p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
@@ -305,11 +282,6 @@ const Neoneon = () => {
                 Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
                 of Lost Soul Enterprises to the inaugural Saturn6 party.
               </p>
-              <p>
-                Stereoh presents Halloween spooktacular edition with Detroit
-                techno songstress Milan Ariel. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Proin eu arcu lacinia.
-              </p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
               </Link>
@@ -326,9 +298,7 @@ const Neoneon = () => {
               <p>
                 Stereoh presents Halloween spooktacular edition with Detroit
                 techno songstress Milan Ariel. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Proin eu arcu lacinia, lobortis
-                ante vel. Proin eu arcu lacinia, lobortis ante vel. Proin eu
-                arcu lacinia, lobortis.
+                consectetur adipiscing elit.
               </p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
@@ -352,9 +322,7 @@ const Neoneon = () => {
               <p>
                 Stereoh presents Halloween spooktacular edition with Detroit
                 techno songstress Milan Ariel. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Proin eu arcu lacinia, lobortis
-                ante vel. Proin eu arcu lacinia, lobortis ante vel. Proin eu
-                arcu lacinia.
+                consectetur adipiscing elit.
               </p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
@@ -373,11 +341,6 @@ const Neoneon = () => {
                 Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
                 of Lost Soul Enterprises to the inaugural Saturn6 party.
               </p>
-              <p>
-                Stereoh presents Halloween spooktacular edition with Detroit
-                techno songstress Milan Ariel. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Proin eu arcu lacinia.
-              </p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
               </Link>
@@ -394,9 +357,7 @@ const Neoneon = () => {
               <p>
                 Stereoh presents Halloween spooktacular edition with Detroit
                 techno songstress Milan Ariel. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Proin eu arcu lacinia, lobortis
-                ante vel. Proin eu arcu lacinia, lobortis ante vel. Proin eu
-                arcu lacinia.
+                consectetur adipiscing elit.
               </p>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
@@ -551,4 +512,4 @@ const Neoneon = () => {
   );
 };
 
-export default Neoneon;
+export default experiences;
