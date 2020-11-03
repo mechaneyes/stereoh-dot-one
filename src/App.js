@@ -9,7 +9,9 @@ import TropicalFreeze from "./pages/TropicalFreeze/TropicalFreeze";
 import BasslineBasin from "./pages/BasslineBasin/BasslineBasin";
 import TropicalFright from "./pages/TropicalFright/TropicalFright";
 import Experiences from "./pages/Experiences/Experiences";
+import DeckOne from "./pages/DeckOne/DeckOne";
 import About from "./pages/About/About";
+
 import Feedback from "./pages/Feedback/Feedback";
 import SignUp from "./pages/SignUp/SignUp";
 import Verification from "./pages/Verification/Verification";
@@ -35,6 +37,7 @@ export class App extends Component {
             <Route path="/spooky" component={TropicalFright} />
             <Route path="/tropical-fright" component={TropicalFright} />
             <Route path="/experiences" component={Experiences} />
+            <Route path="/deck-one" component={DeckOne} />
             <Route path="/about" component={About} />
             <Route path="/signup" component={SignUp} />
             <Route path="/feedback" component={Feedback} />
