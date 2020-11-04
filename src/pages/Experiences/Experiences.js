@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
 import "./Experiences.scss";
 
-const imgPath = process.env.PUBLIC_URL + "/assets/";
-
 const experiences = () => {
   document.title = "Stereoh | Events";
 
@@ -29,21 +27,44 @@ const experiences = () => {
         {/* // ————————————————————————————————————o————————————————————————————————————o TWO ACROSS -->
         // TWO ACROSS -->
         // ———————————————————————————————————— TWO ACROSS —> */}
-        <div className="events-tiles two-across">
+        <div className="events-tiles">
           <article className="one-event-tile">
             <div className="tile-img-cont">
               <img
                 className="one-event-img"
-                src={imgPath + "tropicalFright_008.jpg"}
+                src="/assets/tropicalFright_008.jpg"
                 alt="neonPlatform hero"
               />
             </div>
             <div className="one-tile-copy">
-              <h2>Tropical Fright</h2>
-              <p>
-                Stereoh presents Halloween spooktacular edition with Detroit
-                techno songstress Milan Ariel.
-              </p>
+              <div className="tile-copy-inner">
+                <h2>Tropical Fright</h2>
+                <p>
+                  Stereoh presents Halloween spooktacular edition with Detroit
+                  techno songstress Milan Ariel.
+                </p>
+              </div>
+              <Link to="/spooky">
+                <button className="transp-bg">Explore</button>
+              </Link>
+            </div>
+          </article>
+          <article className="one-event-tile">
+            <div className="tile-img-cont">
+              <img
+                className="one-event-img"
+                src="/assets/basslineIroc.jpg"
+                alt="neonPlatform hero"
+              />
+            </div>
+            <div className="one-tile-copy">
+              <div className="tile-copy-inner">
+                <h2>Bassline Reactor</h2>
+                <p>
+                  Stereoh is welcoming Detroit native musician, DJ and
+                  tastemaker Drummer B.
+                </p>
+              </div>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
               </Link>
@@ -53,57 +74,40 @@ const experiences = () => {
             <div className="tile-img-cont">
               <img
                 className="one-event-img"
-                src={imgPath + "sat6/satSixSideRoom_017.jpg"}
+                src="/assets/sat6/satSixSideRoom_017.jpg"
                 alt="neonPlatform hero"
               />
             </div>
             <div className="one-tile-copy">
-              <h2>Saturn 6</h2>
-              <p>
-                Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
-                of Lost Soul Enterprises to the inaugural Saturn6 party. Stereoh
-                presents Halloween
-              </p>
-              <Link to="/bassline-basin">
+              <div className="tile-copy-inner">
+                <h2>Saturn 6</h2>
+                <p>
+                  Stereoh is welcoming Heidi Sabertooth and R.Gamble
+                  of Lost Soul Enterprises to the inaugural Saturn6 party.
+                </p>
+              </div>
+              <Link to="/saturn6">
                 <button className="transp-bg">Explore</button>
               </Link>
             </div>
           </article>
-          <article className="one-event-tile">
+          <article className="one-event-tile coming-soon">
             <div className="tile-img-cont">
               <img
                 className="one-event-img"
-                src={imgPath + "sat6/satSixSideRoom_017.jpg"}
+                src="/assets/tropicalFreeze_014.png"
                 alt="neonPlatform hero"
               />
             </div>
             <div className="one-tile-copy">
-              <h2>Saturn 6</h2>
-              <p>
-                Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
-                of Lost Soul Enterprises to the inaugural Saturn6 party.
-              </p>
-              <Link to="/bassline-basin">
-                <button className="transp-bg">Explore</button>
-              </Link>
-            </div>
-          </article>
-          <article className="one-event-tile">
-            <div className="tile-img-cont">
-              <img
-                className="one-event-img"
-                src={imgPath + "tropicalFright_008.jpg"}
-                alt="neonPlatform hero"
-              />
-            </div>
-            <div className="one-tile-copy">
-              <h2>Tropical Fright</h2>
-              <p>
-                Stereoh is welcoming New Yorkers Heidi Sabertooth and R.Gamble
-                of Lost Soul Enterprises to the inaugural Saturn6 party. Stereoh
-                presents Halloween
-              </p>
-              <Link to="/bassline-basin">
+              <div className="tile-copy-inner">
+                <h2>Tropical Freeze</h2>
+                <p>
+                  Stereoh presents Halloween spooktacular edition with Detroit
+                  techno songstress Milan Ariel.
+                </p>
+              </div>
+              <Link to="/tropical-freeze">
                 <button className="transp-bg">Explore</button>
               </Link>
             </div>
