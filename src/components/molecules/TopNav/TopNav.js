@@ -24,6 +24,7 @@ const MenuItem = (href) => {
   let basslineActive;
   let spookyActive;
   let experiencesActive;
+  let cheatSheetActive
   let aboutActive;
 
   switch (location.pathname) {
@@ -42,6 +43,9 @@ const MenuItem = (href) => {
     case "/experiences":
       experiencesActive = true;
       break;
+    case "/cheat-sheet":
+      cheatSheetActive = true;
+      break;
     case "/about":
       aboutActive = true;
       break;
@@ -56,8 +60,17 @@ const MenuItem = (href) => {
           <h2>Stereoh</h2>
         </Link>
         <ul className={isVisible === true ? "show-menu" : ""}>
-          <li className={`menu-item events ${experiencesActive ? "events" : ""}`}>
+          <li
+            className={`menu-item events ${experiencesActive ? "active" : ""}`}
+          >
             <Link to="/experiences">experiences</Link>
+          </li>
+          <li
+            className={`menu-item cheat-sheet ${
+              cheatSheetActive ? "active" : ""
+            }`}
+          >
+            <Link to="/cheat-sheet">Cheat&nbsp;Sheet</Link>
           </li>
           <li className={`menu-item about ${aboutActive ? "active" : ""}`}>
             <Link to="/about">About</Link>
