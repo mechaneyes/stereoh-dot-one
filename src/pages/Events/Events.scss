@@ -10,24 +10,29 @@
     margin: 0;
   }
 
+  .events-hero {
+    position: relative;
+
+    .events-hero-img {
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      width: 100%;
+    }
+  }
+
+  .events-info-content {
+    position: absolute;
+    bottom: 1vw;
+    left: 30px;
+    width: 66%;
+  }
+
   .all-events-main {
     position: relative;
     // height: 100vh;
     padding: 100px 30px 0 30px;
     background-color: rgba(0, 18, 37, 0.9);
-  }
-
-  .events-hero-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-
-  .events-info-content {
-    position: relative;
-    width: 66%;
-    margin: 26vw 0 110px;
   }
 
   .events-tiles {

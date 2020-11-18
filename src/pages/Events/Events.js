@@ -9,12 +9,12 @@ const events = () => {
 
   return (
     <div className="all-events">
-      <section className="all-events-main">
-          <img
-            className="events-hero-img"
-            src="/assets/events-hero-fright.jpg"
-            alt="events hero"
-          />
+      <section className="events-hero">
+        <img
+          className="events-hero-img"
+          src="/assets/events-hero-fright.jpg"
+          alt="events hero"
+        />
         <div className="events-info-content">
           <h1>Stereoh Experiences</h1>
           <p className="events-info-subheadline">
@@ -27,6 +27,8 @@ const events = () => {
             by to check out the latest events.
           </p>
         </div>
+      </section>
+      <section className="all-events-main">
         {/* <div className="gradient"></div> */}
 
         {/* // ————————————————————————————————————o————————————————————————————————————o TWO ACROSS -->
