@@ -2,14 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
-import "./Experiences.scss";
+import "./Events.scss";
 
-const experiences = () => {
+const events = () => {
   document.title = "Stereoh | Events";
 
   return (
     <div className="all-events">
       <section className="all-events-main">
+          <img
+            className="events-hero-img"
+            src="/assets/events-hero-fright.jpg"
+            alt="events hero"
+          />
         <div className="events-info-content">
           <h1>Stereoh Experiences</h1>
           <p className="events-info-subheadline">
@@ -82,8 +87,8 @@ const experiences = () => {
               <div className="tile-copy-inner">
                 <h2>Saturn 6</h2>
                 <p>
-                  Stereoh is welcoming Heidi Sabertooth and R.Gamble
-                  of Lost Soul Enterprises to the inaugural Saturn6 party.
+                  Stereoh is welcoming Heidi Sabertooth and R.Gamble of Lost
+                  Soul Enterprises to the inaugural Saturn6 party.
                 </p>
               </div>
               <Link to="/saturn6">
@@ -120,4 +125,4 @@ const experiences = () => {
   );
 };
 
-export default experiences;
+export default events;
