@@ -23,13 +23,9 @@ const events = () => {
         <div className="events-hero-content">
           <h1>Stereoh Events</h1>
           <p className="events-hero-subheadline">
-            Stereoh is a platform for live music shows and interactive
-            experiences in a novel format that combines streaming video with
-            freely traversable social 3D environments, where audience members
-            can talk and interact naturally, and artists can meet their fans
-            personally. We are constantly adding new functionality and plotting
-            new experiences, so <Link to="/signup">keep in touch</Link> and drop
-            by to check out the latest events.
+            These are our upcoming and previous events. We are constantly plotting new experiences, so{" "}
+            <Link to="/signup">keep in touch</Link> and drop by to check out the
+            latest events.
           </p>
         </div>
       </section>
@@ -61,9 +57,7 @@ const events = () => {
             <div className="tile-copy-inner">
               <h5>2020.10.18</h5>
               <h2>Bassline Reactor</h2>
-              <h3>
-                Drummer B <br /> MPC Set | Transmat, Detroit
-              </h3>
+              <h3>Drummer B <br /> MPC Set | Transmat, Detroit</h3>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
               </Link>
