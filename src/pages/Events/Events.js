@@ -57,7 +57,7 @@ const events = () => {
             <div className="tile-copy-inner">
               <h5>2020.10.18</h5>
               <h2>Bassline Reactor</h2>
-              <h3>Drummer B &middot; MPC Set &middot; Transmat, Detroit</h3>
+              <h3>Drummer B &middot; MPC Set &middot; Transmat &middot; Detroit</h3>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
               </Link>
