@@ -1,0 +1,32 @@
+@import "../../../styles/breakpoints";
+
+.hero-gradient {
+  z-index: 1;
+  position: absolute;
+  top: auto;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 18, 37, 0) 0,
+    rgba(0, 18, 37, 0) 70.28%
+  );
+//   background: linear-gradient(0deg, #001225 30%, rgba(0, 0, 0, 0) 66%);
+
+//   @include bp(land13) {
+//     background: linear-gradient(
+//       270deg,
+//       rgba(0, 18, 37, 0) 0,
+//       #287a73 63.28%
+//     );
+//   }
+
+//   @include bp(vert11) {
+//     background: linear-gradient(
+//       270deg,
+//       rgba(0, 18, 37, 0) 0,
+//       #287a73 50.28%
+//     );
+//   }
+}

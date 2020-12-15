@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import HeroGradient from "../../components/atoms/HeroGradient/HeroGradient";
 import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
 import "./Events.scss";
 
@@ -10,11 +11,21 @@ const events = () => {
   return (
     <div className="all-events">
       <section className="events-hero">
-        <img
+        {/* <img
           className="events-hero-img"
           src="/assets/events-hero-fright.jpg"
           alt="events hero"
-        />
+        /> */}
+        <video className="hero-video" autoPlay muted loop>
+          <source src="/assets/events-hero-hyperloop.mp4" type="video/mp4" />
+        </video>
+        {/* <img
+          className="hero-gradient"
+          src="/assets/hero-gradient0.1.1.png"
+          alt="hero gradient"
+        /> */}
+      {/* <div className="gradient"></div> */}
+      <HeroGradient />
         <img
           className="events-hero-img mobile-img"
           src="/assets/halloween_001.jpg"
@@ -23,9 +34,9 @@ const events = () => {
         <div className="events-hero-content">
           <h1>Stereoh Events</h1>
           <p className="events-hero-subheadline">
-            These are our upcoming and previous events. We are constantly plotting new experiences, so{" "}
-            <Link to="/signup">keep in touch</Link> and drop by to check out the
-            latest events.
+            These are our upcoming and previous events. We are constantly
+            plotting new experiences, so <Link to="/signup">keep in touch</Link>{" "}
+            and drop by to check out the latest events.
           </p>
         </div>
       </section>
@@ -57,7 +68,9 @@ const events = () => {
             <div className="tile-copy-inner">
               <h5>2020.10.18</h5>
               <h2>Bassline Reactor</h2>
-              <h3>Drummer B &middot; MPC Set &middot; Transmat &middot; Detroit</h3>
+              <h3>
+                Drummer B &middot; MPC Set &middot; Transmat &middot; Detroit
+              </h3>
               <Link to="/bassline-basin">
                 <button className="transp-bg">Explore</button>
               </Link>
@@ -74,7 +87,7 @@ const events = () => {
             <div className="tile-copy-inner">
               <h5>2020.10.02</h5>
               <h2>Saturn&nbsp;6</h2>
-              <h3>Heidi Sabertooth + R.Gamble</h3>
+              <h3>Heidi Sabertooth + R.Gamble &middot; <br />Lost Soul Enterprises</h3>
               <Link to="/saturn6">
                 <button className="transp-bg">Explore</button>
               </Link>
