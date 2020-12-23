@@ -1,0 +1,61 @@
+.App .nye {
+  h1 {
+    font-family: changeling-neo, sans-serif;
+    font-weight: 700;
+    color: #ff1a20;
+    color: rgba(13, 255, 213, 1);
+  }
+
+  p {
+    font-size: 20px;
+    color: #ff1a20;
+    color: rgba(13, 255, 213, 1);
+  }
+
+  button {
+    color: #ff1a20;
+    border-color: #ff1a20;
+
+    &:hover {
+        color: white;
+        background-color: #ff1a20;
+    }
+  }
+
+  .gradient-hero {
+    // background: rgba(13, 255, 213, 0.3);
+    background: black;
+
+    .gradient {
+      background: rgba(13, 255, 213, 0.1);
+    }
+  }
+
+  .video-bg {
+    opacity: 0.5;
+    width: 100%;
+  }
+
+  .event-info {
+    z-index: 3;
+    position: absolute;
+    bottom: 30.5%;
+    bottom: auto;
+    top: 280px;
+    width: 45%;
+  }
+
+  .artists {
+    list-style-type: none;
+    font-family: changeling-neo, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #ff1a20;
+    color: rgba(13, 255, 213, 1);
+    text-align: left;
+  }
+
+  .countdown-comp .count-container h3 {
+    color: rgba(13, 255, 213, 1);
+  }
+}

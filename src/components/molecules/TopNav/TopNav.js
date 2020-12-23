@@ -23,6 +23,7 @@ const MenuItem = (href) => {
   let tropicalActive;
   let basslineActive;
   let spookyActive;
+  let nyeActive;
   let eventsActive;
   let cheatSheetActive
   let aboutActive;
@@ -39,6 +40,9 @@ const MenuItem = (href) => {
       break;
     case "/tropical-fright":
       spookyActive = true;
+      break;
+    case "/nye":
+      nyeActive = true;
       break;
     case "/events":
       eventsActive = true;
@@ -60,6 +64,11 @@ const MenuItem = (href) => {
           <h2>Stereoh</h2>
         </Link>
         <ul className={isVisible === true ? "show-menu" : ""}>
+          <li
+            className={`menu-item nye ${nyeActive ? "active" : ""}`}
+          >
+            <Link to="/nye">nye</Link>
+          </li>
           <li
             className={`menu-item events ${eventsActive ? "active" : ""}`}
           >

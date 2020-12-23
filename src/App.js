@@ -8,6 +8,7 @@ import Saturn6 from "./pages/Saturn6/Saturn6";
 import TropicalFreeze from "./pages/TropicalFreeze/TropicalFreeze";
 import BasslineBasin from "./pages/BasslineBasin/BasslineBasin";
 import TropicalFright from "./pages/TropicalFright/TropicalFright";
+import NYE from "./pages/NYE/NYE";
 import Events from "./pages/Events/Events";
 import CheatSheet from "./pages/CheatSheet/CheatSheet";
 import About from "./pages/About/About";
@@ -35,6 +36,7 @@ export class App extends Component {
             <Route path="/reactor" component={BasslineBasin} />
             <Route path="/spooky" component={TropicalFright} />
             <Route path="/tropical-fright" component={TropicalFright} />
+            <Route path="/nye" component={NYE} />
             <Route path="/events" component={Events} />
             <Route path="/cheat-sheet" component={CheatSheet} />
             <Route path="/about" component={About} />
