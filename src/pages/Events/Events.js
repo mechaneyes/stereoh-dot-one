@@ -24,13 +24,8 @@ const events = () => {
           src="/assets/hero-gradient0.1.1.png"
           alt="hero gradient"
         /> */}
-      {/* <div className="gradient"></div> */}
-      <HeroGradient />
-        <img
-          className="events-hero-img mobile-img"
-          src="/assets/halloween_001.jpg"
-          alt="events hero"
-        />
+        {/* <div className="gradient"></div> */}
+        <HeroGradient />
         <div className="events-hero-content">
           <h1>Stereoh Events</h1>
           <p className="events-hero-subheadline">
@@ -41,6 +36,26 @@ const events = () => {
         </div>
       </section>
       <section className="all-events-main">
+        <article className="one-event-tile">
+          <video className="event-flyer-video" autoPlay muted loop>
+            {/* <source src="/assets/event-nye.mp4" type="video/mp4" /> */}
+            {/* <source src="/assets/events-beatdown-no-copy.mp4" type="video/mp4" /> */}
+            <source src="/assets/events-beatdown-simple.mp4" type="video/mp4" />
+          </video>
+          <div className="one-tile-copy">
+            <div className="tile-copy-inner">
+              <h5 className="coming-flag">Coming 2020.12.31</h5>
+              <h2>Detroit Beatdown</h2>
+              <h3>
+                Delano Smith &middot; Norm Talley &middot; <br /> Mike "Agent X"
+                Clark &middot; Rick Wilhite &middot; Special Guest Fred P
+              </h3>
+              <Link to="/nye">
+                <button className="transp-bg">Explore</button>
+              </Link>
+            </div>
+          </div>
+        </article>
         <article className="one-event-tile">
           <img
             className="one-event-img"
@@ -87,7 +102,10 @@ const events = () => {
             <div className="tile-copy-inner">
               <h5>2020.10.02</h5>
               <h2>Saturn&nbsp;6</h2>
-              <h3>Heidi Sabertooth + R.Gamble &middot; <br />Lost Soul Enterprises</h3>
+              <h3>
+                Heidi Sabertooth + R.Gamble &middot; <br />
+                Lost Soul Enterprises
+              </h3>
               <Link to="/saturn6">
                 <button className="transp-bg">Explore</button>
               </Link>

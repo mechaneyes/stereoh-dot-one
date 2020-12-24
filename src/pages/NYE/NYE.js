@@ -24,7 +24,7 @@ const eventInfo = {
 };
 
 const NYE = () => {
-  document.title = "Stereoh | Tropical Freeze";
+  document.title = "Stereoh | Detroit Beatdown";
 
   let bgRef = React.createRef();
   console.log("bgRef", bgRef);
@@ -36,7 +36,7 @@ const NYE = () => {
     <div className="single nye">
       <article className="gradient-hero">
         <video className="video-bg" autoPlay muted loop>
-          <source src="/assets/light-leaks-loop.mp4" type="video/mp4" />
+          <source src="/assets/events-beatdown-no-copy.mp4" type="video/mp4" />
         </video>
         {/* <EventInfo {...eventInfo} /> */}
         <div className="gradient"></div>

@@ -76,6 +76,10 @@
       width: 100%;
     }
 
+    video {
+      width: 100%;
+    }
+
     &:nth-child(even) {
       direction: rtl;
 
@@ -120,7 +124,8 @@
       font-style: normal;
       line-height: 65px;
       line-height: 3vw;
-      text-align: left;
+      // text-align: left;
+      align-self: flex-end;
       // border: 1px solid tomato;
     }
 
@@ -133,6 +138,17 @@
     h5 {
       display: inline;
       margin: 0 0 15px;
+    }
+
+    h5.coming-flag {
+      display: flex;
+      justify-content: center;
+      width: 200px;
+      padding: 5px 0;
+      font-size: 19px;
+      color: rgba(0, 18, 37, 0.9);
+      font-weight: 700;
+      background: white;
     }
 
     p {
