@@ -27,4 +27,12 @@
       top: auto;
     }
   }
+
+  @include bp(xs) {
+   .homepage-hero {
+     .home-hero-content {
+       padding-top: 40px;
+     }
+   } 
+  }
 }

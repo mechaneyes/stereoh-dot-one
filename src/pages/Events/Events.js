@@ -16,16 +16,25 @@ const events = () => {
           src="/assets/events-hero-fright.jpg"
           alt="events hero"
         /> */}
-        <video className="hero-video" autoPlay muted loop>
+        {/* <video className="hero-video" autoPlay muted loop playsinline>
           <source src="/assets/events-hero-hyperloop.mp4" type="video/mp4" />
-        </video>
-        {/* <img
-          className="hero-gradient"
-          src="/assets/hero-gradient0.1.1.png"
-          alt="hero gradient"
-        /> */}
-        {/* <div className="gradient"></div> */}
-        <HeroGradient />
+        </video> */}
+        <div className="hero-vid-holder"
+          dangerouslySetInnerHTML={{
+            __html: `
+                <video
+                  loop
+                  muted
+                  autoplay
+                  playsinline
+                  src="/assets/events-hero-hyperloop.mp4"
+                  class="hero-video"
+                />,
+              `,
+          }}
+        ></div>
+        <div className="gradient"></div>
+        {/* <HeroGradient /> */}
         <div className="events-hero-content">
           <h1>Stereoh Events</h1>
           <p className="events-hero-subheadline">
@@ -37,11 +46,23 @@ const events = () => {
       </section>
       <section className="all-events-main">
         <article className="one-event-tile">
-          <video className="event-flyer-video" autoPlay muted loop>
-            {/* <source src="/assets/event-nye.mp4" type="video/mp4" /> */}
-            {/* <source src="/assets/events-beatdown-no-copy.mp4" type="video/mp4" /> */}
+          {/* <video className="event-flyer-video" autoPlay muted loop playsinline>
             <source src="/assets/events-beatdown-simple.mp4" type="video/mp4" />
-          </video>
+          </video> */}
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `
+                <video
+                  loop
+                  muted
+                  autoplay
+                  playsinline
+                  src="/assets/events-beatdown-simple.mp4"
+                  class="event-flyer-video"
+                />,
+              `,
+            }}
+          ></div>
           <div className="one-tile-copy">
             <div className="tile-copy-inner">
               <h5 className="coming-flag">Coming 2020.12.31</h5>
