@@ -1,15 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
-import GradientHero from "../../components/atoms/GradientHero/GradientHero"; // Left here just for styling. will figure that out
-// import EventInfo from "../../components/atoms/EventInfo/EventInfo";
-import Button from "../../components/atoms/Button/Button";
+// import Button from "../../components/atoms/Button/Button";
 import Countdown from "../../components/atoms/Countdown/Countdown";
-import RelatedItems from "../../components/molecules/RelatedItems/RelatedItems";
 
 import "./NYE.scss";
 
-const imgPath = process.env.PUBLIC_URL + "/assets/";
 
 const eventInfo = {
   title: "Delano Smith presents <br />Detroit Beatdown",
@@ -25,12 +20,6 @@ const eventInfo = {
 
 const NYE = () => {
   document.title = "Stereoh | Detroit Beatdown";
-
-  let bgRef = React.createRef();
-  console.log("bgRef", bgRef);
-  const setPlayBack = () => {
-    bgRef.current.playbackRate = 0.5;
-  };
 
   return (
     <div className="single nye">
